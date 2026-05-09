@@ -1,10 +1,16 @@
-import pytest
-from unittest.mock import MagicMock, patch, PropertyMock
-import sys
+import importlib.util
 import os
+import pytest
+from unittest.mock import MagicMock
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'load'))
-from load import get_latest_partition, COLLECTIONS
+spec = importlib.util.spec_from_file_location(
+    "load_module",
+    os.path.join(os.path.dirname(__file__), '..', 'load', 'load.py')
+)
+load_module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(load_module)
+get_latest_partition = load_module.get_latest_partition
+COLLECTIONS = load_module.COLLECTIONS
 
 
 class TestGetLatestPartition:
