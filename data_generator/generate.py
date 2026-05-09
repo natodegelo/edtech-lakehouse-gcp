@@ -537,7 +537,7 @@ def generate_certificates(users: list[dict], courses: list[dict]) -> list[dict]:
 
 # ── Aprovados Especializacao ───────────────────────────────────────────────────
 
-def generate_aprovados_especializacao(users: list[dict], events: list[dict], userplans: list[dict]) -> list[dict]:
+def generate_specialization_graduates(users: list[dict], events: list[dict], userplans: list[dict]) -> list[dict]:
     plan_map = {u["userId"]: u for u in userplans}
     especializacoes = [e for e in events if e["category"] == "especializacao"]
     aprovados = []
@@ -566,7 +566,7 @@ def generate_aprovados_especializacao(users: list[dict], events: list[dict], use
 
 # ── Customers Vindi ────────────────────────────────────────────────────────────
 
-def generate_customers_vindi(users: list[dict]) -> list[dict]:
+def generate_gateway_customers(users: list[dict]) -> list[dict]:
     customers = []
     for user in users:
         customers.append({
@@ -592,7 +592,7 @@ def generate_customers_vindi(users: list[dict]) -> list[dict]:
 
 # ── HubSpot Contacts ───────────────────────────────────────────────────────────
 
-def generate_hubspot_contacts(users: list[dict], userplans: list[dict]) -> list[dict]:
+def generate_crm_contacts(users: list[dict], userplans: list[dict]) -> list[dict]:
     plan_map = {u["userId"]: u for u in userplans}
     contacts = []
     for user in users:
@@ -675,9 +675,9 @@ if __name__ == "__main__":
     comments = generate_comments(users, uplans)
     likes    = generate_likes(users, comments)
     certs    = generate_certificates(users, courses)
-    aprovs   = generate_aprovados_especializacao(users, events, uplans)
-    vindi    = generate_customers_vindi(users)
-    hubspot  = generate_hubspot_contacts(users, uplans)
+    aprovs   = generate_specialization_graduates(users, events, uplans)
+    vindi    = generate_gateway_customers(users)
+    hubspot  = generate_crm_contacts(users, uplans)
 
     save(users,    "users.json")
     save(plans,    "plans.json")
@@ -697,6 +697,6 @@ if __name__ == "__main__":
     save(comments, "comments.json")
     save(likes,    "likes.json")
     save(certs,    "certificates.json")
-    save(aprovs,   "aprovados_especializacao.json")
-    save(vindi,    "customers_vindi.json")
-    save(hubspot,  "hubspot_contacts.json")
+    save(aprovs,   "specialization_graduates.json")
+    save(vindi,    "gateway_customers.json")
+    save(hubspot,  "crm_contacts.json")
