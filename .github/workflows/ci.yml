@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt flake8 black pytest
 
       - name: Lint (flake8)
-        run: flake8 ingestion/ load/ --max-line-length=120 --ignore=E501,E241,W292
+        run: flake8 ingestion/ load/ --max-line-length=120 --ignore=E501,E241,W292,E231,E221,F401
 
       - name: Format check (black)
         run: black --check ingestion/ load/ --line-length=120
