@@ -33,9 +33,9 @@ SCHEMA_REQUIRED_FIELDS = {
     "comments":                     ["commentId", "userId"],
     "likes":                        ["likeId", "userId"],
     "certificates":                 ["certificateId", "userId", "courseId"],
-    "aprovados_especializacao":     ["userId", "eventId"],
-    "customers_vindi":              ["customerId", "userId"],
-    "hubspot_contacts":             ["hubspot_id", "email"],
+    "specialization_graduates":     ["userId", "eventId"],
+    "gateway_customers":              ["customerId", "userId"],
+    "crm_contacts":             ["hubspot_id", "email"],
 }
 
 INGEST_STRATEGY = {
@@ -44,7 +44,7 @@ INGEST_STRATEGY = {
     "courses":                       "snapshot",
     "events":                        "snapshot",
     "plans":                         "snapshot",
-    "customers_vindi":               "snapshot",
+    "gateway_customers":               "snapshot",
     "consolidated_sales":            "snapshot",
     "usercourseprogresssummarizeds": "snapshot",
     "scoresummarizeds":              "snapshot",
@@ -52,14 +52,14 @@ INGEST_STRATEGY = {
     "userplans":                     "scd2",
     "subscriptions":                 "scd2",
     "usercourseprogresses":          "merge",
-    "hubspot_contacts":              "checkpoint",
+    "crm_contacts":              "checkpoint",
     "audittraffics":                 "append",
     "scores":                        "append",
     "comments":                      "append",
     "likes":                         "append",
     "certificates":                  "append",
     "newusereventprogresses":        "append",
-    "aprovados_especializacao":      "append",
+    "specialization_graduates":      "append",
 }
 
 
@@ -110,7 +110,9 @@ def ingest_collection(client: storage.Client, collection: str, ingest_date: str,
             record["_ingest_date"] = ingest_date
             quarantine_lines.append(json.dumps(record, ensure_ascii=False))
 
-    blob_path = f"mongodb/{collection}/ingest_date={ingest_date}/ingest_time={ingest_time}/part-00000.ndjson"
+    source = "crm" if collection == "crm_contacts" else "mongodb"
+    entity = "contacts" if collection == "crm_contacts" else collection
+    blob_path = f"{source}/{entity}/ingest_date={ingest_date}/ingest_time={ingest_time}/part-00000.ndjson"
 
     if valid_lines:
         upload_to_gcs(client, GCS_RAW_BUCKET, blob_path, "\n".join(valid_lines))
