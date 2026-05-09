@@ -6,15 +6,15 @@ from faker import Faker
 fake = Faker("pt_BR")
 
 PLANS = [
-    {"planId": "e4aece44-f291-11ec-b939-0242ac120002", "name": "Elite",      "hierarchy": 1},
-    {"planId": "2a9b53c8-f292-11ec-b939-0242ac120002", "name": "Specialist", "hierarchy": 2},
-    {"planId": "15216afa-f292-11ec-b939-0242ac120002", "name": "Essential",  "hierarchy": 3},
-    {"planId": "a1b2c3d4-f292-11ec-b939-0242ac120002", "name": "Light",      "hierarchy": 4},
+    {"planId": "e4aece44-f291-11ec-b939-0242ac120002", "name": "Master", "hierarchy": 1},
+    {"planId": "2a9b53c8-f292-11ec-b939-0242ac120002", "name": "Pro", "hierarchy": 2},
+    {"planId": "15216afa-f292-11ec-b939-0242ac120002", "name": "Plus", "hierarchy": 3},
+    {"planId": "a1b2c3d4-f292-11ec-b939-0242ac120002", "name": "Starter", "hierarchy": 4},
 ]
 
 CATEGORY_GROUPS = ["Customer Success", "CX", "Dados", "Liderança", "Vendas"]
 EVENT_CATEGORIES = ["masterclass", "especializacao"]
-SUBJECTS = ["customer_success", "dados", "cx", "lideranca", "vendas"]
+SUBJECTS = ["customer_experience", "dados", "cx", "lideranca", "vendas"]
 
 
 # ── Users ──────────────────────────────────────────────────────────────────────
@@ -31,7 +31,7 @@ def generate_users(n: int = 100) -> list[dict]:
             "lastName": fake.last_name(),
             "email": fake.unique.email(),
             "phoneNumber": fake.msisdn(),
-            "CSID": f"CS{fake.numerify(text='########')}",
+            "LHID": f"LH{fake.numerify(text='########')}",
             "active": fake.boolean(chance_of_getting_true=80),
             "profile": fake.random_element(elements=["B2C", "B2B"]),
             "company": fake.company() if fake.boolean(chance_of_getting_true=60) else "",
@@ -60,7 +60,7 @@ def generate_plans() -> list[dict]:
         plans.append({
             "planId": p["planId"],
             "name": p["name"],
-            "description": f"Club {p['name']}",
+            "description": f"LearnHub {p['name']}",
             "hierarchy": p["hierarchy"],
             "color": fake.hex_color(),
             "trialAvailable": p["hierarchy"] >= 2,
@@ -209,9 +209,10 @@ def generate_userprofiles(users: list[dict]) -> list[dict]:
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def save(data: list[dict], filename: str) -> None:
-    with open(filename, "w", encoding="utf-8") as f:
+    path = f"data/{filename}"
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"{len(data)} registros gerados em {filename}")
+    print(f"{len(data)} registros gerados em {path}")
 
     
 # ── Audit Traffics ─────────────────────────────────────────────────────────────
@@ -397,7 +398,7 @@ def generate_subscriptions(users: list[dict], userplans: list[dict]) -> list[dic
 def generate_bills(users: list[dict], subscriptions: list[dict]) -> list[dict]:
     sub_map = {s["userId"]: s for s in subscriptions}
     bills = []
-    plan_prices = {"Elite": 297, "Specialist": 197, "Essential": 169, "Light": 97}
+    plan_prices = {"Master": 297, "Pro": 197, "Plus": 169, "Starter": 97}
     for user in users:
         sub = sub_map.get(user["userId"], {})
         n_bills = fake.random_int(min=1, max=12)
@@ -405,7 +406,7 @@ def generate_bills(users: list[dict], subscriptions: list[dict]) -> list[dict]:
         for i in range(n_bills):
             due_at = created_at + timedelta(days=30 * (i + 1))
             status = fake.random_element(elements=["paid", "paid", "paid", "pending", "canceled"])
-            amount = plan_prices.get(sub.get("planName", "Essential"), 169)
+            amount = plan_prices.get(sub.get("planName", "Plus"), 169)
             bills.append({
                 "billId": str(uuid.uuid4()),
                 "userId": user["userId"],
@@ -443,11 +444,11 @@ def generate_consolidated_sales(users: list[dict], bills: list[dict], userplans:
                 elements=["Cartão de crédito", "Boleto", "Pix"]
             ),
             "Tentativas_Pagamento": fake.random_int(min=1, max=3),
-            "Nome_Produto": f"CSA {uplan.get('planName', 'Essential')} - Recorrência",
+            "Nome_Produto": f"LearnHub {uplan.get('planName', 'Essential')} - Recorrência",
             "Valor": int(bill["amount"]),
             "Valor_Total": int(bill["amount"]) * 12,
-            "Plano": uplan.get("planName", "Essential"),
-            "Categoria_Produto": uplan.get("planName", "Essential"),
+            "Plano": uplan.get("planName", "Plus"),
+            "Categoria_Produto": uplan.get("planName", "Plus"),
             "Perfil": fake.random_element(elements=["B2C", "B2B"]),
             "Condicao_Pagamento": fake.random_element(
                 elements=["Recorrência", "À vista", "Parcelado"]
@@ -627,6 +628,32 @@ def generate_hubspot_contacts(users: list[dict], userplans: list[dict]) -> list[
             "_source": "hubspot",
         })
     return contacts
+
+def generate_usercourseprogresssummarizeds(users: list[dict], userplans: list[dict], ucprog: list[dict]) -> list[dict]:
+    plan_map = {u["userId"]: u for u in userplans}
+    prog_map: dict[str, list] = {}
+    for p in ucprog:
+        prog_map.setdefault(p["userId"], []).append(p)
+
+    summarizeds = []
+    for user in users:
+        uplan = plan_map.get(user["userId"], {})
+        progs = prog_map.get(user["userId"], [])
+        total_minutes = round(sum(p["durationInSeconds"] for p in progs) / 60, 2)
+        created_at = datetime.fromisoformat(user["createdAt"])
+        summarizeds.append({
+            "userId": user["userId"],
+            "userName": f"{user['name']} {user['lastName']}",
+            "company": user.get("company", ""),
+            "planName": uplan.get("planName", ""),
+            "courses": list({p["courseId"] for p in progs}),
+            "events": [],
+            "totalWatchedTimeInMinutes": total_minutes,
+            "totalWatchedTimeCurrentMonthInMinutes": round(total_minutes * 0.3, 2),
+            "userSince": created_at.isoformat(),
+            "updatedAt": datetime.now(tz=timezone.utc).isoformat(),
+        })
+    return summarizeds
     
     
 if __name__ == "__main__":
@@ -641,6 +668,7 @@ if __name__ == "__main__":
     ueprog   = generate_newusereventprogresses(users, events, uplans)
     scores   = generate_scores(users, courses)
     ssum     = generate_scoresummarizeds(users, scores)
+    ucprog_sum = generate_usercourseprogresssummarizeds(users, uplans, ucprog)
     subs     = generate_subscriptions(users, uplans)
     bills    = generate_bills(users, subs)
     sales    = generate_consolidated_sales(users, bills, uplans)
@@ -660,6 +688,7 @@ if __name__ == "__main__":
     save(audits,   "audittraffics.json")
     save(ucprog,   "usercourseprogresses.json")
     save(ueprog,   "newusereventprogresses.json")
+    save(ucprog_sum, "usercourseprogresssummarizeds.json")
     save(scores,   "scores.json")
     save(ssum,     "scoresummarizeds.json")
     save(subs,     "subscriptions.json")
