@@ -6,6 +6,8 @@ __pycache__/
 # Generated data
 data_generator/*.json
 data_generator/.venv/
+data_generator/data/*.json
+data_generator/data
 
 # C extensions
 *.so
