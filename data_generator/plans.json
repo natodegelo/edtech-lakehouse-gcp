@@ -4,7 +4,7 @@
     "name": "Elite",
     "description": "Club Elite",
     "hierarchy": 1,
-    "color": "#42748e",
+    "color": "#62ff4e",
     "trialAvailable": false
   },
   {
@@ -12,7 +12,7 @@
     "name": "Specialist",
     "description": "Club Specialist",
     "hierarchy": 2,
-    "color": "#27878e",
+    "color": "#5d0d5c",
     "trialAvailable": true
   },
   {
@@ -20,7 +20,7 @@
     "name": "Essential",
     "description": "Club Essential",
     "hierarchy": 3,
-    "color": "#631e49",
+    "color": "#c68494",
     "trialAvailable": true
   },
   {
@@ -28,7 +28,7 @@
     "name": "Light",
     "description": "Club Light",
     "hierarchy": 4,
-    "color": "#1563e2",
+    "color": "#e53e28",
     "trialAvailable": true
   }
 ]

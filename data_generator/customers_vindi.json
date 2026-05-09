@@ -1,0 +1,2302 @@
+[
+  {
+    "customerId": "2f8a1c34-fb58-469f-8e6c-535e17551949",
+    "userId": "dca74a1c-bbe8-4d12-a4f0-3052dffa036e",
+    "name": "Henrique da Costa",
+    "email": "jose-pedroda-mata@example.com",
+    "registry_code": "924.875.613-19",
+    "status": "active",
+    "address": {
+      "street": "Quadra Luiz Gustavo Marques",
+      "number": "97",
+      "zipcode": "67143-774",
+      "city": "Rios",
+      "state": "MA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561985306713"
+      }
+    ],
+    "created_at": "2026-02-01T23:48:59+00:00"
+  },
+  {
+    "customerId": "7346c630-3200-4edf-9541-4716f2122538",
+    "userId": "aec33be4-fcc4-4b3f-85e9-710d3faa3641",
+    "name": "Francisco Almeida",
+    "email": "qsousa@example.org",
+    "registry_code": "349.102.876-04",
+    "status": "active",
+    "address": {
+      "street": "Área Costela",
+      "number": "29",
+      "zipcode": "08457-351",
+      "city": "Cirino",
+      "state": "CE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571975046395"
+      }
+    ],
+    "created_at": "2024-07-27T07:57:05+00:00"
+  },
+  {
+    "customerId": "ac187519-4f37-4566-ae0f-82301ed7f563",
+    "userId": "3d4ad140-adf2-4f71-be85-46209fe46099",
+    "name": "Francisco Vieira",
+    "email": "jose-miguelnogueira@example.com",
+    "registry_code": "805.314.972-32",
+    "status": "active",
+    "address": {
+      "street": "Viaduto Casa Grande",
+      "number": "3",
+      "zipcode": "46388-873",
+      "city": "Siqueira",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584919872806"
+      }
+    ],
+    "created_at": "2026-02-16T18:49:20+00:00"
+  },
+  {
+    "customerId": "483095f8-6a80-47f1-92a1-a602ea51b207",
+    "userId": "79705518-40df-495e-b64d-bbbe35d0b9ca",
+    "name": "Apollo da Cunha",
+    "email": "luiz-felipe87@example.org",
+    "registry_code": "984.261.375-55",
+    "status": "inactive",
+    "address": {
+      "street": "Colônia da Costa",
+      "number": "7",
+      "zipcode": "77895712",
+      "city": "Sá",
+      "state": "PA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584904515652"
+      }
+    ],
+    "created_at": "2026-01-12T17:36:27+00:00"
+  },
+  {
+    "customerId": "d1c7201d-84b6-45c1-8ee0-458f4baca909",
+    "userId": "86784f71-23d8-4ff5-8853-942518a19c1a",
+    "name": "Júlia Cavalcanti",
+    "email": "iribeiro@example.com",
+    "registry_code": "361.572.049-07",
+    "status": "active",
+    "address": {
+      "street": "Jardim Pimenta",
+      "number": "39",
+      "zipcode": "29704524",
+      "city": "Ferreira",
+      "state": "RR",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521937771073"
+      }
+    ],
+    "created_at": "2024-08-13T16:26:35+00:00"
+  },
+  {
+    "customerId": "49212b07-14e2-4ca5-9452-635370a5157d",
+    "userId": "fe400250-6a2f-4371-8b0f-90d1ddef483b",
+    "name": "Théo Campos",
+    "email": "joao-guilhermecampos@example.org",
+    "registry_code": "301.628.954-70",
+    "status": "active",
+    "address": {
+      "street": "Condomínio Carolina Martins",
+      "number": "6",
+      "zipcode": "03900-373",
+      "city": "da Costa de Goiás",
+      "state": "MA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5581986956955"
+      }
+    ],
+    "created_at": "2025-12-29T16:46:48+00:00"
+  },
+  {
+    "customerId": "da89793a-dd37-46fb-ac98-562d8b8214e9",
+    "userId": "45fdd827-166c-40e8-8203-1a2ad4d398b7",
+    "name": "Vitor Gabriel Ramos",
+    "email": "znovais@example.com",
+    "registry_code": "951.027.463-16",
+    "status": "inactive",
+    "address": {
+      "street": "Favela de Correia",
+      "number": "32",
+      "zipcode": "27486-094",
+      "city": "Vieira",
+      "state": "SE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561948967878"
+      }
+    ],
+    "created_at": "2024-10-15T18:56:35+00:00"
+  },
+  {
+    "customerId": "c99bf75f-0b48-4550-a749-653fa24c92f2",
+    "userId": "a648ba07-000d-405d-8845-f3d5dc9b95f7",
+    "name": "Maria Cecília Caldeira",
+    "email": "liamgomes@example.net",
+    "registry_code": "189.254.630-24",
+    "status": "active",
+    "address": {
+      "street": "Ladeira Daniel Dias",
+      "number": "523",
+      "zipcode": "95161738",
+      "city": "Gonçalves Paulista",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5541945109984"
+      }
+    ],
+    "created_at": "2026-01-16T05:27:34+00:00"
+  },
+  {
+    "customerId": "c2dc911a-8e77-429e-b4f9-45e436336448",
+    "userId": "30aaeeba-6b91-4420-95a1-77f0fccaae4a",
+    "name": "Apollo Macedo",
+    "email": "pastorerick@example.net",
+    "registry_code": "963.720.485-74",
+    "status": "active",
+    "address": {
+      "street": "Conjunto Rebeca Rocha",
+      "number": "19",
+      "zipcode": "21350223",
+      "city": "Nogueira do Campo",
+      "state": "RJ",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511937508343"
+      }
+    ],
+    "created_at": "2025-02-15T00:51:50+00:00"
+  },
+  {
+    "customerId": "e071f21d-0fd5-459a-bcde-351ff29160d9",
+    "userId": "48003c4b-672a-46e8-a0fb-c617bb3dc123",
+    "name": "Nina Nunes",
+    "email": "maria-ceciliada-costa@example.net",
+    "registry_code": "431.206.975-16",
+    "status": "active",
+    "address": {
+      "street": "Via Letícia Silveira",
+      "number": "142",
+      "zipcode": "11183-455",
+      "city": "Mendonça",
+      "state": "AL",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5541963801095"
+      }
+    ],
+    "created_at": "2025-09-14T23:42:07+00:00"
+  },
+  {
+    "customerId": "646677aa-8dc6-49c1-9a82-700236a507ef",
+    "userId": "659d4f16-086a-4da1-8515-8d8b5bddf0d9",
+    "name": "Heitor Nascimento",
+    "email": "miguelnogueira@example.net",
+    "registry_code": "825.410.367-44",
+    "status": "active",
+    "address": {
+      "street": "Condomínio Vicente Moura",
+      "number": "53",
+      "zipcode": "29227-605",
+      "city": "Pimenta",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551904157005"
+      }
+    ],
+    "created_at": "2025-10-23T01:52:43+00:00"
+  },
+  {
+    "customerId": "edc81123-7818-4fa1-ab3c-552e848ce855",
+    "userId": "49ea0b40-26c5-4e4f-9aab-d9cb34564131",
+    "name": "Camila Lopes",
+    "email": "ana-beatriz83@example.org",
+    "registry_code": "309.421.876-87",
+    "status": "active",
+    "address": {
+      "street": "Trevo Fonseca",
+      "number": "51",
+      "zipcode": "70517-163",
+      "city": "Marques",
+      "state": "DF",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551937189065"
+      }
+    ],
+    "created_at": "2024-09-24T07:36:33+00:00"
+  },
+  {
+    "customerId": "5468a118-71ae-46f4-8a89-d7945d61ebca",
+    "userId": "88b7a4da-4bc6-4c1d-b171-44dbefcfef83",
+    "name": "Rebeca Mendes",
+    "email": "mirellacosta@example.org",
+    "registry_code": "527.960.381-30",
+    "status": "inactive",
+    "address": {
+      "street": "Praia Nogueira",
+      "number": "17",
+      "zipcode": "12864365",
+      "city": "da Paz",
+      "state": "CE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5541926003420"
+      }
+    ],
+    "created_at": "2025-06-19T00:52:16+00:00"
+  },
+  {
+    "customerId": "55783e53-372b-46ed-b1d0-97bbaa3a8129",
+    "userId": "aa8c2588-a6f1-4a2b-a49d-54f7ae111d65",
+    "name": "Elisa Leão",
+    "email": "moreirapedro@example.org",
+    "registry_code": "706.521.493-16",
+    "status": "active",
+    "address": {
+      "street": "Setor Heitor Vieira",
+      "number": "84",
+      "zipcode": "14836-216",
+      "city": "Costela de Lopes",
+      "state": "RO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5581964461067"
+      }
+    ],
+    "created_at": "2026-04-08T03:43:27+00:00"
+  },
+  {
+    "customerId": "0aaa6742-02c5-4f8e-ab5a-9a0c731724e7",
+    "userId": "89b0ee84-60c2-4d4d-bafe-9dfcca850c1f",
+    "name": "Sophia Macedo",
+    "email": "daniel02@example.com",
+    "registry_code": "642.193.870-13",
+    "status": "active",
+    "address": {
+      "street": "Colônia de Nunes",
+      "number": "356",
+      "zipcode": "96636-385",
+      "city": "Casa Grande",
+      "state": "SC",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5531974101795"
+      }
+    ],
+    "created_at": "2025-06-02T06:58:19+00:00"
+  },
+  {
+    "customerId": "a0771b02-8fa2-45c3-97f7-d2b71b9daa5b",
+    "userId": "e92ee127-81d0-4452-8cc4-81dc502c2dbc",
+    "name": "Luiz Gustavo Pereira",
+    "email": "marcos-vinicius36@example.com",
+    "registry_code": "139.486.502-33",
+    "status": "active",
+    "address": {
+      "street": "Vila Stephany Siqueira",
+      "number": "47",
+      "zipcode": "53841881",
+      "city": "Marques Verde",
+      "state": "BA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551942836182"
+      }
+    ],
+    "created_at": "2026-04-09T04:57:38+00:00"
+  },
+  {
+    "customerId": "e4b47912-4208-495b-b106-873e86a89546",
+    "userId": "1234f949-486d-4962-ac5c-e57655a19058",
+    "name": "Fernando Gomes",
+    "email": "jmendonca@example.org",
+    "registry_code": "786.201.395-68",
+    "status": "active",
+    "address": {
+      "street": "Fazenda de Sá",
+      "number": "488",
+      "zipcode": "73503319",
+      "city": "Cardoso de Goiás",
+      "state": "CE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511912999597"
+      }
+    ],
+    "created_at": "2025-06-20T07:41:43+00:00"
+  },
+  {
+    "customerId": "d5cd7f2b-afc0-419b-b2af-624e5762bcef",
+    "userId": "176f4d4f-7abc-46bf-ab3a-d685369f365d",
+    "name": "Guilherme Souza",
+    "email": "heitorporto@example.net",
+    "registry_code": "859.763.140-66",
+    "status": "active",
+    "address": {
+      "street": "Vale Miguel Duarte",
+      "number": "73",
+      "zipcode": "68542-208",
+      "city": "Brito do Sul",
+      "state": "CE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561967321862"
+      }
+    ],
+    "created_at": "2024-09-06T13:28:08+00:00"
+  },
+  {
+    "customerId": "555d9945-01be-4275-87d0-200f9103860a",
+    "userId": "94438a06-79bd-4064-ad16-787f05ce381d",
+    "name": "Theo Costela",
+    "email": "matteoda-mata@example.com",
+    "registry_code": "397.160.245-25",
+    "status": "active",
+    "address": {
+      "street": "Setor da Cunha",
+      "number": "735",
+      "zipcode": "29183608",
+      "city": "Gomes Alegre",
+      "state": "PI",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561958323784"
+      }
+    ],
+    "created_at": "2025-07-11T11:11:10+00:00"
+  },
+  {
+    "customerId": "d7f0335a-f50c-49a9-bbef-e3ccb8ee6bf5",
+    "userId": "bf8ef6b0-34d2-4591-a492-9dfe7e706670",
+    "name": "Gael Andrade",
+    "email": "mda-rosa@example.org",
+    "registry_code": "213.649.057-52",
+    "status": "active",
+    "address": {
+      "street": "Área Mariana Vasconcelos",
+      "number": "84",
+      "zipcode": "97674-300",
+      "city": "Costa",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521980547525"
+      }
+    ],
+    "created_at": "2025-04-07T03:12:09+00:00"
+  },
+  {
+    "customerId": "0e5ccf62-0518-46ee-8bbe-89ba78296005",
+    "userId": "02a265a9-edb2-4bba-8873-2733c39fe37b",
+    "name": "Pedro Miguel da Cruz",
+    "email": "aragaomaysa@example.net",
+    "registry_code": "038.752.619-68",
+    "status": "active",
+    "address": {
+      "street": "Loteamento Duarte",
+      "number": "47",
+      "zipcode": "69420126",
+      "city": "Azevedo de Cavalcanti",
+      "state": "PR",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571904448687"
+      }
+    ],
+    "created_at": "2025-12-23T00:52:54+00:00"
+  },
+  {
+    "customerId": "dbb2dc54-b79c-451a-b1cc-8e7867c6c51f",
+    "userId": "da95051d-37b8-40bd-bbdb-7efac4d3bf5f",
+    "name": "Murilo Machado",
+    "email": "fariasliz@example.net",
+    "registry_code": "139.820.657-12",
+    "status": "active",
+    "address": {
+      "street": "Setor Cecilia Cunha",
+      "number": "17",
+      "zipcode": "34673-501",
+      "city": "Jesus",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584922492633"
+      }
+    ],
+    "created_at": "2025-12-02T16:04:42+00:00"
+  },
+  {
+    "customerId": "745c14d2-0b8f-4fb6-b8a9-9ad3a8646c8a",
+    "userId": "0dbae45e-486e-4d68-aed6-69e52069fc12",
+    "name": "Benício Martins",
+    "email": "isabellyramos@example.com",
+    "registry_code": "862.137.590-77",
+    "status": "active",
+    "address": {
+      "street": "Loteamento Vitória Fernandes",
+      "number": "69",
+      "zipcode": "67480-483",
+      "city": "Pires",
+      "state": "SC",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571915567920"
+      }
+    ],
+    "created_at": "2025-07-18T18:08:27+00:00"
+  },
+  {
+    "customerId": "9bcf1eb1-87b7-4210-a23a-a9332c64154d",
+    "userId": "33cdd871-0867-46d4-b90c-7c493dc256c8",
+    "name": "Gael Henrique Cunha",
+    "email": "josue85@example.org",
+    "registry_code": "204.658.913-06",
+    "status": "inactive",
+    "address": {
+      "street": "Lago Amanda Albuquerque",
+      "number": "80",
+      "zipcode": "18093118",
+      "city": "da Cunha de Caldeira",
+      "state": "PI",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571961001979"
+      }
+    ],
+    "created_at": "2026-04-17T17:34:29+00:00"
+  },
+  {
+    "customerId": "78429c29-b274-4389-8c3a-31e850f05df0",
+    "userId": "b69f912e-504e-484e-b8db-7306905c6bf6",
+    "name": "Léo Freitas",
+    "email": "aliciaduarte@example.net",
+    "registry_code": "891.025.467-01",
+    "status": "active",
+    "address": {
+      "street": "Vila Francisco Cunha",
+      "number": "7",
+      "zipcode": "84866412",
+      "city": "Souza",
+      "state": "GO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551999517823"
+      }
+    ],
+    "created_at": "2025-11-24T22:57:45+00:00"
+  },
+  {
+    "customerId": "e033d577-998d-4592-acf5-0d2a6a93796b",
+    "userId": "945df0fb-b8d7-44b8-a52c-511f144df582",
+    "name": "Thomas Costela",
+    "email": "soliveira@example.org",
+    "registry_code": "013.452.789-50",
+    "status": "active",
+    "address": {
+      "street": "Vereda da Mata",
+      "number": "69",
+      "zipcode": "74978-725",
+      "city": "Câmara da Serra",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571935347049"
+      }
+    ],
+    "created_at": "2025-03-16T09:32:39+00:00"
+  },
+  {
+    "customerId": "9313ea04-77ec-4b2e-8381-059237bc95ee",
+    "userId": "79d54f46-fa44-4c23-9111-54033a7b7e6f",
+    "name": "Vitória Rios",
+    "email": "zporto@example.com",
+    "registry_code": "146.802.957-67",
+    "status": "inactive",
+    "address": {
+      "street": "Jardim Kamilly Araújo",
+      "number": "929",
+      "zipcode": "71561-160",
+      "city": "Ferreira do Norte",
+      "state": "RJ",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584982322590"
+      }
+    ],
+    "created_at": "2025-03-03T03:12:23+00:00"
+  },
+  {
+    "customerId": "85e8f375-c9ab-4744-b44b-2218490255b3",
+    "userId": "1610a257-aab3-45b0-9578-68ceb64ebebd",
+    "name": "Antony Farias",
+    "email": "anthony-gabriel22@example.org",
+    "registry_code": "850.763.291-21",
+    "status": "inactive",
+    "address": {
+      "street": "Favela de Novaes",
+      "number": "3",
+      "zipcode": "89615206",
+      "city": "Azevedo do Oeste",
+      "state": "BA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521975380427"
+      }
+    ],
+    "created_at": "2026-04-20T08:35:37+00:00"
+  },
+  {
+    "customerId": "1c478973-9d92-4324-9151-731edaec6a1a",
+    "userId": "a35061f3-79a9-46ea-9da9-2afac676c714",
+    "name": "Danilo Carvalho",
+    "email": "da-rosaluan@example.com",
+    "registry_code": "162.594.837-91",
+    "status": "inactive",
+    "address": {
+      "street": "Vereda Abreu",
+      "number": "9",
+      "zipcode": "64327681",
+      "city": "Nunes Paulista",
+      "state": "TO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561998975800"
+      }
+    ],
+    "created_at": "2025-07-05T16:27:26+00:00"
+  },
+  {
+    "customerId": "ebc02c23-b0cb-4470-a73d-c32956ca0e7c",
+    "userId": "e8881edc-d250-4e2c-a51c-ed80c8778f8f",
+    "name": "Guilherme Costa",
+    "email": "araujosophie@example.org",
+    "registry_code": "156.287.390-30",
+    "status": "active",
+    "address": {
+      "street": "Vale Albuquerque",
+      "number": "7",
+      "zipcode": "75810-159",
+      "city": "Fogaça de Minas",
+      "state": "PB",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584940931269"
+      }
+    ],
+    "created_at": "2025-12-09T18:05:10+00:00"
+  },
+  {
+    "customerId": "985db98b-c2f2-4f17-a6ff-2c76533f4d50",
+    "userId": "9433c153-da1b-4a59-9932-4c11efa34da3",
+    "name": "Ana Clara Vasconcelos",
+    "email": "marina26@example.org",
+    "registry_code": "510.784.392-14",
+    "status": "active",
+    "address": {
+      "street": "Praia Almeida",
+      "number": "181",
+      "zipcode": "33391351",
+      "city": "Araújo",
+      "state": "SE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551951592017"
+      }
+    ],
+    "created_at": "2024-08-14T23:46:41+00:00"
+  },
+  {
+    "customerId": "d3ff87be-1665-468d-8fad-acbc986a79bf",
+    "userId": "af8ec4cf-0330-4360-a0cb-dc6bcbe75b80",
+    "name": "Ana Beatriz da Rosa",
+    "email": "henry-gabrielpastor@example.com",
+    "registry_code": "753.481.290-97",
+    "status": "inactive",
+    "address": {
+      "street": "Recanto Daniela Nascimento",
+      "number": "66",
+      "zipcode": "25734045",
+      "city": "Cassiano",
+      "state": "AL",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561923453987"
+      }
+    ],
+    "created_at": "2025-02-05T16:52:01+00:00"
+  },
+  {
+    "customerId": "094ea2ec-1a3c-4ed1-92d2-8d11552cebae",
+    "userId": "bf0a47bc-43c6-46d5-bdff-f63e620e66c7",
+    "name": "João Lucas Dias",
+    "email": "pduarte@example.org",
+    "registry_code": "816.354.029-05",
+    "status": "active",
+    "address": {
+      "street": "Fazenda Ribeiro",
+      "number": "489",
+      "zipcode": "33917-707",
+      "city": "Silveira",
+      "state": "MT",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571995214905"
+      }
+    ],
+    "created_at": "2024-11-26T13:02:48+00:00"
+  },
+  {
+    "customerId": "e7d81c11-5dee-495e-856a-8e613ced0931",
+    "userId": "13a392a4-0087-40bd-9e20-f5f52469e2ac",
+    "name": "Apollo Alves",
+    "email": "brunosilveira@example.com",
+    "registry_code": "907.465.382-00",
+    "status": "active",
+    "address": {
+      "street": "Feira Pietra Marques",
+      "number": "48",
+      "zipcode": "79488805",
+      "city": "Monteiro de Pinto",
+      "state": "CE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5541920467579"
+      }
+    ],
+    "created_at": "2024-09-24T21:58:29+00:00"
+  },
+  {
+    "customerId": "6f48cf85-2ade-4d52-8f82-277a72822ce8",
+    "userId": "9c4520fe-342b-4dc1-9087-9b8218c79ee5",
+    "name": "Samuel Dias",
+    "email": "limagiovanna@example.org",
+    "registry_code": "942.368.057-74",
+    "status": "active",
+    "address": {
+      "street": "Passarela de da Cruz",
+      "number": "7",
+      "zipcode": "95655976",
+      "city": "da Cunha do Norte",
+      "state": "AC",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511978532680"
+      }
+    ],
+    "created_at": "2025-12-09T20:55:01+00:00"
+  },
+  {
+    "customerId": "5b868978-5a01-4efe-b239-a40f098790f1",
+    "userId": "50a49896-afa4-46a5-824e-c2c89dd1bb51",
+    "name": "Helena Ramos",
+    "email": "miguel62@example.com",
+    "registry_code": "458.372.169-28",
+    "status": "active",
+    "address": {
+      "street": "Via Rafaela Pereira",
+      "number": "82",
+      "zipcode": "99489659",
+      "city": "Azevedo do Sul",
+      "state": "GO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551982075789"
+      }
+    ],
+    "created_at": "2024-06-14T17:54:40+00:00"
+  },
+  {
+    "customerId": "68bf2c1a-fd31-4b42-9315-9c4641684d66",
+    "userId": "90639116-5f5d-4dea-9bb7-8cc10a74fe7e",
+    "name": "João Miguel Martins",
+    "email": "maria-laura22@example.com",
+    "registry_code": "134.576.289-55",
+    "status": "active",
+    "address": {
+      "street": "Alameda Evelyn Porto",
+      "number": "1",
+      "zipcode": "28455623",
+      "city": "Pastor de Aragão",
+      "state": "AL",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561930052723"
+      }
+    ],
+    "created_at": "2025-01-16T06:39:02+00:00"
+  },
+  {
+    "customerId": "ac00b937-ec83-4b34-8cb4-69844ee8aaea",
+    "userId": "8517717b-ba6e-4091-8d06-52268e68b1ef",
+    "name": "Bella Macedo",
+    "email": "henry-gabrielabreu@example.net",
+    "registry_code": "685.172.349-28",
+    "status": "inactive",
+    "address": {
+      "street": "Jardim Lopes",
+      "number": "50",
+      "zipcode": "61441628",
+      "city": "Macedo",
+      "state": "PI",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571995251462"
+      }
+    ],
+    "created_at": "2026-04-23T13:15:50+00:00"
+  },
+  {
+    "customerId": "8c9464c9-01fc-40ad-8b4f-063a1acbf188",
+    "userId": "f620b0ec-3747-4488-9cf7-b4afbb1a6048",
+    "name": "Davi Lucas Casa Grande",
+    "email": "da-motasamuel@example.net",
+    "registry_code": "234.791.068-03",
+    "status": "active",
+    "address": {
+      "street": "Residencial de Duarte",
+      "number": "464",
+      "zipcode": "19025250",
+      "city": "das Neves",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561945854756"
+      }
+    ],
+    "created_at": "2026-03-28T08:48:19+00:00"
+  },
+  {
+    "customerId": "79b8f924-47d5-4e53-ae65-796ee55c5b4e",
+    "userId": "8d7eb9de-da9d-4e41-8de5-064772ebdae2",
+    "name": "Júlia Leão",
+    "email": "arthurvasconcelos@example.net",
+    "registry_code": "750.194.683-39",
+    "status": "inactive",
+    "address": {
+      "street": "Lagoa Vinícius Araújo",
+      "number": "96",
+      "zipcode": "95668-805",
+      "city": "Casa Grande",
+      "state": "RR",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521990385839"
+      }
+    ],
+    "created_at": "2024-07-17T07:49:40+00:00"
+  },
+  {
+    "customerId": "c4f78b92-4cb5-4758-ab8d-3138c4c1e336",
+    "userId": "743b28a6-35e6-485f-be70-f0e12e56a6b8",
+    "name": "Julia Campos",
+    "email": "blima@example.net",
+    "registry_code": "618.907.452-94",
+    "status": "active",
+    "address": {
+      "street": "Praça Isabelly Duarte",
+      "number": "93",
+      "zipcode": "40318773",
+      "city": "Cunha de Minas",
+      "state": "TO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571983619896"
+      }
+    ],
+    "created_at": "2025-10-26T16:11:36+00:00"
+  },
+  {
+    "customerId": "d85f33b3-abc9-40cd-914e-aad0988f9ddc",
+    "userId": "9d8f8197-e70f-4ea8-be21-d58354c8b8bf",
+    "name": "Maria Sophia Rocha",
+    "email": "raquel78@example.org",
+    "registry_code": "841.256.790-02",
+    "status": "inactive",
+    "address": {
+      "street": "Chácara Sophia Rocha",
+      "number": "16",
+      "zipcode": "04797-060",
+      "city": "Cavalcante",
+      "state": "AL",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521911130512"
+      }
+    ],
+    "created_at": "2024-12-06T07:46:29+00:00"
+  },
+  {
+    "customerId": "bd6e792b-7d99-4b27-b626-4c16f7328f80",
+    "userId": "1e9620d4-becc-467b-b782-f625f7318595",
+    "name": "Pietro Martins",
+    "email": "yuri75@example.com",
+    "registry_code": "923.674.108-87",
+    "status": "active",
+    "address": {
+      "street": "Chácara Moreira",
+      "number": "485",
+      "zipcode": "09283-243",
+      "city": "Abreu de Pastor",
+      "state": "GO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551980858340"
+      }
+    ],
+    "created_at": "2024-05-22T08:34:22+00:00"
+  },
+  {
+    "customerId": "d146f72b-48a8-44f2-a0ce-a70844b363c0",
+    "userId": "7979a86d-55fa-44bb-bc77-3d0f805d92f4",
+    "name": "Luiz Otávio da Costa",
+    "email": "rcamargo@example.net",
+    "registry_code": "236.470.159-70",
+    "status": "inactive",
+    "address": {
+      "street": "Área da Conceição",
+      "number": "113",
+      "zipcode": "15335984",
+      "city": "Rocha da Mata",
+      "state": "MT",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521935656719"
+      }
+    ],
+    "created_at": "2024-11-13T17:14:12+00:00"
+  },
+  {
+    "customerId": "dfe33f53-6465-43db-aa26-d76f0372923d",
+    "userId": "fa3800ea-f600-45d4-9a20-a2c8833a47ef",
+    "name": "Lavínia Oliveira",
+    "email": "stephanyborges@example.com",
+    "registry_code": "193.647.508-10",
+    "status": "active",
+    "address": {
+      "street": "Vale Bárbara Vasconcelos",
+      "number": "8",
+      "zipcode": "13222-506",
+      "city": "Moreira do Sul",
+      "state": "PI",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571988600769"
+      }
+    ],
+    "created_at": "2025-08-28T17:36:55+00:00"
+  },
+  {
+    "customerId": "40bd1d18-6e84-4855-bda5-8af0d86ef3e4",
+    "userId": "11edf857-82ec-4756-9f12-59d540921837",
+    "name": "Lucca Jesus",
+    "email": "macedofernando@example.org",
+    "registry_code": "845.216.903-51",
+    "status": "inactive",
+    "address": {
+      "street": "Parque Miguel Vieira",
+      "number": "66",
+      "zipcode": "80203523",
+      "city": "da Rocha",
+      "state": "DF",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5581924535824"
+      }
+    ],
+    "created_at": "2025-01-19T10:24:44+00:00"
+  },
+  {
+    "customerId": "e0df5e1e-4477-4170-b5d6-7c567825f986",
+    "userId": "ccb76013-34b3-4e23-8ad5-419faf12551b",
+    "name": "Caroline Peixoto",
+    "email": "oda-cunha@example.net",
+    "registry_code": "637.089.214-96",
+    "status": "active",
+    "address": {
+      "street": "Núcleo Nogueira",
+      "number": "37",
+      "zipcode": "20013602",
+      "city": "Porto do Oeste",
+      "state": "SC",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561994832931"
+      }
+    ],
+    "created_at": "2025-01-22T05:24:48+00:00"
+  },
+  {
+    "customerId": "93563031-f440-473c-82ab-e2f03fa0ba2f",
+    "userId": "7633287d-51cb-48a4-8c1b-5d31b4d9687b",
+    "name": "Matteo Abreu",
+    "email": "ana-liviasampaio@example.org",
+    "registry_code": "326.819.705-12",
+    "status": "active",
+    "address": {
+      "street": "Rua Isabella Santos",
+      "number": "50",
+      "zipcode": "63277889",
+      "city": "Câmara",
+      "state": "RO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571991892666"
+      }
+    ],
+    "created_at": "2024-08-10T17:46:21+00:00"
+  },
+  {
+    "customerId": "53d68ff4-0176-4e8a-a8ed-e5f2d834e662",
+    "userId": "2f9df6cc-c2e7-4896-af28-85a4486d3cb5",
+    "name": "Benicio Teixeira",
+    "email": "nazevedo@example.net",
+    "registry_code": "508.173.246-07",
+    "status": "inactive",
+    "address": {
+      "street": "Trecho Teixeira",
+      "number": "363",
+      "zipcode": "60023-751",
+      "city": "Gonçalves",
+      "state": "AL",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551934474073"
+      }
+    ],
+    "created_at": "2026-01-05T16:10:54+00:00"
+  },
+  {
+    "customerId": "3b582d1f-842d-4c24-9140-244c5bbabf7a",
+    "userId": "081aa167-655f-4148-aeeb-a91c6a3d9d08",
+    "name": "Milena da Luz",
+    "email": "udias@example.net",
+    "registry_code": "369.482.015-98",
+    "status": "active",
+    "address": {
+      "street": "Núcleo Thales Oliveira",
+      "number": "764",
+      "zipcode": "18779-809",
+      "city": "Nogueira",
+      "state": "SP",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5541933594456"
+      }
+    ],
+    "created_at": "2024-06-06T09:24:29+00:00"
+  },
+  {
+    "customerId": "7e468d88-e8b8-4970-9977-b8ff41df7704",
+    "userId": "6496660d-a4fe-462d-bf5a-8a3bc4c9e79b",
+    "name": "Helena Machado",
+    "email": "vitor-gabrielfogaca@example.net",
+    "registry_code": "412.380.576-08",
+    "status": "inactive",
+    "address": {
+      "street": "Rua Lara Casa Grande",
+      "number": "95",
+      "zipcode": "76987-471",
+      "city": "Camargo",
+      "state": "CE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571965478620"
+      }
+    ],
+    "created_at": "2026-01-04T19:26:13+00:00"
+  },
+  {
+    "customerId": "2c089d2a-9ef7-4e4e-ba4e-892e3074469e",
+    "userId": "b23b708d-7698-488f-917b-ae0429babff7",
+    "name": "Ana Aparecida",
+    "email": "jdias@example.net",
+    "registry_code": "093.615.842-51",
+    "status": "inactive",
+    "address": {
+      "street": "Praia de da Cruz",
+      "number": "70",
+      "zipcode": "04350030",
+      "city": "Pereira",
+      "state": "DF",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561959873737"
+      }
+    ],
+    "created_at": "2026-01-20T04:45:02+00:00"
+  },
+  {
+    "customerId": "58e24c27-9c6b-4994-bc05-fad6a111b34b",
+    "userId": "f602790a-1d2e-40a4-9404-811af98e048c",
+    "name": "Yasmin da Cunha",
+    "email": "jrios@example.org",
+    "registry_code": "692.048.513-33",
+    "status": "active",
+    "address": {
+      "street": "Praça de Nunes",
+      "number": "51",
+      "zipcode": "33564592",
+      "city": "Andrade",
+      "state": "DF",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5541977162138"
+      }
+    ],
+    "created_at": "2025-05-01T20:44:11+00:00"
+  },
+  {
+    "customerId": "26d26610-aaa3-49b3-9e8b-5b6fca060abd",
+    "userId": "8508f472-81fe-48a4-8490-498ee706446d",
+    "name": "Marcela Correia",
+    "email": "luccarocha@example.org",
+    "registry_code": "095.718.326-77",
+    "status": "active",
+    "address": {
+      "street": "Viaduto Macedo",
+      "number": "47",
+      "zipcode": "19134-263",
+      "city": "Albuquerque Grande",
+      "state": "SC",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511968497246"
+      }
+    ],
+    "created_at": "2025-01-09T04:14:06+00:00"
+  },
+  {
+    "customerId": "96d5d1ca-5f45-4da8-87b1-1170d57e0ec3",
+    "userId": "038c359c-c2e0-4186-b2f6-28c23842bc84",
+    "name": "Gustavo Moura",
+    "email": "ana-julia33@example.com",
+    "registry_code": "592.436.107-16",
+    "status": "inactive",
+    "address": {
+      "street": "Ladeira Maria Laura Freitas",
+      "number": "4",
+      "zipcode": "95768367",
+      "city": "Fernandes do Amparo",
+      "state": "PI",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5581960103453"
+      }
+    ],
+    "created_at": "2025-10-25T06:56:37+00:00"
+  },
+  {
+    "customerId": "f97c5f16-a356-43c6-977b-174670c1a0f6",
+    "userId": "235b2c88-488d-4c3e-b1aa-b98e2abe4b14",
+    "name": "Ravi Lucca da Cruz",
+    "email": "lara96@example.com",
+    "registry_code": "294.603.817-31",
+    "status": "inactive",
+    "address": {
+      "street": "Via Murilo Pires",
+      "number": "31",
+      "zipcode": "16040508",
+      "city": "Machado",
+      "state": "RJ",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5531917411588"
+      }
+    ],
+    "created_at": "2026-02-03T15:37:07+00:00"
+  },
+  {
+    "customerId": "55756a92-e7e8-4069-97c3-1f5f9b69a0a7",
+    "userId": "975d2c49-1b58-4a8f-b43b-3ab584cc7026",
+    "name": "Bernardo Silva",
+    "email": "brenomoraes@example.org",
+    "registry_code": "735.410.968-10",
+    "status": "active",
+    "address": {
+      "street": "Morro de Carvalho",
+      "number": "7",
+      "zipcode": "78581908",
+      "city": "Abreu",
+      "state": "SE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5531956550332"
+      }
+    ],
+    "created_at": "2026-04-30T08:16:20+00:00"
+  },
+  {
+    "customerId": "4a59fc25-2b7f-4838-8ec4-6c0abaca4e06",
+    "userId": "0bae4be3-293b-43b1-9c1b-947304258583",
+    "name": "Pedro Henrique Camargo",
+    "email": "pereiramarcela@example.com",
+    "registry_code": "253.691.807-68",
+    "status": "active",
+    "address": {
+      "street": "Avenida Garcia",
+      "number": "884",
+      "zipcode": "02153462",
+      "city": "Jesus",
+      "state": "CE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511925560034"
+      }
+    ],
+    "created_at": "2025-05-21T19:39:36+00:00"
+  },
+  {
+    "customerId": "e8439c85-18b5-4c9c-a2fd-707429a80307",
+    "userId": "186aa098-f4d3-4a3d-b688-95c5758f79ca",
+    "name": "Stella Monteiro",
+    "email": "joao-guilhermepires@example.org",
+    "registry_code": "614.897.032-50",
+    "status": "inactive",
+    "address": {
+      "street": "Quadra Pedro Henrique Pacheco",
+      "number": "10",
+      "zipcode": "26876-410",
+      "city": "Ferreira de Costa",
+      "state": "AP",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521917132904"
+      }
+    ],
+    "created_at": "2025-03-08T22:19:56+00:00"
+  },
+  {
+    "customerId": "2b949459-177a-48c8-9238-e92e645df077",
+    "userId": "09dac8f0-61b0-4688-8cfe-a0a353c91fcc",
+    "name": "Ayla Martins",
+    "email": "gabrielalima@example.com",
+    "registry_code": "136.875.902-59",
+    "status": "active",
+    "address": {
+      "street": "Jardim Alana Cavalcanti",
+      "number": "40",
+      "zipcode": "00762-984",
+      "city": "Vasconcelos",
+      "state": "PB",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511910909259"
+      }
+    ],
+    "created_at": "2024-07-09T06:38:12+00:00"
+  },
+  {
+    "customerId": "174d407d-f0bf-4f44-8d8a-779aa470f916",
+    "userId": "2ce70bc8-8a78-406b-b5cd-4e89a83733b3",
+    "name": "Maria Isis Gomes",
+    "email": "isaacpastor@example.net",
+    "registry_code": "063.958.471-39",
+    "status": "active",
+    "address": {
+      "street": "Vila Rios",
+      "number": "865",
+      "zipcode": "12955054",
+      "city": "Vasconcelos",
+      "state": "TO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5541981149932"
+      }
+    ],
+    "created_at": "2025-05-17T03:28:53+00:00"
+  },
+  {
+    "customerId": "f62f73cb-ef2d-4333-8883-f8dd7e543b6e",
+    "userId": "24804c82-4b71-4fcf-beee-e42b080122e8",
+    "name": "Enzo Araújo",
+    "email": "manuela19@example.net",
+    "registry_code": "351.427.690-07",
+    "status": "active",
+    "address": {
+      "street": "Recanto de Aparecida",
+      "number": "38",
+      "zipcode": "64797-064",
+      "city": "Aparecida",
+      "state": "AP",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5581912367508"
+      }
+    ],
+    "created_at": "2025-04-20T19:37:38+00:00"
+  },
+  {
+    "customerId": "9d20c37d-206c-43cf-a3c4-ef253a2af0a5",
+    "userId": "a26ee082-0781-4666-a285-489ecf15dfb0",
+    "name": "Mariane Sampaio",
+    "email": "maysalima@example.net",
+    "registry_code": "082.643.591-24",
+    "status": "active",
+    "address": {
+      "street": "Distrito Ribeiro",
+      "number": "792",
+      "zipcode": "50126501",
+      "city": "Pacheco das Flores",
+      "state": "PI",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521906222857"
+      }
+    ],
+    "created_at": "2025-11-17T19:12:44+00:00"
+  },
+  {
+    "customerId": "8bf3241b-7ae3-4d0c-aae1-fede47b2043c",
+    "userId": "4402eeff-7f07-44e2-a225-f0c3457144e8",
+    "name": "Vitor Gabriel Novaes",
+    "email": "lunacavalcanti@example.com",
+    "registry_code": "732.608.149-22",
+    "status": "active",
+    "address": {
+      "street": "Vale de Cassiano",
+      "number": "957",
+      "zipcode": "34941-428",
+      "city": "Mendes",
+      "state": "ES",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571921094923"
+      }
+    ],
+    "created_at": "2025-05-21T08:38:36+00:00"
+  },
+  {
+    "customerId": "2fb8c706-500f-4251-bdb1-f1533d423b78",
+    "userId": "ce8a0d30-4c6b-4bf7-a8e8-bdbe2c6ae421",
+    "name": "Eloá Vieira",
+    "email": "davimacedo@example.org",
+    "registry_code": "367.049.582-74",
+    "status": "active",
+    "address": {
+      "street": "Estrada Arthur Miguel Ferreira",
+      "number": "8",
+      "zipcode": "84207552",
+      "city": "Macedo do Galho",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584923600081"
+      }
+    ],
+    "created_at": "2026-01-15T11:16:46+00:00"
+  },
+  {
+    "customerId": "5cf94fd6-d33a-4c6c-9a57-6db003918e2f",
+    "userId": "412f3c01-357d-4ee6-868e-e0ffeec23c0c",
+    "name": "Milena Rios",
+    "email": "allana10@example.com",
+    "registry_code": "487.065.219-67",
+    "status": "active",
+    "address": {
+      "street": "Campo de Correia",
+      "number": "43",
+      "zipcode": "94084559",
+      "city": "Rocha Alegre",
+      "state": "SC",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561985781143"
+      }
+    ],
+    "created_at": "2024-10-09T14:02:55+00:00"
+  },
+  {
+    "customerId": "d7ab29e7-6d6b-493c-b6ea-275321728f4a",
+    "userId": "3472f40d-9d30-4c7f-b7a1-dd2ed6da2148",
+    "name": "Eduarda Aragão",
+    "email": "da-matajoao-pedro@example.com",
+    "registry_code": "076.592.143-06",
+    "status": "active",
+    "address": {
+      "street": "Alameda de Freitas",
+      "number": "87",
+      "zipcode": "80151430",
+      "city": "Fogaça do Campo",
+      "state": "SE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571974107688"
+      }
+    ],
+    "created_at": "2026-01-16T01:44:51+00:00"
+  },
+  {
+    "customerId": "3ce984c9-9551-4088-8289-efad06190dce",
+    "userId": "c054fc3a-c82b-479d-bd86-1b75f193aabf",
+    "name": "Bruna Melo",
+    "email": "hvieira@example.com",
+    "registry_code": "893.652.740-10",
+    "status": "active",
+    "address": {
+      "street": "Avenida de Pimenta",
+      "number": "4",
+      "zipcode": "38175936",
+      "city": "Mendonça Alegre",
+      "state": "AP",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5531932007128"
+      }
+    ],
+    "created_at": "2026-04-09T01:47:47+00:00"
+  },
+  {
+    "customerId": "519a745c-6466-4034-aa5b-8a375bbf7903",
+    "userId": "ca72972d-0825-476b-bf4c-1c9544b42116",
+    "name": "Cauã Martins",
+    "email": "luizapereira@example.org",
+    "registry_code": "476.539.081-01",
+    "status": "active",
+    "address": {
+      "street": "Distrito Pimenta",
+      "number": "67",
+      "zipcode": "79464509",
+      "city": "Farias",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521948686140"
+      }
+    ],
+    "created_at": "2025-05-12T01:58:53+00:00"
+  },
+  {
+    "customerId": "7237235b-e3c7-405b-a651-a3bb270a3ab1",
+    "userId": "8aaf94da-e351-4ec4-a6d6-3f13f506a7f9",
+    "name": "Brenda Sousa",
+    "email": "samaria@example.net",
+    "registry_code": "418.370.296-87",
+    "status": "active",
+    "address": {
+      "street": "Lago Ana Júlia da Paz",
+      "number": "91",
+      "zipcode": "60666-892",
+      "city": "das Neves",
+      "state": "MT",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5531956716760"
+      }
+    ],
+    "created_at": "2025-12-26T09:20:05+00:00"
+  },
+  {
+    "customerId": "b9a657f9-e252-43fa-8e17-0e7681ba827e",
+    "userId": "a01ee489-d2be-42f8-9e1e-e05833745480",
+    "name": "Vitor Gabriel Pastor",
+    "email": "mariacassiano@example.org",
+    "registry_code": "103.647.928-50",
+    "status": "active",
+    "address": {
+      "street": "Passarela Lucca Rezende",
+      "number": "4",
+      "zipcode": "12535997",
+      "city": "da Cruz",
+      "state": "AP",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521968515925"
+      }
+    ],
+    "created_at": "2026-02-22T13:27:40+00:00"
+  },
+  {
+    "customerId": "d6c7a1a2-650c-4450-9072-1378a783f769",
+    "userId": "20d88f4b-d6b7-4898-b173-b75529c13178",
+    "name": "Maria Luísa Silva",
+    "email": "pcardoso@example.org",
+    "registry_code": "946.073.825-74",
+    "status": "active",
+    "address": {
+      "street": "Área Henrique Carvalho",
+      "number": "743",
+      "zipcode": "32050705",
+      "city": "Casa Grande da Serra",
+      "state": "RJ",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584966912216"
+      }
+    ],
+    "created_at": "2024-12-01T08:19:36+00:00"
+  },
+  {
+    "customerId": "a89cd7b3-c511-4db1-8814-27e96a7b8d9f",
+    "userId": "2676ae14-d9fc-4710-9fa2-b5cfeea0ed3f",
+    "name": "Emilly Marques",
+    "email": "da-cunharaquel@example.net",
+    "registry_code": "180.549.726-01",
+    "status": "active",
+    "address": {
+      "street": "Distrito Caroline Rios",
+      "number": "24",
+      "zipcode": "89905701",
+      "city": "da Luz",
+      "state": "RN",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584972951664"
+      }
+    ],
+    "created_at": "2025-03-30T13:32:45+00:00"
+  },
+  {
+    "customerId": "35290dda-ce4b-4428-a37f-02537786468e",
+    "userId": "871607b0-446e-4ec0-b1cf-94527608aa60",
+    "name": "Davi Pastor",
+    "email": "dom22@example.org",
+    "registry_code": "205.481.397-41",
+    "status": "active",
+    "address": {
+      "street": "Lago de Vargas",
+      "number": "66",
+      "zipcode": "83889982",
+      "city": "Novais das Pedras",
+      "state": "SP",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511946647367"
+      }
+    ],
+    "created_at": "2024-06-02T18:00:24+00:00"
+  },
+  {
+    "customerId": "9b8efbe1-9cc5-487d-8d18-a1ec3a4010ab",
+    "userId": "6d1d56e7-1711-4b70-b1a4-d8ed2b0d5e49",
+    "name": "Aylla Silva",
+    "email": "ferreiramarcelo@example.com",
+    "registry_code": "936.815.702-21",
+    "status": "active",
+    "address": {
+      "street": "Jardim Sales",
+      "number": "980",
+      "zipcode": "47624-088",
+      "city": "Lopes",
+      "state": "SC",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5531990611853"
+      }
+    ],
+    "created_at": "2025-08-25T18:19:46+00:00"
+  },
+  {
+    "customerId": "372d2820-204c-4771-9bdf-54ee1d93ea24",
+    "userId": "fcbe45f9-17c2-490e-ab79-0e6f8ef9c8ea",
+    "name": "Bianca Fonseca",
+    "email": "henriquesouza@example.com",
+    "registry_code": "903.716.248-78",
+    "status": "inactive",
+    "address": {
+      "street": "Condomínio Abreu",
+      "number": "845",
+      "zipcode": "23910-006",
+      "city": "Rezende",
+      "state": "RJ",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521987220085"
+      }
+    ],
+    "created_at": "2026-02-17T20:35:41+00:00"
+  },
+  {
+    "customerId": "a76bcf5a-789e-4fdb-8796-218f6b585ccd",
+    "userId": "dde3aa44-91a7-4695-8eae-92059dc62a03",
+    "name": "Guilherme Novais",
+    "email": "oliverjesus@example.org",
+    "registry_code": "560.984.731-10",
+    "status": "active",
+    "address": {
+      "street": "Vale de da Rosa",
+      "number": "46",
+      "zipcode": "36912-230",
+      "city": "Nascimento",
+      "state": "MA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584993392376"
+      }
+    ],
+    "created_at": "2026-03-17T17:22:01+00:00"
+  },
+  {
+    "customerId": "cc4017d2-8ff5-4772-b583-1b819a1654a1",
+    "userId": "1b91682c-50bd-45c4-ad65-28a70cb04f51",
+    "name": "Noah Barros",
+    "email": "maria-luiza19@example.com",
+    "registry_code": "853.217.094-32",
+    "status": "active",
+    "address": {
+      "street": "Praça de Barbosa",
+      "number": "25",
+      "zipcode": "91397-103",
+      "city": "Vieira",
+      "state": "MT",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511992733318"
+      }
+    ],
+    "created_at": "2025-06-22T17:29:09+00:00"
+  },
+  {
+    "customerId": "60bf581b-4fd8-47cd-a009-0e9e919fabd4",
+    "userId": "bbe45e76-8259-42ec-82f8-ddf05354b251",
+    "name": "Ryan Garcia",
+    "email": "cirinoana-luiza@example.com",
+    "registry_code": "976.435.028-38",
+    "status": "active",
+    "address": {
+      "street": "Lago Novais",
+      "number": "87",
+      "zipcode": "18931820",
+      "city": "Andrade de Melo",
+      "state": "PE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551901578244"
+      }
+    ],
+    "created_at": "2025-06-27T20:02:05+00:00"
+  },
+  {
+    "customerId": "72acce59-30c3-4df7-9d7d-d761052b89d9",
+    "userId": "70355cfb-a842-4e32-8252-ea3e10bf910d",
+    "name": "Gael Henrique Sales",
+    "email": "otaviodas-neves@example.net",
+    "registry_code": "298.107.653-12",
+    "status": "active",
+    "address": {
+      "street": "Viaduto de Pires",
+      "number": "27",
+      "zipcode": "41581957",
+      "city": "Sá",
+      "state": "RR",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5531958643379"
+      }
+    ],
+    "created_at": "2025-07-20T14:33:34+00:00"
+  },
+  {
+    "customerId": "c30047a2-3b12-42e0-8942-3decb017f1f0",
+    "userId": "638813cf-0d6b-418e-8d31-a86fe3ccb7bd",
+    "name": "Lara Fogaça",
+    "email": "ualves@example.org",
+    "registry_code": "362.401.759-43",
+    "status": "active",
+    "address": {
+      "street": "Via de Viana",
+      "number": "90",
+      "zipcode": "01859-120",
+      "city": "Duarte das Flores",
+      "state": "AL",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5541985190434"
+      }
+    ],
+    "created_at": "2025-01-06T12:40:28+00:00"
+  },
+  {
+    "customerId": "2c17ef30-7794-41a9-ac12-5ebbfa144da3",
+    "userId": "2d1d77b4-29b1-472b-ae80-60e707b542bf",
+    "name": "Yuri Cardoso",
+    "email": "benjamimalbuquerque@example.org",
+    "registry_code": "648.013.275-08",
+    "status": "active",
+    "address": {
+      "street": "Estação Moraes",
+      "number": "85",
+      "zipcode": "39716550",
+      "city": "da Rocha",
+      "state": "MG",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561940782413"
+      }
+    ],
+    "created_at": "2024-07-02T23:51:22+00:00"
+  },
+  {
+    "customerId": "8f143595-5d24-412f-b9fa-d781dd8189b7",
+    "userId": "661238a5-8322-4b89-8a5d-5d6e4a25b3eb",
+    "name": "Arthur Miguel Costela",
+    "email": "juliaaraujo@example.net",
+    "registry_code": "578.391.206-95",
+    "status": "active",
+    "address": {
+      "street": "Recanto de Cirino",
+      "number": "357",
+      "zipcode": "30280-884",
+      "city": "Cardoso de Porto",
+      "state": "AL",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511947791006"
+      }
+    ],
+    "created_at": "2025-09-19T00:57:40+00:00"
+  },
+  {
+    "customerId": "57082c07-a243-47e2-8c39-79cce646c3d2",
+    "userId": "fc08fd1e-debd-431b-ae4e-f4c9bb6968d6",
+    "name": "Luiza Pereira",
+    "email": "calebeborges@example.com",
+    "registry_code": "621.437.809-31",
+    "status": "active",
+    "address": {
+      "street": "Lago de Novais",
+      "number": "7",
+      "zipcode": "47882-017",
+      "city": "Caldeira da Mata",
+      "state": "CE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511978628998"
+      }
+    ],
+    "created_at": "2026-03-19T15:33:48+00:00"
+  },
+  {
+    "customerId": "dce22417-dcd5-425b-a059-27d97d9c84c2",
+    "userId": "a2108c5e-298d-4489-a88e-28de6d059fa8",
+    "name": "Felipe Sales",
+    "email": "bleao@example.com",
+    "registry_code": "068.425.371-26",
+    "status": "inactive",
+    "address": {
+      "street": "Trevo Pedro Lucas Alves",
+      "number": "783",
+      "zipcode": "35376443",
+      "city": "Aparecida",
+      "state": "RJ",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551971326763"
+      }
+    ],
+    "created_at": "2024-06-29T17:41:40+00:00"
+  },
+  {
+    "customerId": "c121ed7d-c37b-4c09-a63e-996943194576",
+    "userId": "f0f11249-88f3-408c-8a77-69742ac0ecba",
+    "name": "Mariah Dias",
+    "email": "ana-vitoriada-luz@example.net",
+    "registry_code": "726.954.801-30",
+    "status": "inactive",
+    "address": {
+      "street": "Área Pimenta",
+      "number": "26",
+      "zipcode": "34800-222",
+      "city": "da Conceição",
+      "state": "BA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584922736292"
+      }
+    ],
+    "created_at": "2026-03-02T23:03:10+00:00"
+  },
+  {
+    "customerId": "dec9d207-ab69-4c3f-a5c8-5066dda536ec",
+    "userId": "f01bcfd1-1eb8-4064-a217-4e91073b076b",
+    "name": "Helena Câmara",
+    "email": "catarina93@example.org",
+    "registry_code": "890.534.716-93",
+    "status": "active",
+    "address": {
+      "street": "Vila Borges",
+      "number": "23",
+      "zipcode": "43562-836",
+      "city": "Peixoto",
+      "state": "AP",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5581984234935"
+      }
+    ],
+    "created_at": "2024-12-28T00:18:35+00:00"
+  },
+  {
+    "customerId": "27ccca6a-89e0-4f00-ba86-046122a206e9",
+    "userId": "956cc219-a22c-448b-84bb-0659f9dfa56c",
+    "name": "Thiago Moreira",
+    "email": "fda-mata@example.net",
+    "registry_code": "917.582.034-04",
+    "status": "inactive",
+    "address": {
+      "street": "Praça Sousa",
+      "number": "37",
+      "zipcode": "48686-616",
+      "city": "Albuquerque da Praia",
+      "state": "PR",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5541975319666"
+      }
+    ],
+    "created_at": "2024-07-05T00:59:25+00:00"
+  },
+  {
+    "customerId": "74b87571-b4f4-45e4-8055-2aa8721ce0aa",
+    "userId": "9f24e895-f0bd-47b4-b6d2-efc6e2e26714",
+    "name": "Bryan Pereira",
+    "email": "portoluana@example.net",
+    "registry_code": "591.870.643-75",
+    "status": "active",
+    "address": {
+      "street": "Quadra Daniel Cunha",
+      "number": "5",
+      "zipcode": "70026538",
+      "city": "Camargo da Mata",
+      "state": "BA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511940527345"
+      }
+    ],
+    "created_at": "2025-04-01T15:48:13+00:00"
+  },
+  {
+    "customerId": "5c2f6428-1757-4171-b2b8-d6e97a2aad91",
+    "userId": "553e1816-c43b-48c8-ae43-a3da154a7da0",
+    "name": "Levi Andrade",
+    "email": "bryanborges@example.com",
+    "registry_code": "954.837.126-09",
+    "status": "active",
+    "address": {
+      "street": "Chácara Isabella Costa",
+      "number": "60",
+      "zipcode": "06994-447",
+      "city": "Fogaça do Galho",
+      "state": "RS",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5581997750558"
+      }
+    ],
+    "created_at": "2025-05-25T13:05:58+00:00"
+  },
+  {
+    "customerId": "6437a7ba-7aff-4aa2-a641-f2c942a5034b",
+    "userId": "90e9bcab-a733-4b3f-bdeb-e6fe2f788ecb",
+    "name": "Ágatha Mendonça",
+    "email": "leo00@example.net",
+    "registry_code": "701.698.245-94",
+    "status": "active",
+    "address": {
+      "street": "Loteamento de Pires",
+      "number": "42",
+      "zipcode": "34553333",
+      "city": "Cunha de Novais",
+      "state": "SE",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551983130782"
+      }
+    ],
+    "created_at": "2025-10-16T01:04:17+00:00"
+  },
+  {
+    "customerId": "defc93b0-47ab-4d3c-97f0-79d78a4ded8a",
+    "userId": "d7adcc72-39a3-4748-b8f0-c56e7654781d",
+    "name": "Bianca Vargas",
+    "email": "rnovais@example.net",
+    "registry_code": "019.864.752-20",
+    "status": "active",
+    "address": {
+      "street": "Campo de Cunha",
+      "number": "386",
+      "zipcode": "73873-937",
+      "city": "Silva",
+      "state": "MT",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5581999273389"
+      }
+    ],
+    "created_at": "2024-07-25T01:11:07+00:00"
+  },
+  {
+    "customerId": "9d2cde87-cc0e-42d9-a118-a5e3e71b51ac",
+    "userId": "6180c561-a22a-4675-99a3-f66a1ecaed1d",
+    "name": "Theo Rios",
+    "email": "jvieira@example.net",
+    "registry_code": "025.376.418-17",
+    "status": "active",
+    "address": {
+      "street": "Alameda Maria Luísa Ramos",
+      "number": "754",
+      "zipcode": "21067213",
+      "city": "Peixoto de da Luz",
+      "state": "TO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5571988425793"
+      }
+    ],
+    "created_at": "2025-12-03T13:51:35+00:00"
+  },
+  {
+    "customerId": "e95a3fb5-a578-4fcf-9e98-a51f2a843718",
+    "userId": "741796df-4270-4190-bfa0-0f89831ff3de",
+    "name": "Calebe Pimenta",
+    "email": "samuelfonseca@example.net",
+    "registry_code": "205.319.486-33",
+    "status": "active",
+    "address": {
+      "street": "Vereda Aragão",
+      "number": "767",
+      "zipcode": "62505-868",
+      "city": "Sales",
+      "state": "MT",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5584960025541"
+      }
+    ],
+    "created_at": "2024-11-17T15:46:19+00:00"
+  },
+  {
+    "customerId": "7f1a57a4-09ad-4ae2-bb10-1f6a9e4d05c3",
+    "userId": "0dbb5ec5-c94a-4049-b418-6f59b7e6cd93",
+    "name": "Maria Fernanda Dias",
+    "email": "wdas-neves@example.com",
+    "registry_code": "826.519.470-67",
+    "status": "active",
+    "address": {
+      "street": "Feira de Sousa",
+      "number": "56",
+      "zipcode": "04077-951",
+      "city": "Andrade",
+      "state": "BA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561948279906"
+      }
+    ],
+    "created_at": "2025-08-13T08:53:44+00:00"
+  },
+  {
+    "customerId": "98214d83-4aa2-4f3d-b65c-c70f17277b75",
+    "userId": "331ecb86-35f0-48ef-b7c7-51ac5ba94155",
+    "name": "Pedro Leão",
+    "email": "montenegrohadassa@example.org",
+    "registry_code": "256.309.178-03",
+    "status": "active",
+    "address": {
+      "street": "Praia de da Paz",
+      "number": "28",
+      "zipcode": "72295099",
+      "city": "Melo do Galho",
+      "state": "BA",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5561937616402"
+      }
+    ],
+    "created_at": "2024-11-02T03:07:33+00:00"
+  },
+  {
+    "customerId": "a5b0d284-a972-4b7d-b199-6df064b7de9c",
+    "userId": "abbc6320-d59c-42df-b4a6-067ffcb6c73e",
+    "name": "José Oliveira",
+    "email": "teixeirajose-pedro@example.net",
+    "registry_code": "823.654.170-35",
+    "status": "active",
+    "address": {
+      "street": "Pátio Letícia Brito",
+      "number": "7",
+      "zipcode": "43248967",
+      "city": "Monteiro",
+      "state": "RJ",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521944604083"
+      }
+    ],
+    "created_at": "2025-06-12T07:58:37+00:00"
+  },
+  {
+    "customerId": "7b56dd50-68e1-43f1-9f35-8b742321c37a",
+    "userId": "93971ff9-3f34-459d-b8a7-6698dc774bbe",
+    "name": "José Novaes",
+    "email": "vitoriaferreira@example.net",
+    "registry_code": "530.987.641-39",
+    "status": "active",
+    "address": {
+      "street": "Colônia Ana Cecília Pastor",
+      "number": "6",
+      "zipcode": "24778264",
+      "city": "Costela",
+      "state": "GO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5551984609820"
+      }
+    ],
+    "created_at": "2025-02-23T01:08:45+00:00"
+  },
+  {
+    "customerId": "72093641-5ac7-4068-9bc7-4309f2acc78a",
+    "userId": "5f78e3e9-8245-4fce-8411-c15b23835820",
+    "name": "Giovanna Peixoto",
+    "email": "da-luznatalia@example.com",
+    "registry_code": "518.209.346-24",
+    "status": "active",
+    "address": {
+      "street": "Ladeira de Machado",
+      "number": "255",
+      "zipcode": "55366-713",
+      "city": "Peixoto de Goiás",
+      "state": "RO",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5521934516913"
+      }
+    ],
+    "created_at": "2026-02-04T14:01:10+00:00"
+  },
+  {
+    "customerId": "c0eeec49-2296-444a-81c2-6ede8476503e",
+    "userId": "4ca1fb94-d67c-4cf3-864c-12351a89e0dd",
+    "name": "Pietra Duarte",
+    "email": "hnovais@example.com",
+    "registry_code": "395.871.204-50",
+    "status": "inactive",
+    "address": {
+      "street": "Avenida Laura Teixeira",
+      "number": "81",
+      "zipcode": "88062815",
+      "city": "Costa",
+      "state": "MT",
+      "country": "BR"
+    },
+    "phones": [
+      {
+        "phone_type": "mobile",
+        "number": "5511963010190"
+      }
+    ],
+    "created_at": "2024-07-12T10:44:53+00:00"
+  }
+]

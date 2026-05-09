@@ -356,27 +356,318 @@ def generate_scoresummarizeds(users: list[dict], scores: list[dict]) -> list[dic
         for user in users
     ]    
     
-if __name__ == "__main__":
-    users     = generate_users(100)
-    plans     = generate_plans()
-    courses   = generate_courses(50)
-    events    = generate_events(30)
-    uplans    = generate_userplans(users)
-    uprofiles = generate_userprofiles(users)
-    audits    = generate_audittraffics(users)
-    ucprog    = generate_usercourseprogresses(users, courses)
-    ueprog    = generate_newusereventprogresses(users, events, uplans)
-    scores    = generate_scores(users, courses)
-    ssum      = generate_scoresummarizeds(users, scores)
+# ── Subscriptions ──────────────────────────────────────────────────────────────
 
-    save(users,     "users.json")
-    save(plans,     "plans.json")
-    save(courses,   "courses.json")
-    save(events,    "events.json")
-    save(uplans,    "userplans.json")
-    save(uprofiles, "userprofiles.json")
-    save(audits,    "audittraffics.json")
-    save(ucprog,    "usercourseprogresses.json")
-    save(ueprog,    "newusereventprogresses.json")
-    save(scores,    "scores.json")
-    save(ssum,      "scoresummarizeds.json")
+def generate_subscriptions(users: list[dict], userplans: list[dict]) -> list[dict]:
+    plan_map = {u["userId"]: u for u in userplans}
+    subscriptions = []
+    for user in users:
+        uplan = plan_map.get(user["userId"], {})
+        created_at = datetime.fromisoformat(user["createdAt"])
+        status = fake.random_element(
+            elements=["active", "canceled", "suspended", "future"]
+        )
+        subscriptions.append({
+            "subscriptionId": str(uuid.uuid4()),
+            "userId": user["userId"],
+            "status": status,
+            "planId": uplan.get("planId", ""),
+            "planName": uplan.get("planName", ""),
+            "interval": "months",
+            "interval_count": 1,
+            "installments": fake.random_element(elements=[1, 6, 12]),
+            "start_at": created_at.isoformat(),
+            "end_at": (created_at + timedelta(days=365)).isoformat() if status == "canceled" else None,
+            "next_billing_at": fake.date_time_between(
+                start_date="now", end_date="+1y", tzinfo=timezone.utc
+            ).isoformat(),
+            "cancel_at": fake.date_time_between(
+                start_date=created_at, end_date="now", tzinfo=timezone.utc
+            ).isoformat() if status == "canceled" else None,
+            "created_at": created_at.isoformat(),
+            "updated_at": fake.date_time_between(
+                start_date=created_at, end_date="now", tzinfo=timezone.utc
+            ).isoformat(),
+        })
+    return subscriptions
+
+
+# ── Bills ──────────────────────────────────────────────────────────────────────
+
+def generate_bills(users: list[dict], subscriptions: list[dict]) -> list[dict]:
+    sub_map = {s["userId"]: s for s in subscriptions}
+    bills = []
+    plan_prices = {"Elite": 297, "Specialist": 197, "Essential": 169, "Light": 97}
+    for user in users:
+        sub = sub_map.get(user["userId"], {})
+        n_bills = fake.random_int(min=1, max=12)
+        created_at = datetime.fromisoformat(user["createdAt"])
+        for i in range(n_bills):
+            due_at = created_at + timedelta(days=30 * (i + 1))
+            status = fake.random_element(elements=["paid", "paid", "paid", "pending", "canceled"])
+            amount = plan_prices.get(sub.get("planName", "Essential"), 169)
+            bills.append({
+                "billId": str(uuid.uuid4()),
+                "userId": user["userId"],
+                "subscriptionId": sub.get("subscriptionId", ""),
+                "amount": float(amount),
+                "status": status,
+                "installments": sub.get("installments", 1),
+                "due_at": due_at.isoformat(),
+                "created_at": created_at.isoformat(),
+                "updated_at": fake.date_time_between(
+                    start_date=created_at, end_date="now", tzinfo=timezone.utc
+                ).isoformat(),
+            })
+    return bills
+
+
+# ── Consolidated Sales ─────────────────────────────────────────────────────────
+
+def generate_consolidated_sales(users: list[dict], bills: list[dict], userplans: list[dict]) -> list[dict]:
+    plan_map = {u["userId"]: u for u in userplans}
+    sales = []
+    for bill in bills:
+        if bill["status"] != "paid":
+            continue
+        user_id = bill["userId"]
+        uplan = plan_map.get(user_id, {})
+        sales.append({
+            "saleId": str(uuid.uuid4()),
+            "bill_id": bill["billId"],
+            "UserId": user_id,
+            "Status": bill["status"],
+            "Vencimento": bill["due_at"],
+            "Data_Pagamento": bill["updated_at"],
+            "Forma_de_Pagamento": fake.random_element(
+                elements=["Cartão de crédito", "Boleto", "Pix"]
+            ),
+            "Tentativas_Pagamento": fake.random_int(min=1, max=3),
+            "Nome_Produto": f"CSA {uplan.get('planName', 'Essential')} - Recorrência",
+            "Valor": int(bill["amount"]),
+            "Valor_Total": int(bill["amount"]) * 12,
+            "Plano": uplan.get("planName", "Essential"),
+            "Categoria_Produto": uplan.get("planName", "Essential"),
+            "Perfil": fake.random_element(elements=["B2C", "B2B"]),
+            "Condicao_Pagamento": fake.random_element(
+                elements=["Recorrência", "À vista", "Parcelado"]
+            ),
+            "Numero_Parcelas": bill.get("installments", 1),
+            "Tipo_Venda": fake.random_element(
+                elements=["Nova Venda", "Ciclo 2 - Rec", "Ciclo 3 - Rec", "Upgrade"]
+            ),
+            "Usuario_Ativo": fake.boolean(chance_of_getting_true=80),
+            "Data_Atualizacao": bill["updated_at"],
+        })
+    return sales
+
+
+# ── Comments ───────────────────────────────────────────────────────────────────
+
+def generate_comments(users: list[dict], userplans: list[dict], n: int = 80) -> list[dict]:
+    plan_map = {u["userId"]: u for u in userplans}
+    comments = []
+    for _ in range(n):
+        user = fake.random_element(elements=users)
+        uplan = plan_map.get(user["userId"], {})
+        comments.append({
+            "commentId": str(uuid.uuid4()),
+            "userId": user["userId"],
+            "userName": f"{user['name']} {user['lastName']}",
+            "userEmail": user["email"],
+            "planId": uplan.get("planId", ""),
+            "postId": str(uuid.uuid4()),
+            "parentCommentId": None,
+            "comment": fake.paragraph(nb_sentences=2),
+            "likes": fake.random_int(min=0, max=50),
+            "totalComments": fake.random_int(min=0, max=10),
+            "createdAt": fake.date_time_between(
+                start_date="-1y", end_date="now", tzinfo=timezone.utc
+            ).isoformat(),
+        })
+    return comments
+
+
+# ── Likes ──────────────────────────────────────────────────────────────────────
+
+def generate_likes(users: list[dict], comments: list[dict], n: int = 150) -> list[dict]:
+    likes = []
+    for _ in range(n):
+        user = fake.random_element(elements=users)
+        comment = fake.random_element(elements=comments)
+        likes.append({
+            "likeId": str(uuid.uuid4()),
+            "userId": user["userId"],
+            "postId": comment["postId"],
+            "commentId": comment["commentId"],
+            "createdAt": fake.date_time_between(
+                start_date="-1y", end_date="now", tzinfo=timezone.utc
+            ).isoformat(),
+        })
+    return likes
+
+
+# ── Certificates ───────────────────────────────────────────────────────────────
+
+def generate_certificates(users: list[dict], courses: list[dict]) -> list[dict]:
+    certificates = []
+    for user in users:
+        eligible = [c for c in courses if c["certificate"]]
+        sampled = fake.random_elements(
+            elements=eligible, length=fake.random_int(min=0, max=3), unique=True
+        )
+        for course in sampled:
+            certificates.append({
+                "certificateId": str(uuid.uuid4()),
+                "userId": user["userId"],
+                "userName": f"{user['name']} {user['lastName']}",
+                "courseId": course["courseId"],
+                "courseName": course["name"],
+                "finalProgress": round(fake.pyfloat(min_value=90, max_value=100), 2),
+                "durationHours": course["durationHours"],
+                "durationMinutes": course["durationMinutes"],
+                "fileName": f"{user['name']}--{course['name'].replace(' ', '')}--{str(uuid.uuid4())}.pdf",
+                "finishDate": fake.date_time_between(
+                    start_date="-1y", end_date="now", tzinfo=timezone.utc
+                ).isoformat(),
+            })
+    return certificates
+
+
+# ── Aprovados Especializacao ───────────────────────────────────────────────────
+
+def generate_aprovados_especializacao(users: list[dict], events: list[dict], userplans: list[dict]) -> list[dict]:
+    plan_map = {u["userId"]: u for u in userplans}
+    especializacoes = [e for e in events if e["category"] == "especializacao"]
+    aprovados = []
+    for user in users:
+        if not especializacoes:
+            break
+        if not fake.boolean(chance_of_getting_true=30):
+            continue
+        event = fake.random_element(elements=especializacoes)
+        uplan = plan_map.get(user["userId"], {})
+        aprovados.append({
+            "aprovadoId": str(uuid.uuid4()),
+            "userId": user["userId"],
+            "userEmail": user["email"],
+            "userName": f"{user['name']} {user['lastName']}",
+            "userPlanName": uplan.get("planName", ""),
+            "eventId": event["eventId"],
+            "eventTitle": event["title"],
+            "average_progress": round(fake.pyfloat(min_value=75, max_value=100), 2),
+            "start_time": fake.date_time_between(
+                start_date="-1y", end_date="now", tzinfo=timezone.utc
+            ).isoformat(),
+        })
+    return aprovados
+
+
+# ── Customers Vindi ────────────────────────────────────────────────────────────
+
+def generate_customers_vindi(users: list[dict]) -> list[dict]:
+    customers = []
+    for user in users:
+        customers.append({
+            "customerId": str(uuid.uuid4()),
+            "userId": user["userId"],
+            "name": f"{user['name']} {user['lastName']}",
+            "email": user["email"],
+            "registry_code": fake.cpf(),
+            "status": "active" if user["active"] else "inactive",
+            "address": {
+                "street": fake.street_name(),
+                "number": fake.building_number(),
+                "zipcode": fake.postcode(),
+                "city": fake.city(),
+                "state": fake.estado_sigla(),
+                "country": "BR",
+            },
+            "phones": [{"phone_type": "mobile", "number": user["phoneNumber"]}],
+            "created_at": user["createdAt"],
+        })
+    return customers
+
+
+# ── HubSpot Contacts ───────────────────────────────────────────────────────────
+
+def generate_hubspot_contacts(users: list[dict], userplans: list[dict]) -> list[dict]:
+    plan_map = {u["userId"]: u for u in userplans}
+    contacts = []
+    for user in users:
+        uplan = plan_map.get(user["userId"], {})
+        is_trial = uplan.get("isTrial", False)
+        trial_cancel = fake.boolean(chance_of_getting_true=40) if is_trial else None
+        contacts.append({
+            "hubspot_id": str(fake.random_int(min=10000000, max=99999999)),
+            "email": user["email"],
+            "firstname": user["name"],
+            "lastname": user["lastName"],
+            "phone": user["phoneNumber"],
+            "company": user.get("company") or None,
+            "jobtitle": fake.job() if fake.boolean(chance_of_getting_true=60) else None,
+            "perfil_do_lead": user["profile"],
+            "seu_cargo": fake.random_element(
+                elements=["CS", "CX", "Liderança", "Analista", "Buscando Recolocação", None]
+            ),
+            "tamanho_da_empresa": user.get("companySize") or None,
+            "hubspot_owner_id": str(fake.random_int(min=100, max=999)) if fake.boolean(chance_of_getting_true=50) else None,
+            "userid": user["userId"],
+            "data_inicio_trial": uplan.get("trialUseDate") if is_trial else None,
+            "trial_cancel": trial_cancel,
+            "trial_cancel_date": fake.date_time_between(
+                start_date="-6m", end_date="now", tzinfo=timezone.utc
+            ).isoformat() if trial_cancel else None,
+            "trial_business": fake.sentence(nb_words=5) if (trial_cancel and user["profile"] == "B2B") else None,
+            "trial_user": fake.sentence(nb_words=5) if (trial_cancel and user["profile"] == "B2C") else None,
+            "lastmodifieddate": fake.date_time_between(
+                start_date="-30d", end_date="now", tzinfo=timezone.utc
+            ).isoformat(),
+            "_ingest_date": datetime.now(tz=timezone.utc).date().isoformat(),
+            "_source": "hubspot",
+        })
+    return contacts
+    
+    
+if __name__ == "__main__":
+    users    = generate_users(100)
+    plans    = generate_plans()
+    courses  = generate_courses(50)
+    events   = generate_events(30)
+    uplans   = generate_userplans(users)
+    uprofile = generate_userprofiles(users)
+    audits   = generate_audittraffics(users)
+    ucprog   = generate_usercourseprogresses(users, courses)
+    ueprog   = generate_newusereventprogresses(users, events, uplans)
+    scores   = generate_scores(users, courses)
+    ssum     = generate_scoresummarizeds(users, scores)
+    subs     = generate_subscriptions(users, uplans)
+    bills    = generate_bills(users, subs)
+    sales    = generate_consolidated_sales(users, bills, uplans)
+    comments = generate_comments(users, uplans)
+    likes    = generate_likes(users, comments)
+    certs    = generate_certificates(users, courses)
+    aprovs   = generate_aprovados_especializacao(users, events, uplans)
+    vindi    = generate_customers_vindi(users)
+    hubspot  = generate_hubspot_contacts(users, uplans)
+
+    save(users,    "users.json")
+    save(plans,    "plans.json")
+    save(courses,  "courses.json")
+    save(events,   "events.json")
+    save(uplans,   "userplans.json")
+    save(uprofile, "userprofiles.json")
+    save(audits,   "audittraffics.json")
+    save(ucprog,   "usercourseprogresses.json")
+    save(ueprog,   "newusereventprogresses.json")
+    save(scores,   "scores.json")
+    save(ssum,     "scoresummarizeds.json")
+    save(subs,     "subscriptions.json")
+    save(bills,    "bills.json")
+    save(sales,    "consolidated_sales.json")
+    save(comments, "comments.json")
+    save(likes,    "likes.json")
+    save(certs,    "certificates.json")
+    save(aprovs,   "aprovados_especializacao.json")
+    save(vindi,    "customers_vindi.json")
+    save(hubspot,  "hubspot_contacts.json")
