@@ -3,6 +3,8 @@ name: CD
 on:
   push:
     branches: [main]
+    paths:
+      - 'NEVER_TRIGGER'
 
 jobs:
   deploy:
