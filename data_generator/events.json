@@ -1,0 +1,482 @@
+[
+  {
+    "eventId": "6754db3b-a721-4531-a33b-1ae714f9743d",
+    "title": "Tempora corrupti animi repellendus quisquam",
+    "description": "Nulla minus quos illum tempore fugiat optio eos occaecati",
+    "category": "especializacao",
+    "subject": "lideranca",
+    "hostName": "Dr. João Guilherme Peixoto",
+    "hostEmail": "isaacnovaes@example.com",
+    "highlight": true,
+    "tags": [
+      "iste",
+      "voluptatibus"
+    ],
+    "durationHours": 1,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "22792cc0-8581-404a-9721-810104ce919c",
+    "title": "Nostrum nobis repudiandae fugit ipsa quibusdam",
+    "description": "Quas sunt nesciunt ipsa perspiciatis cum ab eum cum soluta voluptatem labore sit quia",
+    "category": "especializacao",
+    "subject": "dados",
+    "hostName": "Lavínia Câmara",
+    "hostEmail": "costelapedro@example.net",
+    "highlight": false,
+    "tags": [
+      "qui",
+      "quisquam"
+    ],
+    "durationHours": 1,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "00d5bb1f-8111-4941-9cd0-7e96c2bba50a",
+    "title": "Labore ut vitae nobis animi ea",
+    "description": "Enim velit voluptas occaecati illum optio et reiciendis omnis culpa ut officia",
+    "category": "especializacao",
+    "subject": "lideranca",
+    "hostName": "Antony Almeida",
+    "hostEmail": "eloa73@example.org",
+    "highlight": false,
+    "tags": [
+      "quae",
+      "sit"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "ac5cdcfd-33ef-4969-bdfe-57824ec1d1d8",
+    "title": "Ea sit totam impedit cumque suscipit",
+    "description": "Odit est suscipit sunt inventore alias odit assumenda",
+    "category": "masterclass",
+    "subject": "customer_success",
+    "hostName": "Yasmin Rios",
+    "hostEmail": "benjamimvieira@example.org",
+    "highlight": false,
+    "tags": [
+      "quisquam",
+      "maxime"
+    ],
+    "durationHours": 1,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "f8e63cbd-2f1e-4c3c-a0f1-ecc2057f85a0",
+    "title": "Porro occaecati deleniti recusandae asperiores",
+    "description": "Eligendi modi quisquam accusantium reprehenderit rerum magni",
+    "category": "especializacao",
+    "subject": "dados",
+    "hostName": "Sra. Carolina Pimenta",
+    "hostEmail": "correiatheodoro@example.net",
+    "highlight": false,
+    "tags": [
+      "eius",
+      "molestias"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "34a60fe5-69ea-4f27-a310-ca23a13dd174",
+    "title": "Quisquam similique dolorem sapiente saepe",
+    "description": "Provident dignissimos neque est fugit eveniet dolore illo facilis aliquid sint provident impedit",
+    "category": "especializacao",
+    "subject": "lideranca",
+    "hostName": "Luiza Cardoso",
+    "hostEmail": "isabelanunes@example.org",
+    "highlight": false,
+    "tags": [
+      "iste",
+      "odit"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "1f577b45-67fe-4693-91b5-59dfa6d83778",
+    "title": "Beatae eum cupiditate minima amet illum",
+    "description": "Illo explicabo et fuga autem reprehenderit incidunt exercitationem animi",
+    "category": "masterclass",
+    "subject": "lideranca",
+    "hostName": "Eduarda Rios",
+    "hostEmail": "lucasoliveira@example.net",
+    "highlight": false,
+    "tags": [
+      "quo",
+      "natus"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "3d33919c-0d1f-4afb-8276-57ad2c0d7e3b",
+    "title": "Error sint at officia quasi",
+    "description": "Nobis harum architecto repellat eum sapiente illum eos",
+    "category": "especializacao",
+    "subject": "lideranca",
+    "hostName": "Vitor Gonçalves",
+    "hostEmail": "vargasyasmin@example.org",
+    "highlight": false,
+    "tags": [
+      "quos",
+      "quibusdam"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "6cce0248-cd7f-4b34-aa52-d3a5d05cafab",
+    "title": "Illo sunt architecto eius repellat",
+    "description": "Incidunt reprehenderit hic dolor laboriosam tenetur quae tempore sequi corrupti voluptas rerum",
+    "category": "masterclass",
+    "subject": "customer_success",
+    "hostName": "Jade Farias",
+    "hostEmail": "da-pazbreno@example.org",
+    "highlight": false,
+    "tags": [
+      "accusantium",
+      "quis"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "93a5f1cb-da64-46ca-bb92-e952148d9936",
+    "title": "Explicabo iusto odit",
+    "description": "Omnis nam delectus sed totam illo deserunt illo totam",
+    "category": "especializacao",
+    "subject": "vendas",
+    "hostName": "Cecilia da Conceição",
+    "hostEmail": "nnogueira@example.net",
+    "highlight": true,
+    "tags": [
+      "et",
+      "fugit"
+    ],
+    "durationHours": 1,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "055a99d5-2e25-4c32-906c-9e78190e63f9",
+    "title": "Voluptatibus odio tempore laudantium",
+    "description": "Praesentium vero sed vel magni amet similique accusantium temporibus quis nisi quam",
+    "category": "masterclass",
+    "subject": "lideranca",
+    "hostName": "Isis Guerra",
+    "hostEmail": "cecilia95@example.org",
+    "highlight": true,
+    "tags": [
+      "id",
+      "earum"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "a529d23b-e6e1-443f-8730-593764353cfe",
+    "title": "Illo expedita corporis debitis atque",
+    "description": "Blanditiis nihil quos culpa eum consectetur cum quidem doloribus ex eos iure",
+    "category": "masterclass",
+    "subject": "cx",
+    "hostName": "Maria Vitória Jesus",
+    "hostEmail": "andradecatarina@example.net",
+    "highlight": false,
+    "tags": [
+      "id",
+      "accusantium"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "f0690837-95fc-4d51-9596-ebcdcf049215",
+    "title": "Minus iure molestias illo",
+    "description": "In tempore veritatis suscipit eos corporis",
+    "category": "masterclass",
+    "subject": "cx",
+    "hostName": "Dr. Cauê Dias",
+    "hostEmail": "asafe47@example.net",
+    "highlight": false,
+    "tags": [
+      "perspiciatis",
+      "eius"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "54d62d97-ce98-4bfc-860d-2ddf821eb6b5",
+    "title": "Eligendi ipsam vero sit impedit odio",
+    "description": "Officiis tenetur provident cumque facere odio veniam non beatae neque harum",
+    "category": "especializacao",
+    "subject": "lideranca",
+    "hostName": "Marina Gonçalves",
+    "hostEmail": "arthur-miguel77@example.org",
+    "highlight": false,
+    "tags": [
+      "architecto",
+      "harum"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "647d4418-b3a0-4451-bf2c-f9187ef020e1",
+    "title": "Animi corporis veniam doloribus",
+    "description": "Rerum rerum nostrum voluptatibus rem consectetur",
+    "category": "masterclass",
+    "subject": "cx",
+    "hostName": "Luiz Otávio Moraes",
+    "hostEmail": "ceciliapereira@example.org",
+    "highlight": false,
+    "tags": [
+      "repudiandae",
+      "sequi"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "44665f8b-5024-4672-a27e-8a9118622a42",
+    "title": "Illum placeat aperiam",
+    "description": "Nesciunt magni eveniet illum atque voluptatem blanditiis deleniti expedita corporis",
+    "category": "masterclass",
+    "subject": "vendas",
+    "hostName": "Antonella Ferreira",
+    "hostEmail": "olopes@example.com",
+    "highlight": false,
+    "tags": [
+      "impedit",
+      "minima"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "7ff85cf5-4285-4016-8472-3771817680f4",
+    "title": "Accusantium dolorum libero magni",
+    "description": "Fuga magnam at nam quidem excepturi quia voluptas omnis atque",
+    "category": "masterclass",
+    "subject": "lideranca",
+    "hostName": "Heloísa Ramos",
+    "hostEmail": "da-rosaemanuelly@example.net",
+    "highlight": false,
+    "tags": [
+      "excepturi",
+      "quibusdam"
+    ],
+    "durationHours": 1,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "4906d25d-964b-412f-bd02-a2d3775ca164",
+    "title": "Itaque inventore nesciunt est voluptatum perferendis",
+    "description": "Molestias fugiat reiciendis animi quod amet animi praesentium alias incidunt ab",
+    "category": "masterclass",
+    "subject": "cx",
+    "hostName": "Lara Melo",
+    "hostEmail": "daniela02@example.com",
+    "highlight": false,
+    "tags": [
+      "ipsum",
+      "molestias"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "aa7f4d42-4676-48c5-8ec8-201fd168ea80",
+    "title": "Accusantium veniam earum",
+    "description": "Quo maxime eius provident ut veritatis nesciunt eius placeat",
+    "category": "especializacao",
+    "subject": "dados",
+    "hostName": "Ana Luiza Jesus",
+    "hostEmail": "enricoferreira@example.com",
+    "highlight": false,
+    "tags": [
+      "quas",
+      "repudiandae"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "2fe0ca5d-5783-454c-8c95-1d58da3c466a",
+    "title": "Dolorem provident ut dolores",
+    "description": "Sed quaerat autem neque libero veniam",
+    "category": "especializacao",
+    "subject": "lideranca",
+    "hostName": "Sra. Carolina Barbosa",
+    "hostEmail": "ianleao@example.net",
+    "highlight": false,
+    "tags": [
+      "laudantium",
+      "error"
+    ],
+    "durationHours": 1,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "bcce4cd1-4c1e-481e-ab8a-8638215a64fc",
+    "title": "Maiores id nulla et",
+    "description": "Quidem illum enim ullam expedita animi amet earum",
+    "category": "masterclass",
+    "subject": "customer_success",
+    "hostName": "Dr. Breno Montenegro",
+    "hostEmail": "araujodavi-luiz@example.net",
+    "highlight": false,
+    "tags": [
+      "atque",
+      "consectetur"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "d4558ea7-85b4-4398-a6bc-2856013a5847",
+    "title": "Occaecati nisi labore voluptatum corporis",
+    "description": "Eveniet ipsum ullam repudiandae corporis maxime",
+    "category": "especializacao",
+    "subject": "dados",
+    "hostName": "Melina da Luz",
+    "hostEmail": "hmarques@example.com",
+    "highlight": false,
+    "tags": [
+      "doloremque",
+      "blanditiis"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "1b3bfa2b-9298-4688-a557-7956202e9742",
+    "title": "Nam rem quasi asperiores aliquam",
+    "description": "Nobis alias vel aspernatur error sed porro quos voluptatum ipsam accusantium doloribus",
+    "category": "especializacao",
+    "subject": "cx",
+    "hostName": "Carlos Eduardo Cavalcanti",
+    "hostEmail": "piresisabelly@example.org",
+    "highlight": false,
+    "tags": [
+      "non",
+      "in"
+    ],
+    "durationHours": 1,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "15701be2-175e-480f-8d04-f0c18226996f",
+    "title": "Doloribus architecto eius",
+    "description": "Minima dicta in ipsam deleniti quibusdam provident nisi harum sint tenetur",
+    "category": "masterclass",
+    "subject": "cx",
+    "hostName": "Kaique da Mata",
+    "hostEmail": "sophia67@example.com",
+    "highlight": true,
+    "tags": [
+      "officia",
+      "tempore"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "11e8041f-1cc1-4457-a720-f30c0905cf98",
+    "title": "Sapiente delectus beatae nostrum numquam",
+    "description": "Aspernatur quod laboriosam atque perspiciatis numquam iusto",
+    "category": "especializacao",
+    "subject": "customer_success",
+    "hostName": "Sara Albuquerque",
+    "hostEmail": "vinicius98@example.net",
+    "highlight": false,
+    "tags": [
+      "nesciunt",
+      "nulla"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "a1c6570e-96bb-4df6-99b1-f7bc1e383b5f",
+    "title": "Non ut officiis fugit hic",
+    "description": "Explicabo placeat eveniet alias iure praesentium illo placeat",
+    "category": "especializacao",
+    "subject": "cx",
+    "hostName": "Dr. Josué das Neves",
+    "hostEmail": "mendoncaluiz-otavio@example.org",
+    "highlight": true,
+    "tags": [
+      "iste",
+      "commodi"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "0fa5eb3c-6f91-4fe8-ae35-4c7781cd5481",
+    "title": "Non deserunt voluptatum accusantium ex",
+    "description": "Eveniet accusantium eius suscipit rem ipsam nihil",
+    "category": "masterclass",
+    "subject": "dados",
+    "hostName": "Dr. Antônio Andrade",
+    "hostEmail": "gabrielanovaes@example.net",
+    "highlight": true,
+    "tags": [
+      "deserunt",
+      "perferendis"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "749be8fa-6185-490e-9545-73684a022b1a",
+    "title": "Ab est aliquid aut quibusdam fuga",
+    "description": "Officia esse perferendis quasi dignissimos corporis voluptas laboriosam soluta numquam iusto porro",
+    "category": "especializacao",
+    "subject": "lideranca",
+    "hostName": "Dra. Ana Clara Brito",
+    "hostEmail": "fgarcia@example.org",
+    "highlight": false,
+    "tags": [
+      "quia",
+      "cum"
+    ],
+    "durationHours": 3,
+    "durationMinutes": 30
+  },
+  {
+    "eventId": "d450d33b-6dfc-4b44-9777-5835e507ed30",
+    "title": "Aut possimus sunt rem rem",
+    "description": "Accusamus maiores cum atque voluptate nulla maiores",
+    "category": "especializacao",
+    "subject": "dados",
+    "hostName": "Bruno Brito",
+    "hostEmail": "arthurrios@example.net",
+    "highlight": false,
+    "tags": [
+      "cum",
+      "sint"
+    ],
+    "durationHours": 2,
+    "durationMinutes": 0
+  },
+  {
+    "eventId": "50d65ffb-e54d-4755-b3ba-3e2c87dcf41c",
+    "title": "Illo amet minus expedita quas",
+    "description": "Nihil dolores autem officiis voluptatibus aut alias dolor minus ipsa",
+    "category": "masterclass",
+    "subject": "lideranca",
+    "hostName": "Benjamim Cirino",
+    "hostEmail": "vda-luz@example.com",
+    "highlight": false,
+    "tags": [
+      "officiis",
+      "tenetur"
+    ],
+    "durationHours": 1,
+    "durationMinutes": 30
+  }
+]

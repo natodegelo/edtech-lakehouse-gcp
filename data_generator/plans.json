@@ -1,0 +1,34 @@
+[
+  {
+    "planId": "e4aece44-f291-11ec-b939-0242ac120002",
+    "name": "Elite",
+    "description": "Club Elite",
+    "hierarchy": 1,
+    "color": "#675635",
+    "trialAvailable": false
+  },
+  {
+    "planId": "2a9b53c8-f292-11ec-b939-0242ac120002",
+    "name": "Specialist",
+    "description": "Club Specialist",
+    "hierarchy": 2,
+    "color": "#7b9cea",
+    "trialAvailable": true
+  },
+  {
+    "planId": "15216afa-f292-11ec-b939-0242ac120002",
+    "name": "Essential",
+    "description": "Club Essential",
+    "hierarchy": 3,
+    "color": "#bf800b",
+    "trialAvailable": true
+  },
+  {
+    "planId": "a1b2c3d4-f292-11ec-b939-0242ac120002",
+    "name": "Light",
+    "description": "Club Light",
+    "hierarchy": 4,
+    "color": "#ebebdc",
+    "trialAvailable": true
+  }
+]
