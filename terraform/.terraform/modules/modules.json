@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"bigquery","Source":"./modules/bigquery","Dir":"modules/bigquery"},{"Key":"gcs","Source":"./modules/gcs","Dir":"modules/gcs"},{"Key":"iam","Source":"./modules/iam","Dir":"modules/iam"}]}
