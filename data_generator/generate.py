@@ -213,18 +213,170 @@ def save(data: list[dict], filename: str) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"{len(data)} registros gerados em {filename}")
 
+    
+# ── Audit Traffics ─────────────────────────────────────────────────────────────
 
+def generate_audittraffics(users: list[dict], n_per_user: int = 5) -> list[dict]:
+    routes = [
+        {"tag": "login",       "route": "/login"},
+        {"tag": "course_view", "route": "/courses"},
+        {"tag": "event_view",  "route": "/events"},
+        {"tag": "certificate", "route": "/certificates"},
+        {"tag": "profile",     "route": "/profile"},
+        {"tag": "community",   "route": "/community"},
+    ]
+    audits = []
+    for user in users:
+        created_at = datetime.fromisoformat(user["createdAt"])
+        for _ in range(fake.random_int(min=1, max=n_per_user)):
+            r = fake.random_element(elements=routes)
+            audits.append({
+                "auditId": str(uuid.uuid4()),
+                "userId": user["userId"],
+                "tag": r["tag"],
+                "route": r["route"],
+                "createdAt": fake.date_time_between(
+                    start_date=created_at, end_date="now", tzinfo=timezone.utc
+                ).isoformat(),
+            })
+    return audits
+
+
+# ── User Course Progresses ─────────────────────────────────────────────────────
+
+def generate_usercourseprogresses(users: list[dict], courses: list[dict]) -> list[dict]:
+    progresses = []
+    for user in users:
+        sampled_courses = fake.random_elements(
+            elements=courses, length=fake.random_int(min=0, max=5), unique=True
+        )
+        created_at = datetime.fromisoformat(user["createdAt"])
+        for course in sampled_courses:
+            for module in course["modules"]:
+                for topic in module["topics"]:
+                    video_progress = round(fake.pyfloat(min_value=0, max_value=100), 2)
+                    progresses.append({
+                        "userCourseProgressId": str(uuid.uuid4()),
+                        "userId": user["userId"],
+                        "courseId": course["courseId"],
+                        "moduleId": module["moduleId"],
+                        "topicId": topic["topicId"],
+                        "durationInSeconds": topic["durationInSeconds"],
+                        "progress": round(video_progress / 100 * 10, 2),
+                        "videoProgress": video_progress,
+                        "lastTopicViewed": fake.boolean(chance_of_getting_true=20),
+                        "datesViewed": [
+                            fake.date_time_between(
+                                start_date=created_at, end_date="now", tzinfo=timezone.utc
+                            ).isoformat()
+                        ],
+                        "createdAt": created_at.isoformat(),
+                        "updatedAt": fake.date_time_between(
+                            start_date=created_at, end_date="now", tzinfo=timezone.utc
+                        ).isoformat(),
+                    })
+    return progresses
+
+
+# ── User Event Progresses ──────────────────────────────────────────────────────
+
+def generate_newusereventprogresses(users: list[dict], events: list[dict], userplans: list[dict]) -> list[dict]:
+    plan_map = {u["userId"]: u for u in userplans}
+    progresses = []
+    for user in users:
+        sampled_events = fake.random_elements(
+            elements=events, length=fake.random_int(min=0, max=3), unique=True
+        )
+        uplan = plan_map.get(user["userId"], {})
+        for event in sampled_events:
+            progresses.append({
+                "eventProgressId": str(uuid.uuid4()),
+                "userId": user["userId"],
+                "userEmail": user["email"],
+                "userName": f"{user['name']} {user['lastName']}",
+                "userPlanId": uplan.get("planId", ""),
+                "userPlanName": uplan.get("planName", ""),
+                "eventId": event["eventId"],
+                "eventName": event["title"],
+                "eventCategory": event["category"],
+                "eventDate": fake.date_time_between(
+                    start_date="-1y", end_date="now", tzinfo=timezone.utc
+                ).isoformat(),
+                "progress": fake.random_int(min=0, max=100),
+            })
+    return progresses
+
+
+# ── Scores ─────────────────────────────────────────────────────────────────────
+
+def generate_scores(users: list[dict], courses: list[dict]) -> list[dict]:
+    score_types = {
+        1: ("course_started",   10),
+        2: ("topic_completed",  5),
+        3: ("course_completed", 50),
+        4: ("event_attended",   20),
+        5: ("comment_posted",   5),
+        6: ("login",            2),
+        7: ("certificate",      100),
+    }
+    scores = []
+    for user in users:
+        created_at = datetime.fromisoformat(user["createdAt"])
+        n_scores = fake.random_int(min=1, max=10)
+        for _ in range(n_scores):
+            type_id, (_, points) = fake.random_element(elements=list(score_types.items()))
+            scores.append({
+                "scoreId": str(uuid.uuid4()),
+                "userId": user["userId"],
+                "type": type_id,
+                "score": points,
+                "active": fake.boolean(chance_of_getting_true=95),
+                "entityUniqueIds": [str(uuid.uuid4())],
+                "createdAt": fake.date_time_between(
+                    start_date=created_at, end_date="now", tzinfo=timezone.utc
+                ).isoformat(),
+            })
+    return scores
+
+
+# ── Score Summarizeds ──────────────────────────────────────────────────────────
+
+def generate_scoresummarizeds(users: list[dict], scores: list[dict]) -> list[dict]:
+    score_map: dict[str, int] = {}
+    for s in scores:
+        if s["active"]:
+            score_map[s["userId"]] = score_map.get(s["userId"], 0) + s["score"]
+    return [
+        {
+            "scoreSummarizedId": str(uuid.uuid4()),
+            "userId": user["userId"],
+            "score": score_map.get(user["userId"], 0),
+            "updatedAt": datetime.now(tz=timezone.utc).isoformat(),
+        }
+        for user in users
+    ]    
+    
 if __name__ == "__main__":
-    users    = generate_users(100)
-    plans    = generate_plans()
-    courses  = generate_courses(50)
-    events   = generate_events(30)
-    uplans   = generate_userplans(users)
-    uprofile = generate_userprofiles(users)
+    users     = generate_users(100)
+    plans     = generate_plans()
+    courses   = generate_courses(50)
+    events    = generate_events(30)
+    uplans    = generate_userplans(users)
+    uprofiles = generate_userprofiles(users)
+    audits    = generate_audittraffics(users)
+    ucprog    = generate_usercourseprogresses(users, courses)
+    ueprog    = generate_newusereventprogresses(users, events, uplans)
+    scores    = generate_scores(users, courses)
+    ssum      = generate_scoresummarizeds(users, scores)
 
-    save(users,    "users.json")
-    save(plans,    "plans.json")
-    save(courses,  "courses.json")
-    save(events,   "events.json")
-    save(uplans,   "userplans.json")
-    save(uprofile, "userprofiles.json")
+    save(users,     "users.json")
+    save(plans,     "plans.json")
+    save(courses,   "courses.json")
+    save(events,    "events.json")
+    save(uplans,    "userplans.json")
+    save(uprofiles, "userprofiles.json")
+    save(audits,    "audittraffics.json")
+    save(ucprog,    "usercourseprogresses.json")
+    save(ueprog,    "newusereventprogresses.json")
+    save(scores,    "scores.json")
+    save(ssum,      "scoresummarizeds.json")

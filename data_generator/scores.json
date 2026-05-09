@@ -1,0 +1,6151 @@
+[
+  {
+    "scoreId": "189e4e18-048d-4dd7-ac9c-91278bf6252e",
+    "userId": "9a4fbf25-79a0-4723-a5df-c76de3247afd",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "befc6443-22cb-4e99-a6ec-4394445b59d7"
+    ],
+    "createdAt": "2025-12-27T20:21:54+00:00"
+  },
+  {
+    "scoreId": "601a02f9-8f06-4be6-b461-93a8abc7e95b",
+    "userId": "9a4fbf25-79a0-4723-a5df-c76de3247afd",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "a2e2d873-a2ba-461e-a9a4-f367c0f4e381"
+    ],
+    "createdAt": "2025-04-10T05:40:57+00:00"
+  },
+  {
+    "scoreId": "ea3c2078-70cb-4d0c-ba2e-bf6744ffa37d",
+    "userId": "9a4fbf25-79a0-4723-a5df-c76de3247afd",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "309ee9f5-579e-4178-8715-41b6ba5414af"
+    ],
+    "createdAt": "2026-02-22T11:38:15+00:00"
+  },
+  {
+    "scoreId": "d603f8ac-bc9f-446c-a0ac-8ee9d7974606",
+    "userId": "ccefbfee-b459-4d6b-9e39-c37aabc97045",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "7c0a31d7-eb70-440e-a447-40597a9a82c5"
+    ],
+    "createdAt": "2025-10-13T10:31:26+00:00"
+  },
+  {
+    "scoreId": "de7739d5-9f16-46a1-8b2c-fbc61355c1f2",
+    "userId": "ccefbfee-b459-4d6b-9e39-c37aabc97045",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "f5551f91-3887-4e34-b925-6b615d26a322"
+    ],
+    "createdAt": "2025-10-21T14:22:39+00:00"
+  },
+  {
+    "scoreId": "dbb1e829-3875-4bfb-91de-65a2f637bbe8",
+    "userId": "ccefbfee-b459-4d6b-9e39-c37aabc97045",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "680497be-4914-44f7-afbb-d6b2f0204415"
+    ],
+    "createdAt": "2026-04-23T12:57:14+00:00"
+  },
+  {
+    "scoreId": "8cdcd391-f123-4550-bc3c-24987b1ef96b",
+    "userId": "ccefbfee-b459-4d6b-9e39-c37aabc97045",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "a6d0232a-d6ea-457e-b36c-05077ad1a00b"
+    ],
+    "createdAt": "2025-11-25T06:15:58+00:00"
+  },
+  {
+    "scoreId": "4db4ebba-2abd-4bfb-85e9-62ed21c68327",
+    "userId": "ccefbfee-b459-4d6b-9e39-c37aabc97045",
+    "type": 4,
+    "score": 20,
+    "active": false,
+    "entityUniqueIds": [
+      "c237e41a-034b-4c07-8146-6b3722c63d45"
+    ],
+    "createdAt": "2026-01-06T10:36:37+00:00"
+  },
+  {
+    "scoreId": "c071571c-feee-49a0-a46d-1f1c3b2f0458",
+    "userId": "f7b3d05d-5da3-4326-88c3-627680ebbb93",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "20a19f21-6696-4175-bc4d-9b100d784f92"
+    ],
+    "createdAt": "2026-02-04T12:10:49+00:00"
+  },
+  {
+    "scoreId": "e93c459f-28bd-436e-b7d2-711d127020b1",
+    "userId": "f7b3d05d-5da3-4326-88c3-627680ebbb93",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "6c7fe935-9e53-466c-bd8d-a302b25c164e"
+    ],
+    "createdAt": "2026-05-08T16:55:17+00:00"
+  },
+  {
+    "scoreId": "6effabf2-4c5d-4709-a004-e417dee6b341",
+    "userId": "f7b3d05d-5da3-4326-88c3-627680ebbb93",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "21b2249a-1d00-4239-b734-1bd5aeb145e3"
+    ],
+    "createdAt": "2026-05-08T20:26:57+00:00"
+  },
+  {
+    "scoreId": "750eef73-dc05-4cc7-8c28-9464738f3230",
+    "userId": "f7b3d05d-5da3-4326-88c3-627680ebbb93",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "128d501f-29e0-4a20-9244-b5ece6b6f15b"
+    ],
+    "createdAt": "2026-01-20T02:55:02+00:00"
+  },
+  {
+    "scoreId": "9b5b4631-0d0e-44ad-934f-def00398e849",
+    "userId": "f7b3d05d-5da3-4326-88c3-627680ebbb93",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "81ff9e99-ce0e-4674-bdf1-30273087212c"
+    ],
+    "createdAt": "2026-02-23T21:07:28+00:00"
+  },
+  {
+    "scoreId": "9b7ab246-535d-4b41-8d9e-c199fc5044a7",
+    "userId": "f7b3d05d-5da3-4326-88c3-627680ebbb93",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "8b39bbce-2d7c-4d73-b8eb-bbb5b85ac0cd"
+    ],
+    "createdAt": "2026-05-06T16:37:51+00:00"
+  },
+  {
+    "scoreId": "cbf46c3b-46ad-4edd-a9a7-483fc9be318f",
+    "userId": "a01622d5-23ee-4927-b405-3d9fd9eebcaa",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "81e46697-7f81-4268-9281-b17b91e79998"
+    ],
+    "createdAt": "2026-04-03T10:15:58+00:00"
+  },
+  {
+    "scoreId": "e8398587-40d4-42ef-9095-671b9a0478a2",
+    "userId": "a01622d5-23ee-4927-b405-3d9fd9eebcaa",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7355bd13-5bd6-4778-93d2-a80cbd23e3d3"
+    ],
+    "createdAt": "2026-04-27T20:16:32+00:00"
+  },
+  {
+    "scoreId": "bae43f57-fd3b-4506-9a7f-daa584ca010e",
+    "userId": "a01622d5-23ee-4927-b405-3d9fd9eebcaa",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "78c2ea11-b581-4f96-8460-6860e1315374"
+    ],
+    "createdAt": "2026-03-07T20:49:55+00:00"
+  },
+  {
+    "scoreId": "971335d9-d598-44ec-b12d-641c7e0b5e70",
+    "userId": "a01622d5-23ee-4927-b405-3d9fd9eebcaa",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "60c64678-2ffa-4a37-86f3-19e1b67ec8b6"
+    ],
+    "createdAt": "2026-03-01T21:01:30+00:00"
+  },
+  {
+    "scoreId": "afa65a6d-051c-4939-9ec8-774a87147cab",
+    "userId": "f0446d98-0430-4a13-b1cd-7b781cc72c90",
+    "type": 4,
+    "score": 20,
+    "active": false,
+    "entityUniqueIds": [
+      "805fac6d-6b12-497a-b193-af23456689d0"
+    ],
+    "createdAt": "2025-07-17T21:29:17+00:00"
+  },
+  {
+    "scoreId": "899d388b-b741-4c32-8cf2-091c12b90ebc",
+    "userId": "f0446d98-0430-4a13-b1cd-7b781cc72c90",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "fb293516-f568-440e-9db5-4314cf3f9a47"
+    ],
+    "createdAt": "2025-03-20T04:21:35+00:00"
+  },
+  {
+    "scoreId": "8f050d3a-9d44-43f0-a2cf-efd7d7aec279",
+    "userId": "f0446d98-0430-4a13-b1cd-7b781cc72c90",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "e7463aea-5e5e-418c-b5f4-7e19f6c80cee"
+    ],
+    "createdAt": "2025-04-28T17:52:23+00:00"
+  },
+  {
+    "scoreId": "cd60f21f-328e-417d-841d-0ba5a00d3832",
+    "userId": "f0446d98-0430-4a13-b1cd-7b781cc72c90",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "9be74ca1-7b77-414c-aff7-6ab4784afc79"
+    ],
+    "createdAt": "2024-10-17T11:49:22+00:00"
+  },
+  {
+    "scoreId": "10c01104-b112-402b-9563-f10c908757ca",
+    "userId": "f0446d98-0430-4a13-b1cd-7b781cc72c90",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "5b030924-9e6d-4e6f-99b7-4c0aa7386681"
+    ],
+    "createdAt": "2025-06-10T08:28:18+00:00"
+  },
+  {
+    "scoreId": "4bafac77-e2c8-4064-8b8f-31202dd4b6d8",
+    "userId": "f0446d98-0430-4a13-b1cd-7b781cc72c90",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "3c46f6cf-6210-4168-9512-dd35a2fbc738"
+    ],
+    "createdAt": "2026-01-07T00:01:55+00:00"
+  },
+  {
+    "scoreId": "f0428fe8-8852-4c56-be57-c854e781f9e2",
+    "userId": "f0446d98-0430-4a13-b1cd-7b781cc72c90",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "30d3d231-2278-496f-a6fc-7d86b2971016"
+    ],
+    "createdAt": "2026-04-10T17:23:17+00:00"
+  },
+  {
+    "scoreId": "bc54a138-76b4-4b4f-b27b-03c4b2eb7693",
+    "userId": "f0446d98-0430-4a13-b1cd-7b781cc72c90",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "c0188682-5edd-4a99-a6ce-019d662887ba"
+    ],
+    "createdAt": "2025-04-19T23:44:40+00:00"
+  },
+  {
+    "scoreId": "938cabea-3cb3-41eb-88d1-b2f60e1d6a66",
+    "userId": "a4aef005-0a4e-4205-a06c-289fb03d6073",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "893c9019-55be-419e-a8bb-d8f616bce31e"
+    ],
+    "createdAt": "2026-03-20T16:22:31+00:00"
+  },
+  {
+    "scoreId": "47b23f99-57f8-47ea-8f7c-3fad75990935",
+    "userId": "a4aef005-0a4e-4205-a06c-289fb03d6073",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "78c7f5f4-4340-4b3a-8550-a11cb7acca5f"
+    ],
+    "createdAt": "2025-12-02T16:44:58+00:00"
+  },
+  {
+    "scoreId": "cf1170fa-7673-41f9-a094-b19c34062c39",
+    "userId": "a4aef005-0a4e-4205-a06c-289fb03d6073",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "4897c704-06dc-4a6a-af48-376c51bc76a5"
+    ],
+    "createdAt": "2025-12-18T17:42:14+00:00"
+  },
+  {
+    "scoreId": "a2c0b675-c002-478a-9aba-e216a6c21d15",
+    "userId": "a4aef005-0a4e-4205-a06c-289fb03d6073",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "879a24b2-9142-4d38-bcd7-dd4985a5ff0e"
+    ],
+    "createdAt": "2025-06-29T18:04:48+00:00"
+  },
+  {
+    "scoreId": "a21dee44-2d6f-4ac0-b9a6-ad5a11c1894f",
+    "userId": "a4aef005-0a4e-4205-a06c-289fb03d6073",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "274cad21-282b-4a56-9bef-45f0a5c5256a"
+    ],
+    "createdAt": "2026-03-07T04:40:41+00:00"
+  },
+  {
+    "scoreId": "1528f3d7-9db5-43e8-9c2b-0fe7e4860952",
+    "userId": "a4aef005-0a4e-4205-a06c-289fb03d6073",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "c1947d61-aa51-45de-a916-9ad0d474dec5"
+    ],
+    "createdAt": "2026-03-27T22:18:26+00:00"
+  },
+  {
+    "scoreId": "c3fdc506-2f07-4e89-99a3-07382980def7",
+    "userId": "a4aef005-0a4e-4205-a06c-289fb03d6073",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "ae2cb539-83e3-4410-8c8e-ce128ca5b4ec"
+    ],
+    "createdAt": "2025-06-28T12:21:56+00:00"
+  },
+  {
+    "scoreId": "36cfab87-a534-481b-b096-341ab616cdc1",
+    "userId": "a4aef005-0a4e-4205-a06c-289fb03d6073",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "5c036111-92d7-439b-af23-196ba8730bb3"
+    ],
+    "createdAt": "2025-11-11T19:58:12+00:00"
+  },
+  {
+    "scoreId": "971b05de-b648-47f8-ac6e-40628dbb3b47",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "c03a8efa-ba9c-410e-8f58-c1e3d69a7e4e"
+    ],
+    "createdAt": "2026-04-10T20:20:59+00:00"
+  },
+  {
+    "scoreId": "31a9aa9d-5df1-4f1a-8717-cb698f54d881",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "7d2ec049-d663-409a-b1ac-f55888c105b6"
+    ],
+    "createdAt": "2025-12-08T15:53:54+00:00"
+  },
+  {
+    "scoreId": "58c052ee-bb5a-4f6e-9a8f-1b597dbd010e",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "b1352f20-2717-42b1-ba1e-001d04315fc5"
+    ],
+    "createdAt": "2026-03-27T19:38:51+00:00"
+  },
+  {
+    "scoreId": "ad4a9919-5bf4-4d80-a054-0c6399562f9b",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "cebe19e3-52db-4885-8601-3ed16947d984"
+    ],
+    "createdAt": "2026-01-22T22:16:06+00:00"
+  },
+  {
+    "scoreId": "6dfc0674-6a55-4efc-9961-e429656fb2df",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "3b44eaa2-55bd-4ed6-90b9-8887bb1e6272"
+    ],
+    "createdAt": "2026-02-05T19:14:40+00:00"
+  },
+  {
+    "scoreId": "365bf4de-ec4f-4eba-9a92-a33dc46d88cc",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "a4a27adc-7ab8-4c65-b52f-2eb5bdb832be"
+    ],
+    "createdAt": "2026-04-18T07:57:02+00:00"
+  },
+  {
+    "scoreId": "28f4113c-64ca-4113-a9a3-e01d7dc7e551",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 3,
+    "score": 50,
+    "active": false,
+    "entityUniqueIds": [
+      "9118381e-2106-4515-9b68-202510ddc8bb"
+    ],
+    "createdAt": "2026-04-16T21:35:40+00:00"
+  },
+  {
+    "scoreId": "f4aaba47-db80-4881-bce7-369a8ee97432",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "58d0ad20-7e02-407d-8a4a-a48a883b857f"
+    ],
+    "createdAt": "2025-12-23T18:20:24+00:00"
+  },
+  {
+    "scoreId": "78a0da5d-8d5f-4c41-82cf-932a7fd85a84",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 3,
+    "score": 50,
+    "active": false,
+    "entityUniqueIds": [
+      "9b3597b6-65a8-42d6-b40d-7d4a5bf1a01f"
+    ],
+    "createdAt": "2025-12-29T00:40:23+00:00"
+  },
+  {
+    "scoreId": "241036a3-fb99-4d2b-b340-0c00fd6458f8",
+    "userId": "725c8ec5-8344-432c-8852-71b20f5a720a",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "d60dbc3d-cdf6-487c-955b-6681986829a5"
+    ],
+    "createdAt": "2026-03-11T16:54:00+00:00"
+  },
+  {
+    "scoreId": "66312d66-8043-484e-b820-8452145b2349",
+    "userId": "b79a6c8f-62c3-4cc6-a0da-a3324a0453be",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "d79eb166-2276-4ba0-9fdd-66e14c4a8028"
+    ],
+    "createdAt": "2025-11-13T11:03:19+00:00"
+  },
+  {
+    "scoreId": "38c9eec0-a908-42ea-bf3f-8a058cf21bcb",
+    "userId": "b79a6c8f-62c3-4cc6-a0da-a3324a0453be",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "fbaf4fb2-037d-4a29-8278-5c93dc018802"
+    ],
+    "createdAt": "2025-01-18T17:25:38+00:00"
+  },
+  {
+    "scoreId": "a8ab583a-0784-4541-80f7-e58bdb0d680b",
+    "userId": "b79a6c8f-62c3-4cc6-a0da-a3324a0453be",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "8829bfc7-ff37-4e34-8735-0f6b4127ffd3"
+    ],
+    "createdAt": "2026-01-10T19:14:20+00:00"
+  },
+  {
+    "scoreId": "3e1b90ad-650e-481a-a6dc-d3d0c3968276",
+    "userId": "b79a6c8f-62c3-4cc6-a0da-a3324a0453be",
+    "type": 5,
+    "score": 5,
+    "active": false,
+    "entityUniqueIds": [
+      "337c4dc4-7e3a-48d7-96a7-d0df9084109c"
+    ],
+    "createdAt": "2025-04-18T10:31:14+00:00"
+  },
+  {
+    "scoreId": "77aeaff1-4178-44e5-9b5a-7755bd07badd",
+    "userId": "b79a6c8f-62c3-4cc6-a0da-a3324a0453be",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "74f1a6fe-9d60-478b-90fa-65c126bf590e"
+    ],
+    "createdAt": "2025-04-23T17:29:08+00:00"
+  },
+  {
+    "scoreId": "b05fc5ae-942b-4d08-aa17-1621e4d1d99e",
+    "userId": "b79a6c8f-62c3-4cc6-a0da-a3324a0453be",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "e9a4f7aa-5e1e-42c5-9f13-3a17aafa0ef8"
+    ],
+    "createdAt": "2025-09-30T02:20:04+00:00"
+  },
+  {
+    "scoreId": "26e777a5-83af-48cc-83a3-78115bd3ef28",
+    "userId": "b79a6c8f-62c3-4cc6-a0da-a3324a0453be",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "cebc8bc4-bde2-44ea-99c1-4a7b92105780"
+    ],
+    "createdAt": "2024-11-21T20:36:53+00:00"
+  },
+  {
+    "scoreId": "78f31b8b-8aaf-429b-8aee-bd015ce47fc3",
+    "userId": "1c3bd5e0-2fc9-44f6-b0d5-fe1d3e434960",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "114d63ad-e360-4f58-8b55-f259acb74547"
+    ],
+    "createdAt": "2026-03-01T17:53:48+00:00"
+  },
+  {
+    "scoreId": "5c22265f-8184-43d1-b5da-0cc218dd41d8",
+    "userId": "1c3bd5e0-2fc9-44f6-b0d5-fe1d3e434960",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "9be258c7-7f76-4ba0-8247-76b1d6992561"
+    ],
+    "createdAt": "2026-04-04T07:56:53+00:00"
+  },
+  {
+    "scoreId": "0ad3203d-9f8f-4f52-a31a-af696c9b51d6",
+    "userId": "1c3bd5e0-2fc9-44f6-b0d5-fe1d3e434960",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "07f9b590-ab54-4c1c-9845-f80ff772812e"
+    ],
+    "createdAt": "2026-04-11T20:43:25+00:00"
+  },
+  {
+    "scoreId": "b6ee1d15-938a-48e3-b820-e604bc1b8624",
+    "userId": "1c3bd5e0-2fc9-44f6-b0d5-fe1d3e434960",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "fcffa6b1-6184-44e6-a656-f5b25a82b6ab"
+    ],
+    "createdAt": "2026-03-18T00:41:29+00:00"
+  },
+  {
+    "scoreId": "baffc307-c9de-4bad-884c-cfef39bfaa7f",
+    "userId": "1c3bd5e0-2fc9-44f6-b0d5-fe1d3e434960",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "6b4ecfaf-e892-4cba-b3f5-3123d3aaf8fd"
+    ],
+    "createdAt": "2026-03-12T02:27:28+00:00"
+  },
+  {
+    "scoreId": "c5f53a3a-cd70-4f20-a848-f9ad24805289",
+    "userId": "1c3bd5e0-2fc9-44f6-b0d5-fe1d3e434960",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "01db8209-4ea6-4898-b049-229d85269ad7"
+    ],
+    "createdAt": "2026-04-26T10:39:34+00:00"
+  },
+  {
+    "scoreId": "3abdb1cf-9eb8-4b5f-ae8f-eece47a917bc",
+    "userId": "1c3bd5e0-2fc9-44f6-b0d5-fe1d3e434960",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "39866136-56dc-4f05-b02d-eb0f25951775"
+    ],
+    "createdAt": "2026-03-24T12:11:53+00:00"
+  },
+  {
+    "scoreId": "2e05cc7d-ff46-4930-8d09-f09c898e0e59",
+    "userId": "a694a3c1-2330-4b4f-bfbc-b2d8ae8ad0e2",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "5d61e033-75aa-4218-8738-a91b5b039ef6"
+    ],
+    "createdAt": "2026-01-29T19:57:22+00:00"
+  },
+  {
+    "scoreId": "10528276-935d-43f0-b52b-117313fb73e5",
+    "userId": "a694a3c1-2330-4b4f-bfbc-b2d8ae8ad0e2",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "2e5834bd-e54f-41a6-ac39-9f9ffdaf8017"
+    ],
+    "createdAt": "2025-09-23T04:06:48+00:00"
+  },
+  {
+    "scoreId": "69e18fd2-897f-4e2b-8eaf-d24e851e333c",
+    "userId": "a694a3c1-2330-4b4f-bfbc-b2d8ae8ad0e2",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "c7ee3d80-f390-4063-ac6e-53660ebe7248"
+    ],
+    "createdAt": "2025-09-24T11:05:56+00:00"
+  },
+  {
+    "scoreId": "7c23d0a6-a31d-4ff6-927f-6ee337382ee0",
+    "userId": "a694a3c1-2330-4b4f-bfbc-b2d8ae8ad0e2",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "0e92f824-934b-459d-8315-96dcf8dde81d"
+    ],
+    "createdAt": "2025-12-13T10:19:19+00:00"
+  },
+  {
+    "scoreId": "d29c5598-b00e-4b27-9471-1c9eafa236c6",
+    "userId": "a694a3c1-2330-4b4f-bfbc-b2d8ae8ad0e2",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "d198c0b6-433a-4adc-b20e-4e7e7d1523ed"
+    ],
+    "createdAt": "2025-07-06T18:08:51+00:00"
+  },
+  {
+    "scoreId": "5eb22e53-9827-4966-a595-b6e61dbd6eea",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "3254ee9c-3543-47bb-9747-addd62f300d3"
+    ],
+    "createdAt": "2026-04-11T18:52:45+00:00"
+  },
+  {
+    "scoreId": "fb163e4c-58c9-4e4f-9206-59df8979aa8e",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "cfd2fd56-0e3a-4f0f-8911-8b659295c8c7"
+    ],
+    "createdAt": "2026-03-18T13:46:31+00:00"
+  },
+  {
+    "scoreId": "6cedae9b-fab8-4f32-a4d6-0392ce6c320b",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 6,
+    "score": 2,
+    "active": false,
+    "entityUniqueIds": [
+      "73d2a9d8-46bf-49b2-8bce-4458b7d76bb3"
+    ],
+    "createdAt": "2026-03-20T08:15:30+00:00"
+  },
+  {
+    "scoreId": "cc8fc5b8-b330-4aa3-a595-5bdd92cc085b",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "75c6b27c-78d4-4809-91ff-c1f6424c6c75"
+    ],
+    "createdAt": "2025-12-19T14:45:12+00:00"
+  },
+  {
+    "scoreId": "93033721-6c68-4456-bbd5-109dfb77a8b0",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 1,
+    "score": 10,
+    "active": false,
+    "entityUniqueIds": [
+      "28a82374-c4af-4988-9020-f74c9cbcdf5c"
+    ],
+    "createdAt": "2026-03-19T13:34:30+00:00"
+  },
+  {
+    "scoreId": "8f1215f5-9849-4d22-8df4-2715ec5271c4",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "92d5a5b4-456e-4266-a593-46669f39fd2d"
+    ],
+    "createdAt": "2026-01-28T21:37:58+00:00"
+  },
+  {
+    "scoreId": "5ec7214e-a7be-44c1-ab2e-e5ade21b9abc",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "79dc2f41-74d6-42d8-802f-124596756a0f"
+    ],
+    "createdAt": "2026-01-16T22:53:32+00:00"
+  },
+  {
+    "scoreId": "5dd49eea-f097-46aa-acf9-ab9385d3f5c3",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "36dec7c8-365c-4554-bb17-a296a2c7bb5b"
+    ],
+    "createdAt": "2026-03-06T14:02:59+00:00"
+  },
+  {
+    "scoreId": "a89a18b1-fbdc-4d28-b78b-7b3f47f83128",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "eea2c1e3-a583-466b-af52-399820aa92e7"
+    ],
+    "createdAt": "2026-02-10T23:39:18+00:00"
+  },
+  {
+    "scoreId": "4fe1ecc2-9125-4ebd-9202-178a0cbcde62",
+    "userId": "622e0126-2093-476c-9513-dda57061080b",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "a22638ce-2ca1-4cbc-8f9f-40a1036d7c43"
+    ],
+    "createdAt": "2026-02-18T00:14:20+00:00"
+  },
+  {
+    "scoreId": "809778ac-9e90-4a7c-80c1-5f266b9b38e5",
+    "userId": "6af5c304-1b53-45e8-bcab-c233802952a9",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "089a635b-ebd6-4dc0-ae95-cd567277e2b6"
+    ],
+    "createdAt": "2025-08-21T11:19:41+00:00"
+  },
+  {
+    "scoreId": "375d4ab7-9deb-4721-b126-41b09adbc356",
+    "userId": "6af5c304-1b53-45e8-bcab-c233802952a9",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "1c819026-94c9-4d4c-ba6d-9ec3893495fd"
+    ],
+    "createdAt": "2025-10-01T19:15:49+00:00"
+  },
+  {
+    "scoreId": "39cd40d5-600c-49b9-b96f-7c068cdc158c",
+    "userId": "6af5c304-1b53-45e8-bcab-c233802952a9",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "201dfd32-ad17-43ed-ace6-c678b21fadda"
+    ],
+    "createdAt": "2026-02-08T03:37:31+00:00"
+  },
+  {
+    "scoreId": "e2b75f2b-bd65-43da-88f3-de97c1ae32eb",
+    "userId": "6af5c304-1b53-45e8-bcab-c233802952a9",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "a7624f96-ccf9-4456-b256-de8a2bcc251e"
+    ],
+    "createdAt": "2026-02-23T02:41:33+00:00"
+  },
+  {
+    "scoreId": "b36a98af-ab12-4679-90e7-6effea048a2e",
+    "userId": "6af5c304-1b53-45e8-bcab-c233802952a9",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5f12bac6-c021-4f70-8f44-7f48dce45235"
+    ],
+    "createdAt": "2026-03-08T03:34:49+00:00"
+  },
+  {
+    "scoreId": "5fa9012f-425d-4eb6-87d8-f335698c73dc",
+    "userId": "6af5c304-1b53-45e8-bcab-c233802952a9",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "907ed849-0d38-45fa-a63a-62b2fcf30201"
+    ],
+    "createdAt": "2025-09-04T22:42:44+00:00"
+  },
+  {
+    "scoreId": "29de57c0-0b70-4668-92c5-ff066638243d",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "5dd80928-2ff9-406f-ae45-bce8eda9ec85"
+    ],
+    "createdAt": "2025-12-09T19:20:39+00:00"
+  },
+  {
+    "scoreId": "694cacc8-7476-4515-bb3a-c8c1424b3865",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "554fa527-72e1-49d4-b004-4d94dd0976c8"
+    ],
+    "createdAt": "2025-07-14T17:45:12+00:00"
+  },
+  {
+    "scoreId": "b77d50f8-6f54-45e1-b7a7-752697c7276a",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "bf1cef2c-7926-46b3-ab3c-c6076ae4a26e"
+    ],
+    "createdAt": "2026-01-18T02:22:24+00:00"
+  },
+  {
+    "scoreId": "6e939dd4-e08e-48f8-9d0a-2735234d95cb",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "30cf4c44-b01a-435b-a4ad-8523b1d3ac73"
+    ],
+    "createdAt": "2025-11-23T11:28:37+00:00"
+  },
+  {
+    "scoreId": "c27aec2e-88c8-4fad-8abf-638a295de20a",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "4e349d6f-16e6-454a-a4bf-f7d8ba17908a"
+    ],
+    "createdAt": "2026-02-17T03:56:18+00:00"
+  },
+  {
+    "scoreId": "19257d37-e144-4736-9fe7-68881011a3bc",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "680fdd7c-7a40-439c-b36a-cbd2b121465e"
+    ],
+    "createdAt": "2025-12-15T19:18:42+00:00"
+  },
+  {
+    "scoreId": "2a4b87b4-b6de-4c3e-a1d2-a9e1a3540665",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "f891294c-1069-4bb1-bdbc-997a50fe00d6"
+    ],
+    "createdAt": "2025-11-22T05:55:39+00:00"
+  },
+  {
+    "scoreId": "f24b7239-9b89-4093-a36e-c4afba7aee40",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "0d4164e0-4dc6-49de-8f86-5640f35f255c"
+    ],
+    "createdAt": "2026-05-09T10:57:53+00:00"
+  },
+  {
+    "scoreId": "844ab63e-bcff-4bbf-87d3-908170bf0e1c",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "aa5f4c8c-5540-4559-a590-1d1bb73d91bf"
+    ],
+    "createdAt": "2026-02-05T23:07:50+00:00"
+  },
+  {
+    "scoreId": "ab2c2176-e420-438e-8f7b-ac32f75b800a",
+    "userId": "89733ebf-63de-4dda-b440-e0249941ee26",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "e61aaa93-174c-4e4b-b4a3-d06a6befbe2c"
+    ],
+    "createdAt": "2025-07-22T10:59:04+00:00"
+  },
+  {
+    "scoreId": "4203a665-5e68-49e3-bfc9-906d039ac381",
+    "userId": "b5b7dbd3-a684-4017-9851-eb6cc9a79a73",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "330b1351-e7b4-4537-92b6-6e769f4745be"
+    ],
+    "createdAt": "2025-06-10T04:33:29+00:00"
+  },
+  {
+    "scoreId": "208d4230-968d-498f-9747-bbb9247aae43",
+    "userId": "b5b7dbd3-a684-4017-9851-eb6cc9a79a73",
+    "type": 6,
+    "score": 2,
+    "active": false,
+    "entityUniqueIds": [
+      "989810ab-26d2-4818-8e42-10ed24ce2136"
+    ],
+    "createdAt": "2024-10-13T05:45:21+00:00"
+  },
+  {
+    "scoreId": "ed7a00cc-0cf2-4e12-9b7e-382e0d417ac6",
+    "userId": "b5b7dbd3-a684-4017-9851-eb6cc9a79a73",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "807e7f96-d213-4ad2-9747-cf89a3d5e994"
+    ],
+    "createdAt": "2026-01-20T10:21:13+00:00"
+  },
+  {
+    "scoreId": "ccebd50a-e03d-4d8f-bab6-e12dbde7232d",
+    "userId": "b5b7dbd3-a684-4017-9851-eb6cc9a79a73",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "84a3a78c-ee51-47c4-9152-3cf38a4fa2a5"
+    ],
+    "createdAt": "2025-09-18T10:06:36+00:00"
+  },
+  {
+    "scoreId": "307d3740-764d-4039-a4fe-be17ff436b66",
+    "userId": "b5b7dbd3-a684-4017-9851-eb6cc9a79a73",
+    "type": 7,
+    "score": 100,
+    "active": false,
+    "entityUniqueIds": [
+      "ce1d58da-6be4-450a-bc1a-7f33c55f0637"
+    ],
+    "createdAt": "2024-12-23T19:30:30+00:00"
+  },
+  {
+    "scoreId": "cc4c061b-e178-4ce3-8536-a9f5381a80e4",
+    "userId": "b5b7dbd3-a684-4017-9851-eb6cc9a79a73",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "dcfacd07-836b-439e-84fb-e3ed283633a2"
+    ],
+    "createdAt": "2025-06-04T22:23:33+00:00"
+  },
+  {
+    "scoreId": "950f8314-1170-4615-a7ec-f5e20116f984",
+    "userId": "b5b7dbd3-a684-4017-9851-eb6cc9a79a73",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "4a3c9aac-9619-4a0e-b3d5-65ab6890eb6b"
+    ],
+    "createdAt": "2025-07-24T18:30:55+00:00"
+  },
+  {
+    "scoreId": "11ce65a9-9899-4d9d-8df1-30b9fa7b6226",
+    "userId": "b5b7dbd3-a684-4017-9851-eb6cc9a79a73",
+    "type": 3,
+    "score": 50,
+    "active": false,
+    "entityUniqueIds": [
+      "12dfdfe2-4048-49b6-993e-5b636c839dd2"
+    ],
+    "createdAt": "2025-07-26T05:05:14+00:00"
+  },
+  {
+    "scoreId": "f69f1a6d-60d6-4d12-a6f4-af2da304c528",
+    "userId": "10a48bb1-69f3-4757-b974-2a1b469a3ffd",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "0f0ceab7-0c44-4796-a936-f307077939c8"
+    ],
+    "createdAt": "2025-06-17T04:23:18+00:00"
+  },
+  {
+    "scoreId": "dcc8f987-0c9c-4e6b-aed4-dcb0022e4844",
+    "userId": "10a48bb1-69f3-4757-b974-2a1b469a3ffd",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "64ba6e4b-583d-4c30-889a-a02f08666b9c"
+    ],
+    "createdAt": "2025-09-01T05:47:13+00:00"
+  },
+  {
+    "scoreId": "d9800a20-6d54-4ca7-8fee-aa0a940daed7",
+    "userId": "10a48bb1-69f3-4757-b974-2a1b469a3ffd",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "96397cad-0ad8-4a92-820e-178cf1ac0df6"
+    ],
+    "createdAt": "2026-04-17T16:27:58+00:00"
+  },
+  {
+    "scoreId": "abcaac5c-6524-4c76-b619-ee7c15b2715d",
+    "userId": "10a48bb1-69f3-4757-b974-2a1b469a3ffd",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "a1df04ab-c1d8-4516-9674-d2a19e401373"
+    ],
+    "createdAt": "2025-10-14T00:30:44+00:00"
+  },
+  {
+    "scoreId": "1013379f-0f0a-4768-bf2a-06e3dd317726",
+    "userId": "10a48bb1-69f3-4757-b974-2a1b469a3ffd",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "287c42d5-9943-447e-a3da-7bf00071cb76"
+    ],
+    "createdAt": "2026-04-11T17:13:14+00:00"
+  },
+  {
+    "scoreId": "8424999e-d7ad-4324-a0d4-1927d7c4a46d",
+    "userId": "10a48bb1-69f3-4757-b974-2a1b469a3ffd",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "dc94667c-f8ca-4a3f-8c3e-e1c451a4d4e8"
+    ],
+    "createdAt": "2025-11-11T01:21:13+00:00"
+  },
+  {
+    "scoreId": "e77a5124-f76f-4df0-8e70-760dc06853b0",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "e1cf2c80-e5b7-4b7d-a333-55ef047cb64e"
+    ],
+    "createdAt": "2026-04-18T06:19:28+00:00"
+  },
+  {
+    "scoreId": "1d8b15e4-4038-4693-bf6d-b8b92c094d28",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "06bba18c-a187-4989-af62-860de07a7ca4"
+    ],
+    "createdAt": "2026-04-19T04:29:13+00:00"
+  },
+  {
+    "scoreId": "4ba04651-32d0-40b1-94b6-d43b60a5b376",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "0ce8c4c6-b64b-4aa1-a0de-c2c56202683e"
+    ],
+    "createdAt": "2026-04-29T22:52:05+00:00"
+  },
+  {
+    "scoreId": "3806c7b2-3e9d-4920-a9ec-bb5da095b838",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "3a469e86-0f0b-46d2-9376-9e38ceb828a2"
+    ],
+    "createdAt": "2026-04-15T23:02:06+00:00"
+  },
+  {
+    "scoreId": "c369ff0f-7e42-47aa-815f-1e602a5d3bfd",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "9b8bbc99-3808-40d1-b925-40e130e7ba41"
+    ],
+    "createdAt": "2026-04-12T23:06:33+00:00"
+  },
+  {
+    "scoreId": "8bdc6538-c113-4ead-a43f-1974c942e88f",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 3,
+    "score": 50,
+    "active": false,
+    "entityUniqueIds": [
+      "0a4c4777-4a05-44f8-ad29-342f8c00743d"
+    ],
+    "createdAt": "2026-04-27T23:58:03+00:00"
+  },
+  {
+    "scoreId": "72595668-e737-427d-94e7-32b4bf64e1f6",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "05440885-25db-4207-9217-3f31f03965fb"
+    ],
+    "createdAt": "2026-04-06T08:14:55+00:00"
+  },
+  {
+    "scoreId": "5de38022-d32b-4ab6-b959-487a72474dd0",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "b9450a9a-4bf9-4911-babe-b578ed24ca0f"
+    ],
+    "createdAt": "2026-05-08T17:13:48+00:00"
+  },
+  {
+    "scoreId": "e9a585ff-c6e4-48a5-afcc-311f13593cb1",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "b29defb1-aad9-4531-a643-0c012b65de80"
+    ],
+    "createdAt": "2026-04-23T19:35:36+00:00"
+  },
+  {
+    "scoreId": "f1c3dd2c-cace-4ddb-97a8-5957a1cdb55f",
+    "userId": "400a0656-efc5-40fd-8677-0cace3c94535",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "2b174860-9d08-4368-b35b-e62b886c2422"
+    ],
+    "createdAt": "2026-04-08T22:44:38+00:00"
+  },
+  {
+    "scoreId": "ba0faaf7-0674-43e2-9d7a-afc89de75dc7",
+    "userId": "2fd76e7f-38e6-4aa7-9c84-c6b6ac08e90b",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "7db50d82-72ee-4fb8-8454-f85d87fd01a3"
+    ],
+    "createdAt": "2026-01-25T14:28:03+00:00"
+  },
+  {
+    "scoreId": "d85426e6-9151-4bc7-9fd7-cd11749fa375",
+    "userId": "2e06e580-2a24-4045-be2f-c56556f5660e",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "378c635e-52d4-4823-b8fb-78d519bd7a18"
+    ],
+    "createdAt": "2025-08-05T03:00:39+00:00"
+  },
+  {
+    "scoreId": "e66b404d-a905-418e-99c3-c0df953be52e",
+    "userId": "2e06e580-2a24-4045-be2f-c56556f5660e",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "76d11a86-d6e4-439d-91ee-1e49d82574a2"
+    ],
+    "createdAt": "2025-07-04T21:24:58+00:00"
+  },
+  {
+    "scoreId": "a8da1958-0bd0-4cb7-83f7-11f29b67f8d1",
+    "userId": "2e06e580-2a24-4045-be2f-c56556f5660e",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "4ba7e8b5-29a7-44f8-8ca4-18b2309e86de"
+    ],
+    "createdAt": "2025-03-17T15:18:09+00:00"
+  },
+  {
+    "scoreId": "32c6dffe-fab1-493e-9919-baacacb13021",
+    "userId": "2e06e580-2a24-4045-be2f-c56556f5660e",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "9555a14d-6405-422e-9e9c-7587dada4fa4"
+    ],
+    "createdAt": "2024-06-29T08:05:28+00:00"
+  },
+  {
+    "scoreId": "43e6ef70-1bf0-4156-93ac-8078d08dc620",
+    "userId": "2e06e580-2a24-4045-be2f-c56556f5660e",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5dddf11b-a807-495a-9b2c-22b193559a72"
+    ],
+    "createdAt": "2024-11-14T19:21:23+00:00"
+  },
+  {
+    "scoreId": "39f82397-6c0e-4ca6-946c-512da314077c",
+    "userId": "2e06e580-2a24-4045-be2f-c56556f5660e",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "32f60605-7612-4684-a77e-ff9bd9ba8241"
+    ],
+    "createdAt": "2024-09-26T14:52:15+00:00"
+  },
+  {
+    "scoreId": "f5746384-a45c-4705-9623-ab03dd7ea503",
+    "userId": "2e06e580-2a24-4045-be2f-c56556f5660e",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "20c32b9d-7dd3-4d49-8bf2-3c7ebc7d7111"
+    ],
+    "createdAt": "2025-07-05T07:15:36+00:00"
+  },
+  {
+    "scoreId": "70f51902-c709-461b-a34d-0dbdb99eccaa",
+    "userId": "2e06e580-2a24-4045-be2f-c56556f5660e",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "b6cd6a1f-5ba8-415d-b839-413eed422a3b"
+    ],
+    "createdAt": "2025-01-15T08:33:27+00:00"
+  },
+  {
+    "scoreId": "b3d12985-635e-4d29-9ff0-486855f94fcd",
+    "userId": "fd94854e-518c-4b85-bb12-143ff34247ff",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "ac2f8da2-9a16-4932-9569-019096bf48b2"
+    ],
+    "createdAt": "2025-11-19T00:58:20+00:00"
+  },
+  {
+    "scoreId": "a49f92a6-07a8-4b72-9117-1ee767e9a925",
+    "userId": "fd94854e-518c-4b85-bb12-143ff34247ff",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "b688ddf5-525f-4595-82b7-6709c9379012"
+    ],
+    "createdAt": "2025-10-13T20:17:46+00:00"
+  },
+  {
+    "scoreId": "4fc6dc4c-1e3f-4c26-8f4a-76fb93f08be1",
+    "userId": "fd94854e-518c-4b85-bb12-143ff34247ff",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "3f149c72-f648-4790-881c-f4cbe03472b7"
+    ],
+    "createdAt": "2025-10-23T21:49:49+00:00"
+  },
+  {
+    "scoreId": "0cbd14f5-49cb-4d2f-bb45-db24d4734ea5",
+    "userId": "fd94854e-518c-4b85-bb12-143ff34247ff",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "dcff5fc4-c097-4e35-b880-c820af271033"
+    ],
+    "createdAt": "2026-03-07T04:15:09+00:00"
+  },
+  {
+    "scoreId": "f71ba0b0-9879-4ea5-84fa-ac11bcd290b8",
+    "userId": "fd94854e-518c-4b85-bb12-143ff34247ff",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "8b3a6711-3fcc-467f-b73d-32095a26bbf6"
+    ],
+    "createdAt": "2026-03-23T17:35:41+00:00"
+  },
+  {
+    "scoreId": "3f5cd99a-cdd4-4fbd-afab-892a5d429226",
+    "userId": "fd94854e-518c-4b85-bb12-143ff34247ff",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "2ccc19e5-d8da-476a-b175-1d218d29a8f6"
+    ],
+    "createdAt": "2025-10-25T00:19:55+00:00"
+  },
+  {
+    "scoreId": "1c40f198-6c62-456e-bf20-ff9bfdd541cc",
+    "userId": "fd94854e-518c-4b85-bb12-143ff34247ff",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "f0ea838a-32a6-47be-819e-9a404ca06e7f"
+    ],
+    "createdAt": "2026-03-16T16:34:12+00:00"
+  },
+  {
+    "scoreId": "8745279d-e379-48c8-beaf-22391aa1d9e3",
+    "userId": "fd94854e-518c-4b85-bb12-143ff34247ff",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "ae33a0e9-da72-45e7-b691-852dd736363f"
+    ],
+    "createdAt": "2026-01-13T03:44:50+00:00"
+  },
+  {
+    "scoreId": "97e7fbb8-b997-4384-9536-f60f0e31c505",
+    "userId": "0003fe45-d424-40a7-8e19-ee6838cb5d24",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "1e6d192e-c9e0-4430-97ec-bd53ae18782d"
+    ],
+    "createdAt": "2025-11-15T06:38:46+00:00"
+  },
+  {
+    "scoreId": "dae58e1d-36c9-40e5-b051-e665703fd751",
+    "userId": "0003fe45-d424-40a7-8e19-ee6838cb5d24",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "b237ed33-b59f-484c-9678-90647f55b927"
+    ],
+    "createdAt": "2026-02-13T22:13:12+00:00"
+  },
+  {
+    "scoreId": "2a48543a-24a3-4664-8ffb-0386fb74c2a3",
+    "userId": "0003fe45-d424-40a7-8e19-ee6838cb5d24",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "b68056de-e890-467c-aa87-afae81d1b48c"
+    ],
+    "createdAt": "2025-10-04T00:13:16+00:00"
+  },
+  {
+    "scoreId": "593219ce-7e18-47a6-b9d4-d3ae73e47090",
+    "userId": "0003fe45-d424-40a7-8e19-ee6838cb5d24",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "71b0250e-a4c8-49ce-adb6-7653436c32c6"
+    ],
+    "createdAt": "2025-10-01T23:14:31+00:00"
+  },
+  {
+    "scoreId": "aa15d7dc-dcf4-4110-9fbb-206003b34e53",
+    "userId": "379fba13-0acb-44cb-8bfe-ce051088ab26",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "03d3e875-ca9d-43ec-8173-c18c587b5369"
+    ],
+    "createdAt": "2025-11-29T21:47:12+00:00"
+  },
+  {
+    "scoreId": "4bfcbe52-b4e3-4ed3-8299-c28dc7d79a54",
+    "userId": "379fba13-0acb-44cb-8bfe-ce051088ab26",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "0966683b-fea4-4d0c-b956-d1eaf7d259f6"
+    ],
+    "createdAt": "2026-02-05T16:02:35+00:00"
+  },
+  {
+    "scoreId": "0a4d96a0-fb49-4c61-8c5d-9dededc2b831",
+    "userId": "379fba13-0acb-44cb-8bfe-ce051088ab26",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "ef086a6f-4b06-4df4-9b72-ec203a794267"
+    ],
+    "createdAt": "2025-06-27T10:32:17+00:00"
+  },
+  {
+    "scoreId": "85665bab-f880-4927-918e-fc51cb07e936",
+    "userId": "379fba13-0acb-44cb-8bfe-ce051088ab26",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "91bbe519-7e48-4b9d-b2a5-be191540fd81"
+    ],
+    "createdAt": "2026-02-25T15:17:32+00:00"
+  },
+  {
+    "scoreId": "821654ed-96c1-4841-9e3a-af84e81e5a5e",
+    "userId": "379fba13-0acb-44cb-8bfe-ce051088ab26",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "ec98d09e-140d-4be6-bfea-98e15ffd0b93"
+    ],
+    "createdAt": "2025-05-02T12:10:05+00:00"
+  },
+  {
+    "scoreId": "027518ed-c901-415e-9550-86d13b422247",
+    "userId": "379fba13-0acb-44cb-8bfe-ce051088ab26",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "ccd31605-91ca-482d-9d7a-50456d5e238b"
+    ],
+    "createdAt": "2025-10-29T09:59:43+00:00"
+  },
+  {
+    "scoreId": "18b407c2-7b7e-4890-8603-1d45ac937548",
+    "userId": "379fba13-0acb-44cb-8bfe-ce051088ab26",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "c5b5dda3-79fd-4366-a3dc-87942104e60a"
+    ],
+    "createdAt": "2025-05-21T21:42:13+00:00"
+  },
+  {
+    "scoreId": "e06a3798-7be1-402b-afd0-110d180801cf",
+    "userId": "379fba13-0acb-44cb-8bfe-ce051088ab26",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "a87c09b9-3965-4f5e-aed4-bc8f30c53b88"
+    ],
+    "createdAt": "2025-05-21T18:18:41+00:00"
+  },
+  {
+    "scoreId": "8821b212-fdad-4ba4-845a-02f7cd972869",
+    "userId": "6670de46-4d9b-4b65-bc93-61986d5e98b2",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "1d1cced0-a517-4e7e-89e3-9c1c96518d8a"
+    ],
+    "createdAt": "2025-03-30T14:24:17+00:00"
+  },
+  {
+    "scoreId": "045d1568-5ff0-4078-8c24-e6aa21e13097",
+    "userId": "6670de46-4d9b-4b65-bc93-61986d5e98b2",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "8de0f465-45ad-425f-ad80-1cf4342753de"
+    ],
+    "createdAt": "2025-03-21T22:09:37+00:00"
+  },
+  {
+    "scoreId": "052ea522-5a9e-40fd-9f4c-7a96f15c759c",
+    "userId": "6670de46-4d9b-4b65-bc93-61986d5e98b2",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "2b3c3433-a3ce-4529-856f-edecd86ab539"
+    ],
+    "createdAt": "2025-12-25T02:14:55+00:00"
+  },
+  {
+    "scoreId": "0f8b34cb-b3dc-4b70-840c-624cc6b21123",
+    "userId": "6670de46-4d9b-4b65-bc93-61986d5e98b2",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "b008b4ed-5ac6-4881-9aca-5e690bbc39ad"
+    ],
+    "createdAt": "2025-03-02T17:39:33+00:00"
+  },
+  {
+    "scoreId": "8a7e1e8a-5712-4cc0-9eac-3710d562cdaf",
+    "userId": "6670de46-4d9b-4b65-bc93-61986d5e98b2",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "7ebc91ee-de2c-4f3f-b94a-7cf4140cb5f9"
+    ],
+    "createdAt": "2024-08-24T18:44:01+00:00"
+  },
+  {
+    "scoreId": "1293d635-3d5a-4631-a3e1-e092f34cec5b",
+    "userId": "6670de46-4d9b-4b65-bc93-61986d5e98b2",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "cdae8967-743f-4403-bee3-65201976d969"
+    ],
+    "createdAt": "2024-07-17T06:29:42+00:00"
+  },
+  {
+    "scoreId": "cbfb66a5-76ca-46db-8726-a69660cf4bf8",
+    "userId": "abcb15af-03d1-4dbf-8987-a205c9c773cf",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7b6b91d9-8f32-4e06-88d0-4c1fc21bebe6"
+    ],
+    "createdAt": "2025-12-22T10:07:41+00:00"
+  },
+  {
+    "scoreId": "0d744f54-9ecf-4c85-bf19-6734a563f5f9",
+    "userId": "abcb15af-03d1-4dbf-8987-a205c9c773cf",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "8b4b7102-8261-422b-ac9b-4b50f7bccf97"
+    ],
+    "createdAt": "2025-09-02T14:56:40+00:00"
+  },
+  {
+    "scoreId": "dd53198c-78dc-4010-896c-5ef9b705f746",
+    "userId": "e0c59497-cc1c-4069-8f00-213f6d5d4972",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "7ea830b9-0403-4de7-b962-0d6ba5ad5a02"
+    ],
+    "createdAt": "2026-05-07T20:19:40+00:00"
+  },
+  {
+    "scoreId": "61da5a31-6cbe-408a-9c82-432206a33db3",
+    "userId": "e0c59497-cc1c-4069-8f00-213f6d5d4972",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "87e6586b-12e3-4f96-9c34-bd95b23d1a67"
+    ],
+    "createdAt": "2026-05-08T16:07:41+00:00"
+  },
+  {
+    "scoreId": "6d9c7637-d980-47da-b695-6d1c8ec78b8e",
+    "userId": "e0c59497-cc1c-4069-8f00-213f6d5d4972",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "5d75f5a5-8259-4241-a533-4d3d7177e934"
+    ],
+    "createdAt": "2026-05-07T12:24:44+00:00"
+  },
+  {
+    "scoreId": "0bcaf872-1253-4114-a9f9-aba2cfd632c9",
+    "userId": "e0c59497-cc1c-4069-8f00-213f6d5d4972",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "955d4f22-2d83-43f2-96e5-c7f9d8c1376e"
+    ],
+    "createdAt": "2026-05-09T18:28:42+00:00"
+  },
+  {
+    "scoreId": "7aa1613e-488d-4bb5-a0b7-199444cfa64d",
+    "userId": "e0c59497-cc1c-4069-8f00-213f6d5d4972",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "41a3451b-332c-4d1b-8e91-80c1d5851fe4"
+    ],
+    "createdAt": "2026-05-09T13:38:49+00:00"
+  },
+  {
+    "scoreId": "2450291f-b8be-4a84-9522-e986d968ccbe",
+    "userId": "e0c59497-cc1c-4069-8f00-213f6d5d4972",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "0e66e0ba-61bf-48e7-b196-c3013122006d"
+    ],
+    "createdAt": "2026-05-08T13:02:24+00:00"
+  },
+  {
+    "scoreId": "40d553d6-5e3b-41b5-8511-e464c7132502",
+    "userId": "e0c59497-cc1c-4069-8f00-213f6d5d4972",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "b2bdcc6b-0e02-43ab-a364-432258f71c7b"
+    ],
+    "createdAt": "2026-05-08T04:15:03+00:00"
+  },
+  {
+    "scoreId": "5e66d1da-aad6-4603-abd1-2828fc812f1b",
+    "userId": "e0c59497-cc1c-4069-8f00-213f6d5d4972",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "515ffc9e-64d0-4497-b170-f68982aef0f2"
+    ],
+    "createdAt": "2026-05-07T02:00:17+00:00"
+  },
+  {
+    "scoreId": "9c18c09d-91cd-477a-a9e1-2197d4242ff6",
+    "userId": "1f0ce101-ca0c-4b64-b9be-35007aae3f90",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "b30fb90a-ac1d-4ad0-9353-6265eb9b2436"
+    ],
+    "createdAt": "2026-04-06T07:46:51+00:00"
+  },
+  {
+    "scoreId": "86b4e556-90b8-4da8-89d8-44ec465df701",
+    "userId": "1f0ce101-ca0c-4b64-b9be-35007aae3f90",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "8fa8c4ad-a68c-43d1-bfcd-5e009819ef79"
+    ],
+    "createdAt": "2026-04-17T09:01:22+00:00"
+  },
+  {
+    "scoreId": "5d8bb79e-c0b9-43df-aba5-29808a9a4f85",
+    "userId": "17d6ded8-b647-4da7-97a9-a2959ee793dd",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "c0f6e5f7-2d1b-4b97-8e32-803fd46ef56c"
+    ],
+    "createdAt": "2026-02-18T01:31:28+00:00"
+  },
+  {
+    "scoreId": "3f28b880-836c-4572-9167-a6b8b7df2d96",
+    "userId": "17d6ded8-b647-4da7-97a9-a2959ee793dd",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "5b278de7-89be-4df1-80d2-caa60f4b9dd9"
+    ],
+    "createdAt": "2025-09-25T01:55:21+00:00"
+  },
+  {
+    "scoreId": "519f1c9e-ec23-4421-a9ec-cb9e04d472cb",
+    "userId": "17d6ded8-b647-4da7-97a9-a2959ee793dd",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "a02fbf25-add6-4712-a131-40d2274f4ae3"
+    ],
+    "createdAt": "2026-01-16T20:00:02+00:00"
+  },
+  {
+    "scoreId": "bf5b43f1-d45b-4201-962e-7200a1232f13",
+    "userId": "17d6ded8-b647-4da7-97a9-a2959ee793dd",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "8c777191-6503-45d3-b4a2-9a6c4191409e"
+    ],
+    "createdAt": "2026-02-08T21:39:25+00:00"
+  },
+  {
+    "scoreId": "fe80e40c-1ab6-4efb-aadf-3d0c59822e8e",
+    "userId": "17d6ded8-b647-4da7-97a9-a2959ee793dd",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "680dec28-83a7-4cb7-b763-7f8e62c40772"
+    ],
+    "createdAt": "2026-02-10T22:16:20+00:00"
+  },
+  {
+    "scoreId": "21527437-ed4b-4280-b419-2ba1c67a7b88",
+    "userId": "17d6ded8-b647-4da7-97a9-a2959ee793dd",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "d9a8de64-b798-4d6c-9b13-5f3350209cb4"
+    ],
+    "createdAt": "2025-12-21T01:53:06+00:00"
+  },
+  {
+    "scoreId": "ad1aa75f-b606-46a3-aea6-f411ebf65291",
+    "userId": "50a0a882-42c9-454c-91d0-13ce2076aae9",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "25941fc8-0360-4934-a015-061764fb5df2"
+    ],
+    "createdAt": "2024-11-08T03:53:23+00:00"
+  },
+  {
+    "scoreId": "d894013f-8c52-44ba-99f1-afaad0700f2e",
+    "userId": "50a0a882-42c9-454c-91d0-13ce2076aae9",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "d236597f-722f-423f-b4e7-f14f3f6e1f8d"
+    ],
+    "createdAt": "2026-02-19T23:14:55+00:00"
+  },
+  {
+    "scoreId": "24889b92-deec-42fd-a394-dcf63f59da20",
+    "userId": "b2bfa531-807e-404a-9b6a-dd5f3c90d645",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "888634b4-aeb1-48a3-b528-c6b26f46be02"
+    ],
+    "createdAt": "2026-03-06T17:36:44+00:00"
+  },
+  {
+    "scoreId": "13e3f835-6d85-410c-838e-1014e81587cc",
+    "userId": "b2bfa531-807e-404a-9b6a-dd5f3c90d645",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "19824bf2-13c8-4dfb-a54c-c859661acda7"
+    ],
+    "createdAt": "2025-12-09T16:34:00+00:00"
+  },
+  {
+    "scoreId": "484a4082-0bf3-4ada-a729-0f9b1dd4ddcd",
+    "userId": "b2bfa531-807e-404a-9b6a-dd5f3c90d645",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "895a2a09-f50f-4d4b-9d28-e63375e31df3"
+    ],
+    "createdAt": "2025-10-21T17:07:45+00:00"
+  },
+  {
+    "scoreId": "405e6e8f-92fc-43af-8434-8e42e1564c55",
+    "userId": "b2bfa531-807e-404a-9b6a-dd5f3c90d645",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "13880df9-b5c2-47a5-a89c-63d97912e2f0"
+    ],
+    "createdAt": "2026-01-03T07:35:24+00:00"
+  },
+  {
+    "scoreId": "afc2169e-1c0c-4008-a93e-3a470f49d49f",
+    "userId": "b2bfa531-807e-404a-9b6a-dd5f3c90d645",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "c6f6d2a5-7b8d-4f37-b8a3-005ca4368d88"
+    ],
+    "createdAt": "2026-01-12T18:28:05+00:00"
+  },
+  {
+    "scoreId": "dee02fe8-4f95-479d-a578-89ef7633334a",
+    "userId": "9c7d22b5-e8c7-441c-a8c2-c96404c69b85",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "554df80d-5007-464a-8971-8f78362288fc"
+    ],
+    "createdAt": "2025-09-22T19:48:06+00:00"
+  },
+  {
+    "scoreId": "f176fbdb-9ee5-4082-a5b8-141c4ec9b456",
+    "userId": "7b66843d-4942-40d9-84e9-4a570bfd1083",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "2cbe6ecd-1e03-4402-a314-623d451f5ce7"
+    ],
+    "createdAt": "2026-03-29T20:28:01+00:00"
+  },
+  {
+    "scoreId": "40fd5612-c3ba-4d1b-8030-b98dc4fbf915",
+    "userId": "7b66843d-4942-40d9-84e9-4a570bfd1083",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "e67293a7-f632-4579-9bc8-85a49916256f"
+    ],
+    "createdAt": "2026-01-28T04:37:22+00:00"
+  },
+  {
+    "scoreId": "f4269990-45d7-45b0-8235-8f7b55991df5",
+    "userId": "7b66843d-4942-40d9-84e9-4a570bfd1083",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "fb958d1c-fcb1-485f-9c37-d6fc74b74e2b"
+    ],
+    "createdAt": "2026-04-09T10:53:12+00:00"
+  },
+  {
+    "scoreId": "f887903f-132a-426d-8682-9e8a05312ca5",
+    "userId": "7b66843d-4942-40d9-84e9-4a570bfd1083",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "a75aa606-89d8-4e44-8582-98d0de246980"
+    ],
+    "createdAt": "2026-05-02T15:55:33+00:00"
+  },
+  {
+    "scoreId": "473d7059-0a4e-48d2-8996-d20184fd1c4d",
+    "userId": "7b66843d-4942-40d9-84e9-4a570bfd1083",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "8acfeff4-a62b-4066-b0ca-99439171f690"
+    ],
+    "createdAt": "2026-01-19T04:40:11+00:00"
+  },
+  {
+    "scoreId": "9bd496f5-6653-4546-ade1-231b19717607",
+    "userId": "7b66843d-4942-40d9-84e9-4a570bfd1083",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "c9d62ef6-b64d-476a-b84c-5740de66e67d"
+    ],
+    "createdAt": "2026-04-23T03:59:32+00:00"
+  },
+  {
+    "scoreId": "f0c383d7-fba7-4840-a468-da4f6dc72638",
+    "userId": "7b66843d-4942-40d9-84e9-4a570bfd1083",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5ef37a26-4254-4e37-ad6f-7fbb4eb11dce"
+    ],
+    "createdAt": "2026-01-23T02:42:00+00:00"
+  },
+  {
+    "scoreId": "9c29155b-98f8-4aac-b92c-a306f4800554",
+    "userId": "7b66843d-4942-40d9-84e9-4a570bfd1083",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "e0b84e65-1e13-47ef-9e6f-995140da903a"
+    ],
+    "createdAt": "2026-03-23T04:03:35+00:00"
+  },
+  {
+    "scoreId": "0a2f7b5d-85ca-4047-8cae-ff03d915b2f2",
+    "userId": "7b66843d-4942-40d9-84e9-4a570bfd1083",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "a612093d-f06b-4170-9525-553207dce31b"
+    ],
+    "createdAt": "2026-05-04T03:12:59+00:00"
+  },
+  {
+    "scoreId": "c6dbf2ab-57df-4be8-9ee6-e1e2c82e9a9a",
+    "userId": "230d98ed-b1cc-4ae4-9261-f58ef18def07",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "d6b33c74-e9b4-445d-b2a2-7472161acbe9"
+    ],
+    "createdAt": "2026-02-02T20:14:03+00:00"
+  },
+  {
+    "scoreId": "26032f3b-cb90-4df7-84eb-24f0cfe72282",
+    "userId": "230d98ed-b1cc-4ae4-9261-f58ef18def07",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "0cc378fc-c639-4b0e-961b-e3733e8d1f7c"
+    ],
+    "createdAt": "2025-12-30T17:36:51+00:00"
+  },
+  {
+    "scoreId": "1c509ae5-c6e2-4571-a5c4-0ffc3a3eedc8",
+    "userId": "230d98ed-b1cc-4ae4-9261-f58ef18def07",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "3d47d9da-7489-48f5-bd81-68d3403625ee"
+    ],
+    "createdAt": "2024-08-12T02:28:13+00:00"
+  },
+  {
+    "scoreId": "eb144cae-dccf-40de-a9bd-d9879d22a0ef",
+    "userId": "230d98ed-b1cc-4ae4-9261-f58ef18def07",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "61c117e5-5d8a-4998-9a61-156ef4ee1909"
+    ],
+    "createdAt": "2025-02-14T08:52:37+00:00"
+  },
+  {
+    "scoreId": "0fc10cb0-0952-43d5-9ba7-ee93d024ed11",
+    "userId": "230d98ed-b1cc-4ae4-9261-f58ef18def07",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "fc80f93d-a815-4641-86a5-43cb5b138994"
+    ],
+    "createdAt": "2025-07-12T21:01:57+00:00"
+  },
+  {
+    "scoreId": "920e795d-5634-4f82-bc56-261e2bbb60b3",
+    "userId": "230d98ed-b1cc-4ae4-9261-f58ef18def07",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "7f709e95-a17e-4243-8a7b-a566440dd738"
+    ],
+    "createdAt": "2025-09-08T03:49:23+00:00"
+  },
+  {
+    "scoreId": "335db07c-d465-4fda-a434-531b4f6b4c1e",
+    "userId": "230d98ed-b1cc-4ae4-9261-f58ef18def07",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "1c69f04b-7f20-42a3-90b2-8f4cdf4972c3"
+    ],
+    "createdAt": "2025-11-26T02:55:53+00:00"
+  },
+  {
+    "scoreId": "2cb6886f-363e-43b1-a823-75b489eddeca",
+    "userId": "bbaf82e7-f11f-4686-9f73-751067a96767",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "0d27ed7e-c221-4b52-9dc9-cf7bf48e2784"
+    ],
+    "createdAt": "2026-01-25T05:52:33+00:00"
+  },
+  {
+    "scoreId": "97359a34-acd3-4c69-a836-870638160f5d",
+    "userId": "bbaf82e7-f11f-4686-9f73-751067a96767",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "a2bfb4e8-23a7-477a-a430-6385c845000d"
+    ],
+    "createdAt": "2025-04-05T02:58:24+00:00"
+  },
+  {
+    "scoreId": "4d34363e-df5e-4549-a52d-41816487c916",
+    "userId": "bbaf82e7-f11f-4686-9f73-751067a96767",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "27b72707-2c21-494d-af6b-8181d11da67d"
+    ],
+    "createdAt": "2026-03-01T23:19:36+00:00"
+  },
+  {
+    "scoreId": "8679ac2f-b39b-42a4-b10f-546cfebdd17a",
+    "userId": "bbaf82e7-f11f-4686-9f73-751067a96767",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "41efa5d4-fe8a-45f2-acc2-18f426c8079d"
+    ],
+    "createdAt": "2025-03-01T15:01:23+00:00"
+  },
+  {
+    "scoreId": "539ddf62-8cdd-4e4e-ba7a-02df53653f11",
+    "userId": "bbaf82e7-f11f-4686-9f73-751067a96767",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "156839c5-a8db-4c99-bf23-f8d2715e6f0c"
+    ],
+    "createdAt": "2025-02-09T12:13:52+00:00"
+  },
+  {
+    "scoreId": "2bd6b119-2e15-4047-8750-488d27f61199",
+    "userId": "bbaf82e7-f11f-4686-9f73-751067a96767",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "a1351d1b-847e-4572-96ce-c452a0dbbd8c"
+    ],
+    "createdAt": "2025-10-02T13:05:23+00:00"
+  },
+  {
+    "scoreId": "866ec410-30e2-42b6-95f6-bb7ba8723a65",
+    "userId": "bbaf82e7-f11f-4686-9f73-751067a96767",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "7b566efb-bc8c-4d94-a758-0572ce229f50"
+    ],
+    "createdAt": "2025-08-16T12:11:31+00:00"
+  },
+  {
+    "scoreId": "2aa2d49e-e506-47ab-81e9-eecede5935a0",
+    "userId": "82187925-c293-4bb7-b37b-9cf9adb57659",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "e4506144-46f3-40f8-8dda-0d9687dc887a"
+    ],
+    "createdAt": "2025-05-05T21:11:53+00:00"
+  },
+  {
+    "scoreId": "5f7c96dd-5bcb-4094-8ca7-1727833bb81b",
+    "userId": "82187925-c293-4bb7-b37b-9cf9adb57659",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "5230efc3-9c27-4d27-a21d-96715c2eefd4"
+    ],
+    "createdAt": "2026-04-20T07:58:18+00:00"
+  },
+  {
+    "scoreId": "b0715f24-2459-474f-81cc-16a33a9508d9",
+    "userId": "82187925-c293-4bb7-b37b-9cf9adb57659",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "2cfd6865-13ac-43ee-af23-4d06c41781c8"
+    ],
+    "createdAt": "2025-04-08T03:21:59+00:00"
+  },
+  {
+    "scoreId": "4588fcbf-c590-49b2-a766-a40b2de708f9",
+    "userId": "82187925-c293-4bb7-b37b-9cf9adb57659",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "b86b74ed-a81a-4d7b-8887-08d7a3452773"
+    ],
+    "createdAt": "2026-01-26T02:09:52+00:00"
+  },
+  {
+    "scoreId": "fa48bfe5-7091-4d76-b8e4-1386c24b1c29",
+    "userId": "82187925-c293-4bb7-b37b-9cf9adb57659",
+    "type": 2,
+    "score": 5,
+    "active": false,
+    "entityUniqueIds": [
+      "8f918b40-c3a6-49b6-8143-b86969ed65e9"
+    ],
+    "createdAt": "2025-08-19T07:25:19+00:00"
+  },
+  {
+    "scoreId": "17d93f47-1850-487d-93b8-2859f1a39e99",
+    "userId": "82187925-c293-4bb7-b37b-9cf9adb57659",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "c5abbcba-5df3-4a28-8c39-ac4ddbf4179c"
+    ],
+    "createdAt": "2025-09-19T07:09:26+00:00"
+  },
+  {
+    "scoreId": "3b1714e4-e7f8-4cdd-8a01-074e835fe6be",
+    "userId": "4a96e1d9-1762-4e2f-9263-b1b87eefd393",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "f072e425-5236-4bf0-8631-3284a8b7e53c"
+    ],
+    "createdAt": "2026-04-20T13:17:36+00:00"
+  },
+  {
+    "scoreId": "ead02973-1f6b-4306-97d9-78b89a0967bb",
+    "userId": "96b7a304-2071-42ae-9354-a9fb925d5ba0",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "cf5ef901-9ea1-42e9-a9b0-72c30098ac45"
+    ],
+    "createdAt": "2026-05-05T20:45:21+00:00"
+  },
+  {
+    "scoreId": "1e05c796-8ca4-48a9-834d-53b72c6b95c8",
+    "userId": "96b7a304-2071-42ae-9354-a9fb925d5ba0",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "e3c4f320-9d7a-435b-a1d4-4d41511f8151"
+    ],
+    "createdAt": "2026-05-05T22:55:54+00:00"
+  },
+  {
+    "scoreId": "e34b6ce8-0b5c-4e14-a8fe-3957c47b0638",
+    "userId": "96b7a304-2071-42ae-9354-a9fb925d5ba0",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "39a9af6a-aa92-4753-9730-c18d2cc30600"
+    ],
+    "createdAt": "2026-05-07T13:43:57+00:00"
+  },
+  {
+    "scoreId": "2cbe2def-33b6-4a2c-adc0-cc436cd83647",
+    "userId": "96b7a304-2071-42ae-9354-a9fb925d5ba0",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "8a0be1a5-21c5-4c29-91bd-bf755d3e905e"
+    ],
+    "createdAt": "2026-05-08T12:24:55+00:00"
+  },
+  {
+    "scoreId": "b76852de-2ec5-4c9c-99e6-a13179f1254d",
+    "userId": "96b7a304-2071-42ae-9354-a9fb925d5ba0",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "d63d2120-6561-4789-a354-5e6614eca81a"
+    ],
+    "createdAt": "2026-05-04T12:14:00+00:00"
+  },
+  {
+    "scoreId": "481a3a9e-e954-495c-a6d7-6ae9523acadc",
+    "userId": "d84f824b-0dcf-4620-836b-5d4e8abbf62f",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "e88b9160-274f-4cc7-9583-6513be4a08ec"
+    ],
+    "createdAt": "2026-05-08T16:27:47+00:00"
+  },
+  {
+    "scoreId": "c3cd0286-ef9b-4e27-a7f7-3b769ba8fd4a",
+    "userId": "d84f824b-0dcf-4620-836b-5d4e8abbf62f",
+    "type": 4,
+    "score": 20,
+    "active": false,
+    "entityUniqueIds": [
+      "868d303e-45b7-4761-b330-ae122e168895"
+    ],
+    "createdAt": "2026-04-26T17:50:35+00:00"
+  },
+  {
+    "scoreId": "8fd23418-adf2-48cf-89e1-498b67f60b77",
+    "userId": "d84f824b-0dcf-4620-836b-5d4e8abbf62f",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "5d94c0de-ad09-4d58-8251-e524dd04ed7f"
+    ],
+    "createdAt": "2026-05-05T02:24:46+00:00"
+  },
+  {
+    "scoreId": "d1c4b0a6-31a4-4d8f-a983-3a1fc60390c5",
+    "userId": "1a3ddacd-94a3-415c-a253-71599cdb2980",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "7a13b2dc-2f10-4766-8d93-0db9e4f28c99"
+    ],
+    "createdAt": "2025-07-14T11:07:49+00:00"
+  },
+  {
+    "scoreId": "aaa44e8f-83d1-485f-a63e-68d43ec6bc90",
+    "userId": "1a3ddacd-94a3-415c-a253-71599cdb2980",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "b76c9a08-ea16-46b8-a009-beaa28456b0a"
+    ],
+    "createdAt": "2026-02-02T13:50:45+00:00"
+  },
+  {
+    "scoreId": "c65501ae-6b21-45c9-b5cf-f22a44168080",
+    "userId": "1a3ddacd-94a3-415c-a253-71599cdb2980",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "1c5d82a5-1ee0-4955-85fb-8c758f867cff"
+    ],
+    "createdAt": "2025-01-02T20:57:15+00:00"
+  },
+  {
+    "scoreId": "e815465c-01cb-43b5-af12-6b409e9ba7de",
+    "userId": "1a3ddacd-94a3-415c-a253-71599cdb2980",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "1c1f11ff-a1e9-46ea-9f51-9316353b420b"
+    ],
+    "createdAt": "2025-01-21T16:41:03+00:00"
+  },
+  {
+    "scoreId": "bee9a144-8a45-4416-be44-71df649ebe8c",
+    "userId": "1a3ddacd-94a3-415c-a253-71599cdb2980",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "cd540927-3195-494d-ae02-5c5af59f1668"
+    ],
+    "createdAt": "2024-09-29T12:26:10+00:00"
+  },
+  {
+    "scoreId": "ef94d676-72e7-4471-871f-86733a236593",
+    "userId": "1a3ddacd-94a3-415c-a253-71599cdb2980",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "5b75a614-c57b-4251-8205-da83f9b7387b"
+    ],
+    "createdAt": "2024-08-22T03:14:55+00:00"
+  },
+  {
+    "scoreId": "25d14f29-2298-47b8-bff6-3d62301ff298",
+    "userId": "1a3ddacd-94a3-415c-a253-71599cdb2980",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "35ba250d-7a2f-431f-8762-8ffab0828c99"
+    ],
+    "createdAt": "2024-11-15T20:33:03+00:00"
+  },
+  {
+    "scoreId": "de0e9ae4-dc74-4c45-ad5b-e44a260f1142",
+    "userId": "d5da019c-b1fe-40bf-98da-bccd5a47a8d8",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5d5b15d6-589d-4969-b172-a369c33222b4"
+    ],
+    "createdAt": "2025-11-22T05:14:43+00:00"
+  },
+  {
+    "scoreId": "02164975-8f3f-4601-a5ff-50a5d76152dd",
+    "userId": "d5da019c-b1fe-40bf-98da-bccd5a47a8d8",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "575e08f5-8b49-4921-a0a7-62620a7897d2"
+    ],
+    "createdAt": "2025-01-14T13:15:29+00:00"
+  },
+  {
+    "scoreId": "8b8b600f-0ad1-4c1d-8631-3afdce232264",
+    "userId": "d5da019c-b1fe-40bf-98da-bccd5a47a8d8",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "c4a52c8f-4b52-42ef-8f1a-f758432ae696"
+    ],
+    "createdAt": "2024-12-20T10:02:37+00:00"
+  },
+  {
+    "scoreId": "1d2ac786-1120-48a5-910a-3ebbd99d53a7",
+    "userId": "d5da019c-b1fe-40bf-98da-bccd5a47a8d8",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "5a2092d0-3aa8-4eb8-8c43-f71325e01254"
+    ],
+    "createdAt": "2025-05-16T14:18:55+00:00"
+  },
+  {
+    "scoreId": "c42351f2-23e4-4f14-8825-c076cf33b550",
+    "userId": "d5da019c-b1fe-40bf-98da-bccd5a47a8d8",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "eff6cb61-4cc9-45c6-aa07-e51739d6e01b"
+    ],
+    "createdAt": "2026-01-24T02:37:46+00:00"
+  },
+  {
+    "scoreId": "31c7206a-314e-47cb-ba47-4a0340bcbfe9",
+    "userId": "d5da019c-b1fe-40bf-98da-bccd5a47a8d8",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "ef6666df-4f89-4976-bc8b-52c3bdcf664b"
+    ],
+    "createdAt": "2026-01-06T18:02:11+00:00"
+  },
+  {
+    "scoreId": "abc067cb-3703-47c5-8bf1-7b7532477c2c",
+    "userId": "d5da019c-b1fe-40bf-98da-bccd5a47a8d8",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "cd186365-d874-4ead-b1cd-797cf0edc8bf"
+    ],
+    "createdAt": "2026-02-26T19:15:35+00:00"
+  },
+  {
+    "scoreId": "57a358a0-915e-40ab-9cc8-b116954a0b97",
+    "userId": "197c0477-73fc-4f23-a0e8-bc954653511f",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "21498452-98ee-46bb-8c1d-fba3c654e1a0"
+    ],
+    "createdAt": "2026-04-17T05:24:00+00:00"
+  },
+  {
+    "scoreId": "bf80061e-0050-4a01-8645-6f45e9fafa24",
+    "userId": "197c0477-73fc-4f23-a0e8-bc954653511f",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "2a207a62-9801-412f-8df8-d3c66bb9f186"
+    ],
+    "createdAt": "2025-08-29T23:56:17+00:00"
+  },
+  {
+    "scoreId": "3f2e904d-64c0-4210-8e5b-4ae245df888d",
+    "userId": "197c0477-73fc-4f23-a0e8-bc954653511f",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "c528422f-e2ec-4ee3-a3bb-90fa0a62162d"
+    ],
+    "createdAt": "2025-11-29T10:45:42+00:00"
+  },
+  {
+    "scoreId": "dc6f74ca-290e-454c-87bc-d63d0ee25a15",
+    "userId": "d51ff7b4-a621-4d30-b9b7-cc995078b109",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "89bd15bb-7a24-4ac6-998d-a49842b450a3"
+    ],
+    "createdAt": "2025-12-27T12:21:10+00:00"
+  },
+  {
+    "scoreId": "2687bdb9-9cdb-4626-9d5c-fe37ea3df401",
+    "userId": "d51ff7b4-a621-4d30-b9b7-cc995078b109",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "5539e0e8-6ee1-452f-9625-d4d64def8de8"
+    ],
+    "createdAt": "2025-08-07T10:51:15+00:00"
+  },
+  {
+    "scoreId": "1de26aea-9108-4dfb-8fc2-67a7da79fcea",
+    "userId": "d51ff7b4-a621-4d30-b9b7-cc995078b109",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "656bcb52-afa9-4420-b410-ab705e8ea843"
+    ],
+    "createdAt": "2025-01-29T23:46:29+00:00"
+  },
+  {
+    "scoreId": "93d548e2-9fbd-43f4-a692-351dd5d847c5",
+    "userId": "5d5bd9a1-de0c-4cf5-b65f-8f94889244b3",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "3e97a312-d6b7-4189-b651-c3429b57482e"
+    ],
+    "createdAt": "2026-04-14T19:40:22+00:00"
+  },
+  {
+    "scoreId": "3219ece8-b598-4381-aba2-6bd8577632d4",
+    "userId": "5d5bd9a1-de0c-4cf5-b65f-8f94889244b3",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "3457fb4c-8bec-47a2-b06d-99a19008e835"
+    ],
+    "createdAt": "2026-04-30T16:15:32+00:00"
+  },
+  {
+    "scoreId": "cb11d7d4-da90-41e3-a618-8eceb7ac82b7",
+    "userId": "5d5bd9a1-de0c-4cf5-b65f-8f94889244b3",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "08fc70ee-829d-45c5-98fc-b71946f3fc74"
+    ],
+    "createdAt": "2025-06-29T14:28:07+00:00"
+  },
+  {
+    "scoreId": "4c8f3c5e-637d-4620-a94d-1961e4f5f1e3",
+    "userId": "5d5bd9a1-de0c-4cf5-b65f-8f94889244b3",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "a8ba0b95-5a22-472e-ab8b-96c4189401af"
+    ],
+    "createdAt": "2026-03-07T06:11:26+00:00"
+  },
+  {
+    "scoreId": "1fb330ae-7520-4b8d-af9f-998ebbdf1a85",
+    "userId": "a1a43049-1d0b-438c-b9e7-988a6a7423cd",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "c44a71e6-72db-4a9a-828b-ef56328d334b"
+    ],
+    "createdAt": "2026-01-29T09:45:31+00:00"
+  },
+  {
+    "scoreId": "d9de77cc-3f22-4017-b334-e04c89263b13",
+    "userId": "a1a43049-1d0b-438c-b9e7-988a6a7423cd",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "a370c41d-8d4b-4ef8-9368-c755ae0d7021"
+    ],
+    "createdAt": "2026-03-10T21:31:59+00:00"
+  },
+  {
+    "scoreId": "2783e458-9adc-491c-9578-07a0e3bc8b90",
+    "userId": "a1a43049-1d0b-438c-b9e7-988a6a7423cd",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "e86ab495-5ca8-41d6-acf1-cdd5cf141705"
+    ],
+    "createdAt": "2026-01-29T12:39:31+00:00"
+  },
+  {
+    "scoreId": "5e055065-4807-43d6-a215-356e7b6f0afb",
+    "userId": "a1a43049-1d0b-438c-b9e7-988a6a7423cd",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "5977c2ac-e439-4558-943f-5bff4ce49182"
+    ],
+    "createdAt": "2025-08-17T04:30:32+00:00"
+  },
+  {
+    "scoreId": "cc47ef58-5db6-4694-8d55-3fa0508d0896",
+    "userId": "a1a43049-1d0b-438c-b9e7-988a6a7423cd",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "bb5794c8-38a5-4227-a100-04d0aec5a18d"
+    ],
+    "createdAt": "2025-09-01T02:19:44+00:00"
+  },
+  {
+    "scoreId": "25bd89a0-ff01-4764-b1f5-b84f5a1b6d1d",
+    "userId": "a1a43049-1d0b-438c-b9e7-988a6a7423cd",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "63eee194-cbbf-4000-a24d-b377aa0d024e"
+    ],
+    "createdAt": "2026-02-15T22:16:23+00:00"
+  },
+  {
+    "scoreId": "5844c9d1-e1ff-4af6-8e5b-a17d8202889f",
+    "userId": "a1a43049-1d0b-438c-b9e7-988a6a7423cd",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "c5c015a4-5255-47f6-9c59-08b86c6e54c3"
+    ],
+    "createdAt": "2025-11-09T19:07:41+00:00"
+  },
+  {
+    "scoreId": "9f1d43de-80d5-4de9-99d8-094ad8d8681b",
+    "userId": "a1a43049-1d0b-438c-b9e7-988a6a7423cd",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "4edc6d1a-7bed-43b3-a47e-db5e0053d79c"
+    ],
+    "createdAt": "2026-02-28T08:20:57+00:00"
+  },
+  {
+    "scoreId": "0c259751-e679-44a5-a88f-c8304eb797cd",
+    "userId": "2ccad43c-70c5-41f7-8b58-a422de473b56",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "2e90ecd6-a095-4e7a-b600-1a76f0fdb9b5"
+    ],
+    "createdAt": "2025-08-18T01:23:53+00:00"
+  },
+  {
+    "scoreId": "7b4abb29-8649-4073-a77d-7a71121a0711",
+    "userId": "2ccad43c-70c5-41f7-8b58-a422de473b56",
+    "type": 3,
+    "score": 50,
+    "active": false,
+    "entityUniqueIds": [
+      "32b146fb-bdd1-4990-b3ba-9d1ded0d3690"
+    ],
+    "createdAt": "2025-03-19T05:13:40+00:00"
+  },
+  {
+    "scoreId": "ff94a4b0-3c66-4a59-a319-bd5caf632529",
+    "userId": "2ccad43c-70c5-41f7-8b58-a422de473b56",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "24e000ec-2052-4446-a026-eb684571cd0e"
+    ],
+    "createdAt": "2025-09-14T13:14:03+00:00"
+  },
+  {
+    "scoreId": "86c3142a-5010-44e0-8d41-59ed586f3dea",
+    "userId": "2ccad43c-70c5-41f7-8b58-a422de473b56",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "403b0258-04f3-4e4a-976d-e7b0b77a087d"
+    ],
+    "createdAt": "2025-02-23T17:31:43+00:00"
+  },
+  {
+    "scoreId": "022ba4ef-95ad-4b25-afa6-adc79bec5d78",
+    "userId": "2ccad43c-70c5-41f7-8b58-a422de473b56",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "635b49a2-f8ec-4d00-b746-a8859a420ca8"
+    ],
+    "createdAt": "2025-08-03T01:59:46+00:00"
+  },
+  {
+    "scoreId": "5bd3b5f4-ea16-4f17-a1ec-146d70aec891",
+    "userId": "2ccad43c-70c5-41f7-8b58-a422de473b56",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "e5ad4873-9471-4e7d-9db0-e622844016dd"
+    ],
+    "createdAt": "2025-06-23T07:55:13+00:00"
+  },
+  {
+    "scoreId": "df290d08-0d1b-47de-bf8d-f86d2e4d8575",
+    "userId": "2ccad43c-70c5-41f7-8b58-a422de473b56",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "f849a05a-6fe2-4c68-9377-6edc21c3bdcf"
+    ],
+    "createdAt": "2025-07-08T03:11:26+00:00"
+  },
+  {
+    "scoreId": "fd16303a-2322-4e55-8a21-dec9ac6e6830",
+    "userId": "2224103d-4b3b-4a52-bdf8-02133f2e7e28",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "fcb87125-ef7a-444f-acfe-1167d6e0f693"
+    ],
+    "createdAt": "2025-04-29T11:05:34+00:00"
+  },
+  {
+    "scoreId": "56c9d7d2-63fc-4a94-95fd-317d267b314f",
+    "userId": "2224103d-4b3b-4a52-bdf8-02133f2e7e28",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "d365ab6c-27bb-42e1-a7c1-5bc283639d69"
+    ],
+    "createdAt": "2025-05-10T22:29:47+00:00"
+  },
+  {
+    "scoreId": "ebd4c1ec-3a4a-4a57-8182-0d10fb3af892",
+    "userId": "2224103d-4b3b-4a52-bdf8-02133f2e7e28",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "76d25dc4-15de-49e4-a64e-e91c3efee902"
+    ],
+    "createdAt": "2026-01-30T21:50:04+00:00"
+  },
+  {
+    "scoreId": "7c6e6782-f70c-4f9e-91c7-c24a8d6021f4",
+    "userId": "2224103d-4b3b-4a52-bdf8-02133f2e7e28",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "71d5399f-cd98-4529-869e-3656ba5d5312"
+    ],
+    "createdAt": "2025-04-17T20:14:43+00:00"
+  },
+  {
+    "scoreId": "6b696091-e196-4b94-a1ae-8d040582a1aa",
+    "userId": "3b413c9c-c5a5-4d59-9134-39bd6d341046",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "d58bba52-d0c3-4b5b-b1a9-8760d6395fdb"
+    ],
+    "createdAt": "2025-09-06T08:04:54+00:00"
+  },
+  {
+    "scoreId": "c641eb2d-45eb-4391-8527-4a292323b86f",
+    "userId": "3b413c9c-c5a5-4d59-9134-39bd6d341046",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5077b320-3bc4-455d-92be-09e4adab31de"
+    ],
+    "createdAt": "2026-03-24T02:17:03+00:00"
+  },
+  {
+    "scoreId": "ce6fa685-62dd-4806-8f56-ed0e991861c1",
+    "userId": "66b7c6e8-5309-4e58-b99b-69d65a9eef80",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "2a9d3ce3-7d12-44e7-8880-5c3711ba1229"
+    ],
+    "createdAt": "2026-02-11T14:42:51+00:00"
+  },
+  {
+    "scoreId": "6064d7d1-4306-4380-ac4b-050f84214257",
+    "userId": "66b7c6e8-5309-4e58-b99b-69d65a9eef80",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "bf8b9886-3763-485d-ad33-a434fe0c3f2d"
+    ],
+    "createdAt": "2025-07-26T09:21:28+00:00"
+  },
+  {
+    "scoreId": "0d472f1f-53d2-476b-ae35-ba872672b4d4",
+    "userId": "66b7c6e8-5309-4e58-b99b-69d65a9eef80",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "1da46b46-b204-4e97-88ea-49fae3ef6cb3"
+    ],
+    "createdAt": "2025-08-11T18:19:55+00:00"
+  },
+  {
+    "scoreId": "832b5fb7-1f4b-468e-a7bd-1b8ff7f0414a",
+    "userId": "66b7c6e8-5309-4e58-b99b-69d65a9eef80",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "68837cdc-5daf-45bd-a4d2-32727cedfd80"
+    ],
+    "createdAt": "2026-04-19T16:12:34+00:00"
+  },
+  {
+    "scoreId": "d566c17e-a10f-4aaf-9e50-a2f99ac53690",
+    "userId": "66b7c6e8-5309-4e58-b99b-69d65a9eef80",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "69942064-d14b-44b6-bc94-0a8323ec46ca"
+    ],
+    "createdAt": "2024-10-19T21:22:18+00:00"
+  },
+  {
+    "scoreId": "de69d29a-fe02-46df-8e56-3b05f3949bfc",
+    "userId": "66b7c6e8-5309-4e58-b99b-69d65a9eef80",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "95bfdf0b-981b-45c0-840f-e1ecd3ef0081"
+    ],
+    "createdAt": "2026-03-26T14:48:13+00:00"
+  },
+  {
+    "scoreId": "26dbdaf8-f06d-4846-9135-84602abaf7b1",
+    "userId": "66b7c6e8-5309-4e58-b99b-69d65a9eef80",
+    "type": 2,
+    "score": 5,
+    "active": false,
+    "entityUniqueIds": [
+      "02728b5b-2302-4f3c-8ed1-c86275529083"
+    ],
+    "createdAt": "2026-01-05T16:35:47+00:00"
+  },
+  {
+    "scoreId": "991b75ae-74a7-47c2-b9db-396d1d645c87",
+    "userId": "66b7c6e8-5309-4e58-b99b-69d65a9eef80",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "94f8d437-f950-4cc1-9ade-b8803f599a94"
+    ],
+    "createdAt": "2025-01-01T22:13:01+00:00"
+  },
+  {
+    "scoreId": "27272d05-155a-417d-9c68-18a6d941da1e",
+    "userId": "66b7c6e8-5309-4e58-b99b-69d65a9eef80",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "0a69b4ed-68fe-404c-a474-183742f72ab9"
+    ],
+    "createdAt": "2025-04-21T01:42:26+00:00"
+  },
+  {
+    "scoreId": "e17b7c2b-70a7-4470-a2b1-fe2920a18f28",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "8e516913-5c74-4da6-a9c6-2756caf8f2b4"
+    ],
+    "createdAt": "2025-01-09T05:52:53+00:00"
+  },
+  {
+    "scoreId": "b5e2b0af-8360-4009-b342-21e07da4b77f",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "741e1bad-12b5-4450-9b24-6a4aec2d4df4"
+    ],
+    "createdAt": "2025-07-26T08:15:34+00:00"
+  },
+  {
+    "scoreId": "1892cdcf-dc42-401a-bdd9-15a42b3fcb47",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "61fd7f52-4450-4e43-9365-77cca7f04ec4"
+    ],
+    "createdAt": "2025-11-20T04:19:03+00:00"
+  },
+  {
+    "scoreId": "ba507280-a0cb-4663-a656-0c7d72ee3e21",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "a40783e5-5b65-4ffb-a17f-afb97f753b8c"
+    ],
+    "createdAt": "2025-08-29T07:49:39+00:00"
+  },
+  {
+    "scoreId": "27e891fd-1a67-40c4-a095-cabcb40db251",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "d8b4d754-8cbb-4204-bf84-b9bd7871031c"
+    ],
+    "createdAt": "2025-09-26T10:05:20+00:00"
+  },
+  {
+    "scoreId": "d1017815-d343-4d50-a490-499995c51591",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "8f1cb3b6-1c17-436c-b2b6-99c149f10696"
+    ],
+    "createdAt": "2024-11-15T00:27:16+00:00"
+  },
+  {
+    "scoreId": "c8d8f835-82ef-476f-a2ab-d8c7c6a720c4",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "ffcf6c69-d4b1-4677-89ca-b4689f102e22"
+    ],
+    "createdAt": "2024-08-01T14:22:48+00:00"
+  },
+  {
+    "scoreId": "50348fa6-6401-4524-bec2-3328f3faf7a8",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "9454b4e2-31bb-40e5-8ad8-399f65774791"
+    ],
+    "createdAt": "2024-08-21T22:01:11+00:00"
+  },
+  {
+    "scoreId": "5e3ec310-be24-4d38-9ffb-ef8340f21365",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "7ba03506-389f-4e77-8b90-c176b526a26a"
+    ],
+    "createdAt": "2024-08-26T05:28:21+00:00"
+  },
+  {
+    "scoreId": "a22b8a65-053e-463c-a11b-80f53f15c666",
+    "userId": "637fe541-bf37-44d4-aff6-cdbbfbd6a1e5",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "cce2cb4a-c14b-4584-ab10-530f8eccded3"
+    ],
+    "createdAt": "2025-09-17T14:26:15+00:00"
+  },
+  {
+    "scoreId": "3e083340-09cc-411c-99c4-b1c31640b9ea",
+    "userId": "80dfec68-1fdf-4d68-b7a1-f2824377190c",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "74701dab-53bf-42c6-acab-4c1c9bff3dc0"
+    ],
+    "createdAt": "2025-12-24T10:35:13+00:00"
+  },
+  {
+    "scoreId": "089b77b4-d752-40aa-b3aa-3acc7351d944",
+    "userId": "80dfec68-1fdf-4d68-b7a1-f2824377190c",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "3358d9f9-76db-4f55-9225-163e90db3175"
+    ],
+    "createdAt": "2026-02-04T22:09:35+00:00"
+  },
+  {
+    "scoreId": "548a4186-b8c5-41d6-9120-92947aa2ba0f",
+    "userId": "ffe88895-9796-49d2-a4b7-65a58cdf67fb",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "88b5d123-a766-4d56-8ed7-12baf5e7bbc4"
+    ],
+    "createdAt": "2025-03-02T20:39:04+00:00"
+  },
+  {
+    "scoreId": "8c049f73-94a2-41a2-a5c7-2f32efbe7143",
+    "userId": "ffe88895-9796-49d2-a4b7-65a58cdf67fb",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "fab2e275-f074-4760-9a6e-90458435a6ca"
+    ],
+    "createdAt": "2025-02-17T01:29:03+00:00"
+  },
+  {
+    "scoreId": "e58b9b66-4aad-40be-b398-c61ed6284a93",
+    "userId": "ffe88895-9796-49d2-a4b7-65a58cdf67fb",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "19bab26d-2508-43d8-8fa6-aecd17f561bd"
+    ],
+    "createdAt": "2025-08-15T21:03:29+00:00"
+  },
+  {
+    "scoreId": "bef35dc2-2663-4673-917f-ee0f2a8e3116",
+    "userId": "ffe88895-9796-49d2-a4b7-65a58cdf67fb",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "b9a00456-77b8-442f-a433-df769814b0f0"
+    ],
+    "createdAt": "2026-04-18T00:23:13+00:00"
+  },
+  {
+    "scoreId": "c67d366a-1b56-401e-8086-6ceb6f60f406",
+    "userId": "ffe88895-9796-49d2-a4b7-65a58cdf67fb",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "ade74f67-f833-40ad-a230-85276cd88cdd"
+    ],
+    "createdAt": "2025-04-17T20:49:52+00:00"
+  },
+  {
+    "scoreId": "1f9095b3-9ea9-4341-9679-d6cf935a7525",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "41704642-3c29-47b8-a41f-3326519d5997"
+    ],
+    "createdAt": "2024-10-01T12:23:10+00:00"
+  },
+  {
+    "scoreId": "cef3b626-4beb-4a66-bfda-fffcae1edafa",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "e3b251da-593c-4deb-99fd-af423062bac5"
+    ],
+    "createdAt": "2026-02-15T21:45:53+00:00"
+  },
+  {
+    "scoreId": "b8cf5326-cae0-4e07-aee7-2f38d23edcd1",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "92294f64-af6f-4797-9295-4474f2d37491"
+    ],
+    "createdAt": "2025-04-16T08:24:18+00:00"
+  },
+  {
+    "scoreId": "b58eb02f-8cb5-4aa2-8734-9ac1a6b2e880",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "6ed29e9b-9a76-4e83-a8d5-431ad1af0edf"
+    ],
+    "createdAt": "2026-02-27T01:01:55+00:00"
+  },
+  {
+    "scoreId": "e212a0a5-6c66-4f7b-8f29-4641b0aabc0e",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "c8b52efb-8256-4936-9a3c-8402b8da82ef"
+    ],
+    "createdAt": "2025-07-10T14:51:28+00:00"
+  },
+  {
+    "scoreId": "894f3d04-440a-445a-8cec-d18663adf24f",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "21292789-f8c3-4fbc-bf05-53724250b21c"
+    ],
+    "createdAt": "2025-12-21T05:40:44+00:00"
+  },
+  {
+    "scoreId": "0efd2a2f-06c3-4692-919a-a843f06dcd8f",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "e4eee9d9-1865-4e7e-b0db-ea16fbfd04e3"
+    ],
+    "createdAt": "2025-07-25T09:16:04+00:00"
+  },
+  {
+    "scoreId": "6840226d-821d-4078-b804-74e6b85a216f",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "ef9070f8-becf-4dcb-8ac9-219be72217d0"
+    ],
+    "createdAt": "2025-09-07T04:32:35+00:00"
+  },
+  {
+    "scoreId": "0dee871b-8223-4a5f-8a24-1c5815659718",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "90a809fc-092b-4144-8a1f-33716a3a0ce2"
+    ],
+    "createdAt": "2026-02-01T23:54:03+00:00"
+  },
+  {
+    "scoreId": "1a9979b3-61dc-4bbb-b517-3a837060424e",
+    "userId": "84d5e99e-ede9-4358-bc41-acf77254a6b5",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "acb209f9-d4f9-4dd6-8dbc-6b92ee1fea97"
+    ],
+    "createdAt": "2024-09-23T07:41:26+00:00"
+  },
+  {
+    "scoreId": "8f8be97d-e8e9-48ee-ab56-ee208d7d4c3c",
+    "userId": "3f537e8b-211b-4cc9-8ca2-7fda779feef1",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "6ada2625-f8b4-4e30-85e3-08bf4a510e2b"
+    ],
+    "createdAt": "2025-04-06T16:34:43+00:00"
+  },
+  {
+    "scoreId": "86f405b1-e9f8-4bfd-afd3-929bbff1417f",
+    "userId": "3f537e8b-211b-4cc9-8ca2-7fda779feef1",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "3c6cc48f-e525-40a4-bfc5-005d24ffa845"
+    ],
+    "createdAt": "2026-03-19T17:41:52+00:00"
+  },
+  {
+    "scoreId": "ad763e32-1810-42ab-8677-70b49c1c484e",
+    "userId": "3f537e8b-211b-4cc9-8ca2-7fda779feef1",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "a65496b9-21a0-495d-82e8-0372a1dee721"
+    ],
+    "createdAt": "2024-12-10T11:53:06+00:00"
+  },
+  {
+    "scoreId": "f5a07d27-9149-4e14-9f81-17ad74b9d766",
+    "userId": "3f537e8b-211b-4cc9-8ca2-7fda779feef1",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "6f9e969c-e006-443a-8fd0-79955062e71e"
+    ],
+    "createdAt": "2025-01-05T04:19:20+00:00"
+  },
+  {
+    "scoreId": "1e236bc7-4182-40b1-a7d5-1d796ac8f0fb",
+    "userId": "3f537e8b-211b-4cc9-8ca2-7fda779feef1",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "f6a0bfa8-69d9-4b99-9c6a-e78115721077"
+    ],
+    "createdAt": "2026-01-19T05:36:12+00:00"
+  },
+  {
+    "scoreId": "44c5d732-fd5b-4922-a6ea-36538d256f58",
+    "userId": "3f537e8b-211b-4cc9-8ca2-7fda779feef1",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "2d6a4908-5de0-4184-996a-eb41f5bac388"
+    ],
+    "createdAt": "2026-03-21T03:55:43+00:00"
+  },
+  {
+    "scoreId": "0cd642e2-ea4e-4994-a9e9-531ae308776a",
+    "userId": "3f537e8b-211b-4cc9-8ca2-7fda779feef1",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "1b0a1e7e-080e-4fc2-a358-1cde9dfb4b44"
+    ],
+    "createdAt": "2026-02-27T04:48:24+00:00"
+  },
+  {
+    "scoreId": "3fa38484-66bf-4ffd-beb9-8db40e4d329f",
+    "userId": "3f537e8b-211b-4cc9-8ca2-7fda779feef1",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "fdcb48c8-1c5b-4e2d-9c01-5b182d2b4fe6"
+    ],
+    "createdAt": "2026-03-22T08:57:07+00:00"
+  },
+  {
+    "scoreId": "3c87e532-f505-4235-93e3-b26fe6fef007",
+    "userId": "3f537e8b-211b-4cc9-8ca2-7fda779feef1",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5c865563-5b87-4fc5-96fa-3e01f8c50cb1"
+    ],
+    "createdAt": "2025-01-01T16:57:46+00:00"
+  },
+  {
+    "scoreId": "d49a38af-ad7d-453f-a01a-12cced5c8890",
+    "userId": "3f57fc37-2ec5-4eb7-ae7d-05d18017168d",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "c8f410df-fd32-4b79-b010-3260a432fcc4"
+    ],
+    "createdAt": "2024-10-28T07:31:02+00:00"
+  },
+  {
+    "scoreId": "1a463a4a-b070-4d52-a786-a70539154ad3",
+    "userId": "3f57fc37-2ec5-4eb7-ae7d-05d18017168d",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "3bff6acd-487f-4f97-b716-279757185907"
+    ],
+    "createdAt": "2024-12-01T00:50:45+00:00"
+  },
+  {
+    "scoreId": "9e694393-1535-41af-9581-2dc7436f22eb",
+    "userId": "3f57fc37-2ec5-4eb7-ae7d-05d18017168d",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "f0666b03-003d-4697-9bc7-6d7a1747b73d"
+    ],
+    "createdAt": "2026-01-10T22:23:57+00:00"
+  },
+  {
+    "scoreId": "18074432-5249-4bdf-970c-14615e5e6cfc",
+    "userId": "dacca9cf-602e-4507-b375-c9ba007d9566",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "0b86f045-02c1-4d41-a898-f2db6612d17e"
+    ],
+    "createdAt": "2025-08-25T15:44:40+00:00"
+  },
+  {
+    "scoreId": "3e9da4ee-5e4d-4b1f-8d08-e6485a7fe299",
+    "userId": "dacca9cf-602e-4507-b375-c9ba007d9566",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "dc19aa89-63e6-4cca-b6a7-a6a836243049"
+    ],
+    "createdAt": "2025-06-20T16:33:42+00:00"
+  },
+  {
+    "scoreId": "89ce2456-f933-4ad0-863e-9ab4529d2421",
+    "userId": "dacca9cf-602e-4507-b375-c9ba007d9566",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "df3f0ec9-4ae6-47de-8541-4a26093debf7"
+    ],
+    "createdAt": "2026-04-25T20:19:39+00:00"
+  },
+  {
+    "scoreId": "7fcc82de-9a82-4633-9d19-8fdee6916c65",
+    "userId": "dacca9cf-602e-4507-b375-c9ba007d9566",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "086b4664-e86e-4b09-a592-238ab27da039"
+    ],
+    "createdAt": "2025-09-27T19:21:27+00:00"
+  },
+  {
+    "scoreId": "b00320ff-b4ad-4d11-a5e1-30a45f356293",
+    "userId": "dacca9cf-602e-4507-b375-c9ba007d9566",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "bc907788-2cde-42d7-9f5b-786aeea0193d"
+    ],
+    "createdAt": "2025-08-28T02:32:12+00:00"
+  },
+  {
+    "scoreId": "ab59c470-c1f7-4f7c-9cef-b749a224df35",
+    "userId": "dacca9cf-602e-4507-b375-c9ba007d9566",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "82de5487-8622-4584-93c8-a05d27f18a22"
+    ],
+    "createdAt": "2025-10-14T18:02:07+00:00"
+  },
+  {
+    "scoreId": "f6d579e7-d8df-4063-a2e4-05ad441aa949",
+    "userId": "dacca9cf-602e-4507-b375-c9ba007d9566",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "b1562ec5-cb6e-46a4-a42b-ba8d1fe3ef5e"
+    ],
+    "createdAt": "2025-07-15T17:13:15+00:00"
+  },
+  {
+    "scoreId": "3e9f9a40-8b99-4c7f-a5fd-048c3e3cfcdd",
+    "userId": "55fb7845-2482-4f33-a99c-39bfbe5204de",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "2196c322-8802-4535-8d65-a5e5f6210925"
+    ],
+    "createdAt": "2024-09-25T04:46:07+00:00"
+  },
+  {
+    "scoreId": "2510aa96-ddd8-4498-8a6e-adf0e27da7e8",
+    "userId": "af0e5916-5f76-4b2b-8d72-d890d8b261d2",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "9a03b864-efdc-4511-89d9-bfe6a4524a79"
+    ],
+    "createdAt": "2025-06-23T00:39:50+00:00"
+  },
+  {
+    "scoreId": "e1a167b4-f698-4217-adb6-42e29a2f1225",
+    "userId": "af0e5916-5f76-4b2b-8d72-d890d8b261d2",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "2749fec3-4aa6-4b95-9c96-09e2988dbb30"
+    ],
+    "createdAt": "2026-02-11T11:04:44+00:00"
+  },
+  {
+    "scoreId": "ab36b6bc-4e43-4e4c-96c4-933b0ba7c8ec",
+    "userId": "af0e5916-5f76-4b2b-8d72-d890d8b261d2",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "6bd6615f-c729-40a5-b06f-b8be04117300"
+    ],
+    "createdAt": "2025-09-25T15:58:53+00:00"
+  },
+  {
+    "scoreId": "622c6007-b468-41f4-a997-22af654a9aa3",
+    "userId": "af0e5916-5f76-4b2b-8d72-d890d8b261d2",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "6e95ecd2-1b50-4986-b6e3-07f65c17f8a5"
+    ],
+    "createdAt": "2025-05-02T17:58:56+00:00"
+  },
+  {
+    "scoreId": "afb7944d-1d60-4894-8e00-0bc46ad72014",
+    "userId": "af0e5916-5f76-4b2b-8d72-d890d8b261d2",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "becb04d7-2aba-48e9-ae78-50d5d1b4382d"
+    ],
+    "createdAt": "2024-12-17T19:02:22+00:00"
+  },
+  {
+    "scoreId": "91049cde-39eb-427d-adf7-85e9fac87994",
+    "userId": "af0e5916-5f76-4b2b-8d72-d890d8b261d2",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "0750e087-b927-46c2-b64f-1fc36d2d812f"
+    ],
+    "createdAt": "2026-03-13T08:22:47+00:00"
+  },
+  {
+    "scoreId": "b8a9bfe8-e054-4768-9396-ea4867ba6be4",
+    "userId": "af0e5916-5f76-4b2b-8d72-d890d8b261d2",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "b8e47e79-4f66-4f95-a3bd-54fc9413c7fa"
+    ],
+    "createdAt": "2025-12-23T03:45:01+00:00"
+  },
+  {
+    "scoreId": "de9c1b4d-b4b2-41e5-9e78-36121cb9e9d2",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "031f69b3-6c3a-47e5-b4b1-0bbb3309ea8a"
+    ],
+    "createdAt": "2026-03-21T07:01:04+00:00"
+  },
+  {
+    "scoreId": "f78e9d01-ce7a-4c14-ac53-3c20a597239c",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "0921bd4f-be9b-4921-805e-bd7ccbfb6617"
+    ],
+    "createdAt": "2026-03-31T01:49:23+00:00"
+  },
+  {
+    "scoreId": "579402ab-0542-4e75-9f88-2eba28030791",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "770191ef-056a-4619-8418-fbeffb97f97a"
+    ],
+    "createdAt": "2026-03-24T10:22:32+00:00"
+  },
+  {
+    "scoreId": "fa7f5f2a-ec70-4d32-9b3b-95706649ff5e",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "0e510fe7-ff9e-49d4-a381-99d3717253bc"
+    ],
+    "createdAt": "2026-03-19T21:36:45+00:00"
+  },
+  {
+    "scoreId": "61adc2b4-fb6f-44ea-ad0e-e737bc6711a2",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "2a992019-ba25-46e5-9dfd-081c243286f1"
+    ],
+    "createdAt": "2025-10-23T22:47:35+00:00"
+  },
+  {
+    "scoreId": "c5c1c63a-6bdb-474f-994d-853af7da5865",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "49500e86-138f-419e-895b-9e0819f1b91b"
+    ],
+    "createdAt": "2025-05-08T11:27:00+00:00"
+  },
+  {
+    "scoreId": "711294d5-4a90-4173-9190-384555db013c",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "19136a6f-3e98-4452-bfb1-1be028c77db6"
+    ],
+    "createdAt": "2025-10-12T20:50:25+00:00"
+  },
+  {
+    "scoreId": "b1652766-eda1-4a05-8f1b-21282bed8609",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "a937dc1e-2ec8-4eeb-9b37-9ceb8963707c"
+    ],
+    "createdAt": "2025-05-30T11:37:13+00:00"
+  },
+  {
+    "scoreId": "2082999f-55c2-43d6-98cc-3fa71ab06439",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "65f26f77-80df-4812-990b-cda714419390"
+    ],
+    "createdAt": "2025-10-02T15:16:11+00:00"
+  },
+  {
+    "scoreId": "6ea230a0-3851-43ee-b900-f7fed322be93",
+    "userId": "d73fea74-b2ae-4827-833e-e2a54fce3743",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "f00282b9-4a05-4540-b5d5-0718b98fb0de"
+    ],
+    "createdAt": "2025-06-08T22:47:52+00:00"
+  },
+  {
+    "scoreId": "78942928-2eff-4e26-b5a2-4d902b0b9656",
+    "userId": "76173030-ed32-464b-a0ea-0f3d93c2673e",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "3152bf91-b4bc-4d01-89ee-16bd923556fb"
+    ],
+    "createdAt": "2025-02-01T13:22:30+00:00"
+  },
+  {
+    "scoreId": "b9d6681a-058b-4651-a71b-b055f6f08f98",
+    "userId": "76173030-ed32-464b-a0ea-0f3d93c2673e",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "12a63967-d3fd-4e44-a44c-43b4c2aec7b2"
+    ],
+    "createdAt": "2026-01-22T02:33:12+00:00"
+  },
+  {
+    "scoreId": "79aa2d7c-843f-424b-8171-d5cf60749ddc",
+    "userId": "76173030-ed32-464b-a0ea-0f3d93c2673e",
+    "type": 1,
+    "score": 10,
+    "active": false,
+    "entityUniqueIds": [
+      "38d0b3d5-a352-49e6-9f6c-b99529c1c89c"
+    ],
+    "createdAt": "2025-07-09T22:28:22+00:00"
+  },
+  {
+    "scoreId": "e1775f40-95c1-42fe-a88d-2339ac760231",
+    "userId": "76173030-ed32-464b-a0ea-0f3d93c2673e",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "f6aa0e72-3277-478b-b67a-de289f6d6a62"
+    ],
+    "createdAt": "2025-07-16T05:57:04+00:00"
+  },
+  {
+    "scoreId": "1197f679-544a-4dc4-bbbf-d9fc53e7f646",
+    "userId": "c7626890-2148-4bd7-8eee-fd68de86aa38",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "a94cc756-5300-4009-9f8e-1653b47593ca"
+    ],
+    "createdAt": "2025-06-09T03:38:14+00:00"
+  },
+  {
+    "scoreId": "d588c929-0992-4ce2-9a3f-c98ba0801a76",
+    "userId": "c7626890-2148-4bd7-8eee-fd68de86aa38",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "e84cc6e7-ef45-4423-b6a1-5671a4e31491"
+    ],
+    "createdAt": "2026-02-24T07:51:46+00:00"
+  },
+  {
+    "scoreId": "23aed2a2-a546-4407-afb2-5d7aa98aa2ab",
+    "userId": "c7626890-2148-4bd7-8eee-fd68de86aa38",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "085057df-73d1-4e4d-ba45-9bae5debcdfb"
+    ],
+    "createdAt": "2025-06-07T12:41:14+00:00"
+  },
+  {
+    "scoreId": "2b0029a5-3da3-4072-b82b-7614dd7562c8",
+    "userId": "c7626890-2148-4bd7-8eee-fd68de86aa38",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "3d89cc60-3962-4cb1-964a-2f5255d566d4"
+    ],
+    "createdAt": "2025-08-25T13:02:00+00:00"
+  },
+  {
+    "scoreId": "5b833799-86ba-4d44-9063-b8376ba6513d",
+    "userId": "c7626890-2148-4bd7-8eee-fd68de86aa38",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "439e5559-8193-4dfa-a325-5f53667987e6"
+    ],
+    "createdAt": "2026-05-05T06:01:04+00:00"
+  },
+  {
+    "scoreId": "c1511348-515a-40c4-a9d3-3ff0e8940c7b",
+    "userId": "c7626890-2148-4bd7-8eee-fd68de86aa38",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "68824ed5-cb3e-479e-b064-3bc335be2b84"
+    ],
+    "createdAt": "2025-04-05T08:40:13+00:00"
+  },
+  {
+    "scoreId": "4e696ee8-7347-493b-8df5-46d0f7d7a20c",
+    "userId": "c7626890-2148-4bd7-8eee-fd68de86aa38",
+    "type": 2,
+    "score": 5,
+    "active": false,
+    "entityUniqueIds": [
+      "0ba87120-5b2d-4e0b-9791-6b29d09aaeb5"
+    ],
+    "createdAt": "2026-03-10T01:37:31+00:00"
+  },
+  {
+    "scoreId": "c5a522bf-b44d-4d0c-9e28-fa3b9bac7d34",
+    "userId": "c7626890-2148-4bd7-8eee-fd68de86aa38",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "b89b3e14-f8ff-4049-b144-f313f5e5d274"
+    ],
+    "createdAt": "2025-09-21T01:34:01+00:00"
+  },
+  {
+    "scoreId": "421b5467-5a8a-4fa5-b271-c7d2dfc853d2",
+    "userId": "5e4bf44c-d0b6-469a-9f72-0e7597fcbc26",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7f51cfa4-e146-4d16-a44b-8058e3ae4f95"
+    ],
+    "createdAt": "2025-12-28T05:14:35+00:00"
+  },
+  {
+    "scoreId": "81e5ec29-4526-4a5e-b951-7d251d9b7a72",
+    "userId": "5e4bf44c-d0b6-469a-9f72-0e7597fcbc26",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "2f9122c5-bdcf-4ddf-813a-20fd22b19594"
+    ],
+    "createdAt": "2025-12-18T12:27:24+00:00"
+  },
+  {
+    "scoreId": "187b74bf-33cc-4112-bd8c-d826b22ad52c",
+    "userId": "5e4bf44c-d0b6-469a-9f72-0e7597fcbc26",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "bc617fb8-1278-48d7-b7d0-3e2b0783f475"
+    ],
+    "createdAt": "2025-11-24T23:04:25+00:00"
+  },
+  {
+    "scoreId": "1a314145-a344-4217-90c7-9745b30fd840",
+    "userId": "5e4bf44c-d0b6-469a-9f72-0e7597fcbc26",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "91505072-b83b-4e04-8dc8-72d38a41f69f"
+    ],
+    "createdAt": "2025-05-28T02:33:25+00:00"
+  },
+  {
+    "scoreId": "d8bbdb8c-4cd1-41ab-8c2c-2fa87571d2a4",
+    "userId": "5e4bf44c-d0b6-469a-9f72-0e7597fcbc26",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "ca3b8274-d71f-4144-be1e-a81292220562"
+    ],
+    "createdAt": "2025-08-19T21:02:03+00:00"
+  },
+  {
+    "scoreId": "8f379bf6-fcf1-4e29-9fb4-70fb8a4bd404",
+    "userId": "5e4bf44c-d0b6-469a-9f72-0e7597fcbc26",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "f805ad23-a161-4335-93c2-f3310b18216a"
+    ],
+    "createdAt": "2025-10-18T20:29:40+00:00"
+  },
+  {
+    "scoreId": "22abb9fb-767b-4dae-9077-162aaabc8832",
+    "userId": "5c6a7898-0697-4be7-b1f6-63ffa664a8fb",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "46bd8d66-6355-4568-a05d-0e562a8af812"
+    ],
+    "createdAt": "2025-02-01T04:42:26+00:00"
+  },
+  {
+    "scoreId": "9c73e38e-df7d-4ae7-8b77-09a1253ffa8f",
+    "userId": "5c6a7898-0697-4be7-b1f6-63ffa664a8fb",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "f0cf684b-373e-4676-863a-27df7a594e62"
+    ],
+    "createdAt": "2026-02-16T20:06:23+00:00"
+  },
+  {
+    "scoreId": "744934c5-d11f-4853-8119-224cdc60192a",
+    "userId": "5c6a7898-0697-4be7-b1f6-63ffa664a8fb",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "d10b02a5-726d-45f1-86d3-716d7c096659"
+    ],
+    "createdAt": "2024-09-14T00:18:56+00:00"
+  },
+  {
+    "scoreId": "67641124-6bf1-4529-a45d-73ec7d3985ff",
+    "userId": "5c6a7898-0697-4be7-b1f6-63ffa664a8fb",
+    "type": 7,
+    "score": 100,
+    "active": false,
+    "entityUniqueIds": [
+      "f6272210-cf83-4c00-b642-0291a915ee6f"
+    ],
+    "createdAt": "2024-07-06T03:12:22+00:00"
+  },
+  {
+    "scoreId": "a8e575d8-9dc2-4808-8cb4-124edde730ef",
+    "userId": "5c6a7898-0697-4be7-b1f6-63ffa664a8fb",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "1550c253-1d2f-4e25-a41f-f15436b14377"
+    ],
+    "createdAt": "2025-12-09T01:48:10+00:00"
+  },
+  {
+    "scoreId": "effcb405-46a3-4869-84d1-f65ee60b0809",
+    "userId": "5c6a7898-0697-4be7-b1f6-63ffa664a8fb",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "f7dd375b-595b-4849-a3b4-04ad5c11b613"
+    ],
+    "createdAt": "2024-12-09T19:51:15+00:00"
+  },
+  {
+    "scoreId": "c708a628-b1f6-43db-a94d-aaa7630af738",
+    "userId": "5c6a7898-0697-4be7-b1f6-63ffa664a8fb",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "b78ebccc-9dbb-4897-9012-2b06135fbc8a"
+    ],
+    "createdAt": "2025-03-24T01:49:49+00:00"
+  },
+  {
+    "scoreId": "7878ccc7-bb7b-41ee-b371-c1a308b8210c",
+    "userId": "5c6a7898-0697-4be7-b1f6-63ffa664a8fb",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "e9b809c9-8ec5-4a4f-ab29-fa93da874968"
+    ],
+    "createdAt": "2026-02-22T23:56:15+00:00"
+  },
+  {
+    "scoreId": "995b0cd3-de1e-420a-bf3e-8a9c543d2684",
+    "userId": "ed695913-60aa-4c0b-94b2-417203fdedf3",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "25ed6ed0-e5c6-4713-a7c7-38b478ff4f43"
+    ],
+    "createdAt": "2025-11-25T07:33:09+00:00"
+  },
+  {
+    "scoreId": "d48f1fb4-4b29-46f6-a98d-997a3e925ac2",
+    "userId": "ed695913-60aa-4c0b-94b2-417203fdedf3",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "87e9ba33-fef2-4502-a491-0913b5c17621"
+    ],
+    "createdAt": "2026-04-11T10:30:47+00:00"
+  },
+  {
+    "scoreId": "d23a34ab-c892-4a2b-97b8-625a5b1a958a",
+    "userId": "1215139e-85c8-4b45-9957-73f391f4990d",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "b1cc6f8e-7d47-410c-a4d0-df09b5622ead"
+    ],
+    "createdAt": "2026-03-13T08:43:17+00:00"
+  },
+  {
+    "scoreId": "699c600c-1675-4125-ad58-3f85b94e7f1c",
+    "userId": "65ca1dda-6163-41c6-9e1c-645362bf501f",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "f095aa1b-861e-4f90-89ff-6cf2e8cfd321"
+    ],
+    "createdAt": "2026-04-22T12:22:32+00:00"
+  },
+  {
+    "scoreId": "a798ee65-8db8-43df-8d48-1285c4a0612e",
+    "userId": "65ca1dda-6163-41c6-9e1c-645362bf501f",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "9053ab77-f6d2-416e-88ab-43016148b4b8"
+    ],
+    "createdAt": "2026-05-03T20:25:53+00:00"
+  },
+  {
+    "scoreId": "23866eac-55a5-4ddd-ad84-665df65fea7e",
+    "userId": "65ca1dda-6163-41c6-9e1c-645362bf501f",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "78adb67f-d2e4-471b-9506-c603f2b9d428"
+    ],
+    "createdAt": "2026-05-07T17:52:37+00:00"
+  },
+  {
+    "scoreId": "2546d6d0-5e94-44bd-9a3a-2831af75ea0c",
+    "userId": "65ca1dda-6163-41c6-9e1c-645362bf501f",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7cee9af2-e699-41e1-8b19-f996407fa0f6"
+    ],
+    "createdAt": "2026-04-21T21:24:56+00:00"
+  },
+  {
+    "scoreId": "56b38b79-b2b7-455c-8181-b011dd3ea64a",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 2,
+    "score": 5,
+    "active": false,
+    "entityUniqueIds": [
+      "cf6ef42e-b298-40f4-bd9c-6edbb587cb37"
+    ],
+    "createdAt": "2024-11-15T17:07:52+00:00"
+  },
+  {
+    "scoreId": "3fdaa2d7-3f06-476b-b638-deabc2d5efa4",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 5,
+    "score": 5,
+    "active": false,
+    "entityUniqueIds": [
+      "7e4976c3-db7b-4391-aebd-cace7c6c254d"
+    ],
+    "createdAt": "2025-07-21T08:34:23+00:00"
+  },
+  {
+    "scoreId": "7321dd5e-149e-4df6-88b0-0ee2b31b3f15",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "b3c9d4d3-a844-4fcb-a779-79434ea853b3"
+    ],
+    "createdAt": "2026-01-03T12:33:47+00:00"
+  },
+  {
+    "scoreId": "808c9f59-9432-41a5-80ce-9fff90f683eb",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "88206bea-1d82-4d9b-9a33-1573c2fa4f59"
+    ],
+    "createdAt": "2026-02-04T00:05:05+00:00"
+  },
+  {
+    "scoreId": "7d52b6d2-b6cb-4139-97ea-d92b6db154ce",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "ea6d4188-79bc-4b2f-8153-4193262a28b8"
+    ],
+    "createdAt": "2025-10-24T05:20:27+00:00"
+  },
+  {
+    "scoreId": "0b659a2e-4df8-4105-bf43-419b7c17db2d",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "bbb13f87-7e9b-48d6-b8ac-6f279b9d537c"
+    ],
+    "createdAt": "2024-07-09T06:38:12+00:00"
+  },
+  {
+    "scoreId": "cd82fae7-bce5-4b76-9584-169e7b340e47",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "42b30ffa-d885-441e-8af0-576135e073cf"
+    ],
+    "createdAt": "2024-11-01T21:25:34+00:00"
+  },
+  {
+    "scoreId": "960f9486-1d1b-42fc-a85f-6f1efddcdf3f",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "4819ffdd-9c0f-4ab4-950e-76009f0907b8"
+    ],
+    "createdAt": "2025-03-17T07:45:35+00:00"
+  },
+  {
+    "scoreId": "70c80db0-34b1-42ec-80a4-0964a3528b48",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7951f6bb-e027-44b3-b10c-7abfb868241d"
+    ],
+    "createdAt": "2025-10-01T16:21:50+00:00"
+  },
+  {
+    "scoreId": "83868d90-77d3-4c5a-878a-ad373ef8b533",
+    "userId": "b66466aa-ae67-4791-aad7-a063fe79cc5b",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5ce0850b-285f-4fb5-9566-45379eee5bce"
+    ],
+    "createdAt": "2025-10-31T12:13:53+00:00"
+  },
+  {
+    "scoreId": "d250e90e-805a-4544-a1f7-413443fbff9b",
+    "userId": "f7166239-512b-4540-ad04-21e00cb5b5df",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "0631c6b4-7407-4224-850b-c86e885c695e"
+    ],
+    "createdAt": "2026-04-01T07:03:13+00:00"
+  },
+  {
+    "scoreId": "5cab55dd-1fe4-4181-8948-b093428d115f",
+    "userId": "f7166239-512b-4540-ad04-21e00cb5b5df",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "c7b78b04-65cc-43c5-999a-c795cd1bceaa"
+    ],
+    "createdAt": "2025-04-14T05:59:32+00:00"
+  },
+  {
+    "scoreId": "4fd85528-1ada-4c5b-85a1-4f00c178ffaf",
+    "userId": "f7166239-512b-4540-ad04-21e00cb5b5df",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "6f298a2b-2ca8-4bfd-8a52-269f5ac08c5c"
+    ],
+    "createdAt": "2025-05-26T04:49:46+00:00"
+  },
+  {
+    "scoreId": "b9357a43-b250-4b7c-bf00-247e222618f1",
+    "userId": "f7166239-512b-4540-ad04-21e00cb5b5df",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "b9a9aec0-ec4a-4380-9631-92ce20c32047"
+    ],
+    "createdAt": "2025-10-03T12:40:01+00:00"
+  },
+  {
+    "scoreId": "b2d6886e-49e2-4657-90df-f68d203310c4",
+    "userId": "f7166239-512b-4540-ad04-21e00cb5b5df",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "f1d749a9-1ce9-4d24-8b9a-5e03eb1b22c5"
+    ],
+    "createdAt": "2025-08-22T15:42:48+00:00"
+  },
+  {
+    "scoreId": "797873f3-bdf2-4fa7-bab3-9cabc713d7a5",
+    "userId": "f7166239-512b-4540-ad04-21e00cb5b5df",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "7ce70aa4-dfb2-42f6-b6a0-f8853ac3b6b2"
+    ],
+    "createdAt": "2025-06-07T16:59:49+00:00"
+  },
+  {
+    "scoreId": "15b2276c-0165-403f-a5c9-1334d73a412b",
+    "userId": "f7166239-512b-4540-ad04-21e00cb5b5df",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "706ffbb6-68a3-4e2e-8849-46c2b05639f0"
+    ],
+    "createdAt": "2025-11-19T02:36:40+00:00"
+  },
+  {
+    "scoreId": "fbe1c5b6-fefa-4eab-a4d6-a46cb5cd199a",
+    "userId": "f7166239-512b-4540-ad04-21e00cb5b5df",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "4b04107e-cd1f-464d-a030-05b64acf3111"
+    ],
+    "createdAt": "2025-06-10T23:28:55+00:00"
+  },
+  {
+    "scoreId": "986b02bd-32c8-474a-a16f-73710c5f732e",
+    "userId": "f7166239-512b-4540-ad04-21e00cb5b5df",
+    "type": 4,
+    "score": 20,
+    "active": false,
+    "entityUniqueIds": [
+      "0714b175-f2d8-4608-a3f6-59c57db1b198"
+    ],
+    "createdAt": "2025-01-09T12:23:23+00:00"
+  },
+  {
+    "scoreId": "18f3ef4a-78de-4f5a-95a0-9d7143270d15",
+    "userId": "97fe8c68-7cb6-4f0d-8c71-dbf42e091845",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "a71520d9-d3cb-4e44-ae14-7eedcd07ab6d"
+    ],
+    "createdAt": "2026-03-30T09:57:12+00:00"
+  },
+  {
+    "scoreId": "47caeb0c-8c27-4649-a8a4-a05d26f91d15",
+    "userId": "97fe8c68-7cb6-4f0d-8c71-dbf42e091845",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "77c324c4-6813-430e-b6a6-5c18d554ef8b"
+    ],
+    "createdAt": "2026-04-27T06:48:41+00:00"
+  },
+  {
+    "scoreId": "6423eab2-1457-4e1e-b1b3-56da51eb713d",
+    "userId": "fef7f916-e443-438e-9458-441c176ffad5",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "aed0905b-dc36-48f1-b8b0-b9ffbd0dcead"
+    ],
+    "createdAt": "2025-11-30T13:32:25+00:00"
+  },
+  {
+    "scoreId": "9e38469f-eba4-4284-9cc7-5889e651568e",
+    "userId": "fef7f916-e443-438e-9458-441c176ffad5",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "1bc0c37c-1f3c-4a8f-b7db-f5fb30f46bb4"
+    ],
+    "createdAt": "2026-01-02T02:43:43+00:00"
+  },
+  {
+    "scoreId": "1e771279-464c-45ee-8d5b-ce11ac217926",
+    "userId": "fef7f916-e443-438e-9458-441c176ffad5",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "6bfe99c8-fc2f-4a11-92d7-0afeeecffe1f"
+    ],
+    "createdAt": "2026-04-12T08:51:58+00:00"
+  },
+  {
+    "scoreId": "124a1124-36b2-4b99-a7c5-0861daba6158",
+    "userId": "fef7f916-e443-438e-9458-441c176ffad5",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "e01f0a6a-fcda-4e0b-96bf-045bf33409e2"
+    ],
+    "createdAt": "2026-01-24T06:00:45+00:00"
+  },
+  {
+    "scoreId": "47488155-be7c-4f18-b2f7-c5c56b2b2362",
+    "userId": "fef7f916-e443-438e-9458-441c176ffad5",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "6466de5a-2af2-44fb-8f5c-644c27d10870"
+    ],
+    "createdAt": "2025-12-18T08:32:21+00:00"
+  },
+  {
+    "scoreId": "b09943ae-ff2c-45fc-88fc-d54e71c7d3ee",
+    "userId": "fef7f916-e443-438e-9458-441c176ffad5",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "b6fcef3b-17f4-4c0e-9c7b-b6379e5878c7"
+    ],
+    "createdAt": "2026-03-12T06:32:28+00:00"
+  },
+  {
+    "scoreId": "2d94256a-77c7-4ba8-900c-bf1c381431e3",
+    "userId": "fef7f916-e443-438e-9458-441c176ffad5",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "4c8b7b4b-4c54-460f-a9b0-3f12133e7d31"
+    ],
+    "createdAt": "2026-02-09T11:06:43+00:00"
+  },
+  {
+    "scoreId": "6e436256-abe8-4da3-ba3f-230a415aa448",
+    "userId": "3771ccc3-a329-4eef-81fb-0f646b8e27cf",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "3a5d3a26-f1ef-46e0-9967-a9309708cdc6"
+    ],
+    "createdAt": "2026-01-29T02:48:18+00:00"
+  },
+  {
+    "scoreId": "b8f4a891-e83c-409b-b8c1-4ee976cd2821",
+    "userId": "3771ccc3-a329-4eef-81fb-0f646b8e27cf",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "dd5d3459-8ec1-48ff-af2c-91207b080c30"
+    ],
+    "createdAt": "2026-02-18T23:11:12+00:00"
+  },
+  {
+    "scoreId": "784d8d2a-2f32-498e-8698-9d98cdf5bf3e",
+    "userId": "3771ccc3-a329-4eef-81fb-0f646b8e27cf",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "be82fdc3-53ca-431b-87da-65b92fe3f98e"
+    ],
+    "createdAt": "2025-12-02T03:03:02+00:00"
+  },
+  {
+    "scoreId": "08d94e52-f0a3-4caa-92b7-de297dee1717",
+    "userId": "3771ccc3-a329-4eef-81fb-0f646b8e27cf",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7d1bef74-1128-4042-9000-24209cb5ed93"
+    ],
+    "createdAt": "2025-12-01T15:08:38+00:00"
+  },
+  {
+    "scoreId": "1d58b659-7c79-48f6-8558-a33b53da84e3",
+    "userId": "3771ccc3-a329-4eef-81fb-0f646b8e27cf",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "29616e5b-786b-4091-b1bf-7be93c5cef93"
+    ],
+    "createdAt": "2025-11-17T14:01:41+00:00"
+  },
+  {
+    "scoreId": "18bcc5a9-b458-4e08-8894-31cc98998b0e",
+    "userId": "3771ccc3-a329-4eef-81fb-0f646b8e27cf",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5a8211c9-7348-467e-bc77-13ddfa011703"
+    ],
+    "createdAt": "2026-04-23T00:18:06+00:00"
+  },
+  {
+    "scoreId": "1cbd661c-4c3b-4e2b-8e70-de9382d44edf",
+    "userId": "3771ccc3-a329-4eef-81fb-0f646b8e27cf",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "6672dfe5-bd7d-4228-b7b0-b73046a7ada9"
+    ],
+    "createdAt": "2026-04-23T15:20:28+00:00"
+  },
+  {
+    "scoreId": "4dd7d67d-1f90-4ee9-a002-19b56f73ccda",
+    "userId": "3771ccc3-a329-4eef-81fb-0f646b8e27cf",
+    "type": 1,
+    "score": 10,
+    "active": false,
+    "entityUniqueIds": [
+      "6f126889-76a2-4d05-8136-c2fedb9a0afa"
+    ],
+    "createdAt": "2025-11-12T13:12:08+00:00"
+  },
+  {
+    "scoreId": "4768926b-ddd8-4ff8-9048-98bc1ad50dae",
+    "userId": "3771ccc3-a329-4eef-81fb-0f646b8e27cf",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "ab5e329f-32a3-4d29-9f84-ed400cf20d71"
+    ],
+    "createdAt": "2025-10-28T02:04:37+00:00"
+  },
+  {
+    "scoreId": "ae2f2b51-2d97-4af7-9714-446aa8b5108f",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "4ffbcbad-6988-4dcf-ad29-a84ea4cb24ce"
+    ],
+    "createdAt": "2025-07-26T11:03:38+00:00"
+  },
+  {
+    "scoreId": "52f88da3-2600-498d-8d67-38fac0ca956f",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "0c08b086-570c-4ff8-8bb1-14acbff60dcf"
+    ],
+    "createdAt": "2026-01-19T18:30:00+00:00"
+  },
+  {
+    "scoreId": "1bd12dbd-4f52-4581-b4d8-32736f141401",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "ff3fc9cf-a146-4583-8a8f-ce1c983413c5"
+    ],
+    "createdAt": "2025-08-07T16:44:52+00:00"
+  },
+  {
+    "scoreId": "6e5ae43e-17e6-42b5-ae79-e463a1d06ca0",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 1,
+    "score": 10,
+    "active": false,
+    "entityUniqueIds": [
+      "f9eecf9d-62a4-4845-b9b5-a1a5fe28a2d3"
+    ],
+    "createdAt": "2026-04-28T13:38:52+00:00"
+  },
+  {
+    "scoreId": "5822715b-022a-4304-90bc-d8699bdaeeb8",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "40de036c-accf-4912-8f6a-2bb82166281f"
+    ],
+    "createdAt": "2026-02-03T03:29:54+00:00"
+  },
+  {
+    "scoreId": "a027d79c-182d-45b2-9319-a091134f5caa",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "713ee59c-d4df-49cb-a347-f7a78d32ccb9"
+    ],
+    "createdAt": "2026-02-17T15:43:40+00:00"
+  },
+  {
+    "scoreId": "8129e3b9-750e-49ee-bd41-13ac2f247385",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "c9ae1de4-229f-4c96-b636-88125d831d00"
+    ],
+    "createdAt": "2025-07-24T01:13:23+00:00"
+  },
+  {
+    "scoreId": "012acf7d-9c4b-41c8-a396-a8b2c6e02d5b",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "590b5541-b36c-42db-abcd-3f9a0ecef0a5"
+    ],
+    "createdAt": "2026-04-23T08:31:57+00:00"
+  },
+  {
+    "scoreId": "83eebe35-33ec-48f6-b259-6f82388ba5d1",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 6,
+    "score": 2,
+    "active": false,
+    "entityUniqueIds": [
+      "9536a6b1-bd79-4c38-8b2c-a833ab5db7a8"
+    ],
+    "createdAt": "2025-11-15T03:19:20+00:00"
+  },
+  {
+    "scoreId": "1108c7b0-eda2-497a-b035-5d128d436130",
+    "userId": "9a4620c1-eadb-40d9-be8c-f0c16c61f82a",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "2deeb633-706a-4799-98af-2e04453f565e"
+    ],
+    "createdAt": "2025-09-22T12:18:55+00:00"
+  },
+  {
+    "scoreId": "000658e2-5258-4dc0-8e8d-5f0f3cce5db6",
+    "userId": "6d93c283-085f-418c-be2b-938d730375fc",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "76910860-0188-4178-a36f-1265600a6ac5"
+    ],
+    "createdAt": "2026-01-23T06:40:20+00:00"
+  },
+  {
+    "scoreId": "015c1a7b-228c-4a0c-9cf5-fc73f1f663a7",
+    "userId": "6d93c283-085f-418c-be2b-938d730375fc",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "75ae861a-e4cf-4d7a-8b6e-de186e3a70d5"
+    ],
+    "createdAt": "2026-01-31T09:29:37+00:00"
+  },
+  {
+    "scoreId": "e2ddefe8-3fec-45e8-a83b-bfb6fd2be478",
+    "userId": "6d93c283-085f-418c-be2b-938d730375fc",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "59d85f48-da35-456f-bc38-7129bb445f12"
+    ],
+    "createdAt": "2026-02-01T00:14:12+00:00"
+  },
+  {
+    "scoreId": "31bd8f59-1545-42b4-ad43-ab09af9e650f",
+    "userId": "6d93c283-085f-418c-be2b-938d730375fc",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "ceecb59d-7707-483c-b62f-edc7968501e6"
+    ],
+    "createdAt": "2025-12-29T09:32:34+00:00"
+  },
+  {
+    "scoreId": "72b19450-46cc-4fe3-b22d-651ad24c138d",
+    "userId": "6d93c283-085f-418c-be2b-938d730375fc",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "33c4a796-57e4-4723-8ff1-1007596a8304"
+    ],
+    "createdAt": "2025-12-21T03:20:10+00:00"
+  },
+  {
+    "scoreId": "68ec02bf-5457-4ff5-b361-b73605ae9303",
+    "userId": "6d93c283-085f-418c-be2b-938d730375fc",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "3ff0f871-649e-4761-a66c-69f45ae53eea"
+    ],
+    "createdAt": "2026-01-01T17:16:51+00:00"
+  },
+  {
+    "scoreId": "f0e3af5a-1455-4b96-a67c-7ac3ec030634",
+    "userId": "6d93c283-085f-418c-be2b-938d730375fc",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "a9bf05f5-1bc6-4378-8e1e-2163383111dd"
+    ],
+    "createdAt": "2026-02-26T22:49:05+00:00"
+  },
+  {
+    "scoreId": "a20be233-f90d-4dc0-a9a7-7410828b4bbb",
+    "userId": "6d93c283-085f-418c-be2b-938d730375fc",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "4e8fe014-146a-4c2f-a5b7-4138eed2d064"
+    ],
+    "createdAt": "2026-02-18T21:07:16+00:00"
+  },
+  {
+    "scoreId": "bb4716e3-2d20-462b-bd5c-8bc2b67f2f26",
+    "userId": "3465231d-09fe-49ce-98bc-06a842c33c45",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "722b0357-d175-4872-a6bd-9dcedb69a8c1"
+    ],
+    "createdAt": "2026-04-11T06:00:31+00:00"
+  },
+  {
+    "scoreId": "73591267-32d1-483c-a862-fb64742443f7",
+    "userId": "3465231d-09fe-49ce-98bc-06a842c33c45",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "9fb6e258-edae-439f-b0d0-641b2ec98d80"
+    ],
+    "createdAt": "2026-04-05T21:22:35+00:00"
+  },
+  {
+    "scoreId": "39779789-a80a-4320-bcfa-fef1f7f0ec21",
+    "userId": "3465231d-09fe-49ce-98bc-06a842c33c45",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "8885e000-3004-4f1d-b79c-14b5e41f85d7"
+    ],
+    "createdAt": "2026-04-16T05:38:01+00:00"
+  },
+  {
+    "scoreId": "d6c52507-7ca7-4952-8830-07956ea844be",
+    "userId": "3465231d-09fe-49ce-98bc-06a842c33c45",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "40cc5397-cfcd-4c0d-88b9-da6047b7c656"
+    ],
+    "createdAt": "2026-04-15T12:54:26+00:00"
+  },
+  {
+    "scoreId": "4d0f439d-62e9-49d5-8548-63223e8f7d9a",
+    "userId": "3465231d-09fe-49ce-98bc-06a842c33c45",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "583c85d8-094a-4348-a3de-1bb495cbeae5"
+    ],
+    "createdAt": "2026-04-28T20:33:32+00:00"
+  },
+  {
+    "scoreId": "b583234d-c589-4dbf-8346-0fcb4105e3f7",
+    "userId": "3465231d-09fe-49ce-98bc-06a842c33c45",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "b7c21cea-3ee6-485f-9142-af396e680896"
+    ],
+    "createdAt": "2026-04-06T13:36:43+00:00"
+  },
+  {
+    "scoreId": "f115da36-3185-4897-aac2-1e23cbd6ba5c",
+    "userId": "3465231d-09fe-49ce-98bc-06a842c33c45",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "19763167-4770-4a96-a911-bc74b6d9c527"
+    ],
+    "createdAt": "2026-04-17T04:40:52+00:00"
+  },
+  {
+    "scoreId": "467123c9-8a8b-4bd2-9874-d66b2a1642e0",
+    "userId": "0692db00-3d4d-4368-9969-a2ccab54215f",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "dd217331-53d8-45b8-a791-76c31aec47ce"
+    ],
+    "createdAt": "2025-03-24T10:37:00+00:00"
+  },
+  {
+    "scoreId": "3d341f6a-2f47-4c7e-9d9c-b9441a2d835e",
+    "userId": "0692db00-3d4d-4368-9969-a2ccab54215f",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7b021a7e-2c28-4a57-b7a7-4c22e5bd09fb"
+    ],
+    "createdAt": "2025-10-08T11:56:38+00:00"
+  },
+  {
+    "scoreId": "17c2edf1-060b-45ba-99d4-d653b95b1ec3",
+    "userId": "0692db00-3d4d-4368-9969-a2ccab54215f",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "170213fc-84e1-488c-a7d9-8a9228d99d06"
+    ],
+    "createdAt": "2025-11-02T21:35:46+00:00"
+  },
+  {
+    "scoreId": "7f8771c8-cb08-4502-acd2-db14b139e0ee",
+    "userId": "0ad01177-9fce-46a3-bd68-e909ba026097",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "af489597-9015-4db8-9548-8c948fb16cbd"
+    ],
+    "createdAt": "2025-08-23T02:25:56+00:00"
+  },
+  {
+    "scoreId": "20b4cc79-c96a-46c7-8055-735946932cd9",
+    "userId": "0ad01177-9fce-46a3-bd68-e909ba026097",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "0d9dc776-1efc-4478-81eb-45d1f6267caf"
+    ],
+    "createdAt": "2025-09-21T16:03:02+00:00"
+  },
+  {
+    "scoreId": "302ac412-caa4-4381-af55-5245b930c131",
+    "userId": "0ad01177-9fce-46a3-bd68-e909ba026097",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "8597aa3a-5bbe-467c-bf51-4353fbbc0bd9"
+    ],
+    "createdAt": "2025-08-09T15:11:44+00:00"
+  },
+  {
+    "scoreId": "1a50293e-eb5c-4fc1-ac5d-26a44b4d77e1",
+    "userId": "0ad01177-9fce-46a3-bd68-e909ba026097",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "9fba04ac-7971-4ecb-8743-875eae663c08"
+    ],
+    "createdAt": "2025-12-07T13:49:48+00:00"
+  },
+  {
+    "scoreId": "b1015dbe-05c5-4a0e-99ea-5b4f2c5bde01",
+    "userId": "0ad01177-9fce-46a3-bd68-e909ba026097",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "b3cdb1cc-7720-4b4d-a972-594f12121dfa"
+    ],
+    "createdAt": "2026-04-07T16:48:56+00:00"
+  },
+  {
+    "scoreId": "21a1bf44-06e0-4493-a900-81290993b8f3",
+    "userId": "0ad01177-9fce-46a3-bd68-e909ba026097",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "1f3e4a61-8f4c-4cbb-a3ee-6e12981f44a7"
+    ],
+    "createdAt": "2025-12-15T18:32:44+00:00"
+  },
+  {
+    "scoreId": "684cd33a-e61f-4145-8edc-f192c63517f6",
+    "userId": "0ad01177-9fce-46a3-bd68-e909ba026097",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "40e7e263-1b67-4de2-b5ce-73725895dfd9"
+    ],
+    "createdAt": "2025-12-18T23:10:16+00:00"
+  },
+  {
+    "scoreId": "84c47799-e9d8-4470-aba7-129d54257738",
+    "userId": "0ad01177-9fce-46a3-bd68-e909ba026097",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "81da3cd6-c3ca-4ab0-aa34-facbbc3db7f0"
+    ],
+    "createdAt": "2025-08-29T20:23:30+00:00"
+  },
+  {
+    "scoreId": "62cdec67-c0b4-4489-aaf9-516bd402aaf4",
+    "userId": "0ad01177-9fce-46a3-bd68-e909ba026097",
+    "type": 3,
+    "score": 50,
+    "active": false,
+    "entityUniqueIds": [
+      "1e30c74f-baf3-4938-b55c-3204309929f6"
+    ],
+    "createdAt": "2026-02-19T06:53:40+00:00"
+  },
+  {
+    "scoreId": "04d5a8a1-c7eb-426c-88f6-409acd5f7204",
+    "userId": "4b679d45-6342-4009-8287-055ade0736ea",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "f2148cab-a1fc-48fe-8748-811b7dd473b5"
+    ],
+    "createdAt": "2024-12-23T04:59:26+00:00"
+  },
+  {
+    "scoreId": "d54298ae-e990-4669-8bb4-e0223a972c24",
+    "userId": "ae6098d7-b6e4-4c09-a8d3-180e9650e600",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "bb6b1aa7-d768-4592-915b-044dfef82ed2"
+    ],
+    "createdAt": "2026-04-16T07:13:16+00:00"
+  },
+  {
+    "scoreId": "c6205356-50bc-4242-8ff3-9f1e21aa08a8",
+    "userId": "ae6098d7-b6e4-4c09-a8d3-180e9650e600",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "81f1160c-a4ca-44c5-920b-a0b93157df44"
+    ],
+    "createdAt": "2025-10-31T15:23:05+00:00"
+  },
+  {
+    "scoreId": "075a46f9-14c9-4083-beb2-4bf2951ddea8",
+    "userId": "ae6098d7-b6e4-4c09-a8d3-180e9650e600",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "ae3a1288-23bb-4b39-8ffb-362d1e91f682"
+    ],
+    "createdAt": "2026-02-18T09:35:13+00:00"
+  },
+  {
+    "scoreId": "db9302c7-2ed4-4ac7-a037-efc550991921",
+    "userId": "ae6098d7-b6e4-4c09-a8d3-180e9650e600",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "8318e12d-7543-48ed-aca3-644b7b6e0aec"
+    ],
+    "createdAt": "2026-03-20T02:52:38+00:00"
+  },
+  {
+    "scoreId": "1aa6253f-91d7-4ef0-bb99-1af87adb4b74",
+    "userId": "ae6098d7-b6e4-4c09-a8d3-180e9650e600",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "4cf37c69-139d-4e5b-9890-4b17faec1c37"
+    ],
+    "createdAt": "2025-10-12T14:39:23+00:00"
+  },
+  {
+    "scoreId": "8ab77c24-bb5d-41e8-953e-4da49afb7987",
+    "userId": "ae6098d7-b6e4-4c09-a8d3-180e9650e600",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "2968ad6b-105d-4fb8-b233-3b0c2c604fc3"
+    ],
+    "createdAt": "2026-05-07T04:19:39+00:00"
+  },
+  {
+    "scoreId": "1b0562fc-f14a-4f6d-81c0-5f37fa91f25d",
+    "userId": "ae6098d7-b6e4-4c09-a8d3-180e9650e600",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "2682369a-82e6-48b2-9542-c7173bec04a2"
+    ],
+    "createdAt": "2025-08-07T16:43:33+00:00"
+  },
+  {
+    "scoreId": "b86a1d34-af37-494d-b5f0-8de3bdaa4250",
+    "userId": "ae6098d7-b6e4-4c09-a8d3-180e9650e600",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "3422823c-4d7a-4849-a52e-249a414f6b77"
+    ],
+    "createdAt": "2025-12-15T22:03:32+00:00"
+  },
+  {
+    "scoreId": "425268ee-2460-41e4-a7ae-d9c446984457",
+    "userId": "ae6098d7-b6e4-4c09-a8d3-180e9650e600",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "d160f052-3527-4598-8975-186111c06cdd"
+    ],
+    "createdAt": "2026-03-14T00:37:51+00:00"
+  },
+  {
+    "scoreId": "c5bc14e8-c519-4ecf-a881-7815a73209e2",
+    "userId": "b9aa3122-1292-4afc-a6ff-74cd12ee999f",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "050934f0-3348-4826-9830-cbf58f2e2dd1"
+    ],
+    "createdAt": "2026-02-17T00:52:33+00:00"
+  },
+  {
+    "scoreId": "10939c02-0e91-49c6-8bac-d4f1f8a99d00",
+    "userId": "b9aa3122-1292-4afc-a6ff-74cd12ee999f",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "a74adfdd-6ae4-4db6-b58a-7d5dd3ae1d77"
+    ],
+    "createdAt": "2025-11-12T16:23:31+00:00"
+  },
+  {
+    "scoreId": "56f5f77f-8e9b-4cf6-9de7-34665877b4be",
+    "userId": "b9aa3122-1292-4afc-a6ff-74cd12ee999f",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "299d918e-6b48-44d8-8553-8f8accde51d3"
+    ],
+    "createdAt": "2026-01-16T03:10:38+00:00"
+  },
+  {
+    "scoreId": "83e247f4-520f-42bb-9456-ee76bf31f953",
+    "userId": "b9aa3122-1292-4afc-a6ff-74cd12ee999f",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "6ec0b5e6-c824-4c7f-9513-90afe13f1b7f"
+    ],
+    "createdAt": "2025-10-20T14:50:21+00:00"
+  },
+  {
+    "scoreId": "9177f7c6-0dbe-4af5-8e8c-afd68c379faa",
+    "userId": "b9aa3122-1292-4afc-a6ff-74cd12ee999f",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7a25118c-c106-4324-b477-995a1ff4ad6b"
+    ],
+    "createdAt": "2026-01-08T23:51:34+00:00"
+  },
+  {
+    "scoreId": "9dbab9bf-fb88-4ffe-b42d-f3e2b34b2864",
+    "userId": "b9aa3122-1292-4afc-a6ff-74cd12ee999f",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "8c8c53b6-87d9-4c9a-9ca1-19b89c1687a8"
+    ],
+    "createdAt": "2026-01-02T15:15:23+00:00"
+  },
+  {
+    "scoreId": "7279b324-cf65-4660-afaa-984b07905cef",
+    "userId": "b9aa3122-1292-4afc-a6ff-74cd12ee999f",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "1947ce0d-b395-4850-8738-87665eb0ee86"
+    ],
+    "createdAt": "2026-02-13T21:38:26+00:00"
+  },
+  {
+    "scoreId": "7b0663cb-2f03-4030-b9d5-4ccddf592e5f",
+    "userId": "29f763c5-fe30-42c7-80c9-fd3c35a8e874",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "05d43c85-b22e-42a5-b419-180e49354d82"
+    ],
+    "createdAt": "2026-05-08T15:27:03+00:00"
+  },
+  {
+    "scoreId": "23ace8a7-b320-4412-bb53-af86592241be",
+    "userId": "29f763c5-fe30-42c7-80c9-fd3c35a8e874",
+    "type": 7,
+    "score": 100,
+    "active": false,
+    "entityUniqueIds": [
+      "f28ffdd5-89dc-4169-8b69-b7dda0e31d55"
+    ],
+    "createdAt": "2026-05-08T12:52:59+00:00"
+  },
+  {
+    "scoreId": "cbb47a90-c67c-4e36-9be4-8bf4ecacdfee",
+    "userId": "29f763c5-fe30-42c7-80c9-fd3c35a8e874",
+    "type": 4,
+    "score": 20,
+    "active": false,
+    "entityUniqueIds": [
+      "8e6cbacc-39c2-4df1-becd-299dd332a898"
+    ],
+    "createdAt": "2026-05-07T16:41:28+00:00"
+  },
+  {
+    "scoreId": "57fb674f-4126-4274-b47d-9c9ec397765c",
+    "userId": "29f763c5-fe30-42c7-80c9-fd3c35a8e874",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "d9a67801-4e6d-4a6a-ba32-2f75c58b5191"
+    ],
+    "createdAt": "2026-05-07T16:20:39+00:00"
+  },
+  {
+    "scoreId": "6541df32-28ad-44f3-90b9-d4681b546a8a",
+    "userId": "29f763c5-fe30-42c7-80c9-fd3c35a8e874",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "959e465c-2765-419f-890b-47b38359defb"
+    ],
+    "createdAt": "2026-05-08T05:22:02+00:00"
+  },
+  {
+    "scoreId": "391e363a-6fc9-467a-b4b5-c965ce4aac2e",
+    "userId": "29f763c5-fe30-42c7-80c9-fd3c35a8e874",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7c2b049e-47cc-49b9-8cd6-91f631c74e76"
+    ],
+    "createdAt": "2026-05-06T15:15:45+00:00"
+  },
+  {
+    "scoreId": "c8c9ab11-6cd6-48f7-9916-c0ddec36b2dc",
+    "userId": "29f763c5-fe30-42c7-80c9-fd3c35a8e874",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "f9ccf2aa-3e92-4a96-8065-cac1725c1ca5"
+    ],
+    "createdAt": "2026-05-03T19:47:31+00:00"
+  },
+  {
+    "scoreId": "12d9c0b7-aa86-4605-a5c3-84988a10041e",
+    "userId": "29f763c5-fe30-42c7-80c9-fd3c35a8e874",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "8845f75c-9c5b-477a-be25-26975051020e"
+    ],
+    "createdAt": "2026-05-04T07:13:30+00:00"
+  },
+  {
+    "scoreId": "d181bfd6-951d-4373-b7d9-29e6ceb301cc",
+    "userId": "29f763c5-fe30-42c7-80c9-fd3c35a8e874",
+    "type": 6,
+    "score": 2,
+    "active": false,
+    "entityUniqueIds": [
+      "2ec71d99-2584-4ea6-8500-dad697794642"
+    ],
+    "createdAt": "2026-05-01T22:14:48+00:00"
+  },
+  {
+    "scoreId": "4765a787-9910-4950-9810-8d203bf5d27f",
+    "userId": "fff5f78a-9f62-44f1-b032-d16f8f778157",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "5a917418-27bc-4157-ab71-6591c8574807"
+    ],
+    "createdAt": "2026-03-15T17:42:28+00:00"
+  },
+  {
+    "scoreId": "1b12015e-01f6-4043-bc15-6f66c738a153",
+    "userId": "fff5f78a-9f62-44f1-b032-d16f8f778157",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "dc8bb77e-b515-4af6-ae4d-3ca837406791"
+    ],
+    "createdAt": "2026-02-24T21:31:22+00:00"
+  },
+  {
+    "scoreId": "0e736b2a-3a84-4527-a60a-2a256f4ff39d",
+    "userId": "fff5f78a-9f62-44f1-b032-d16f8f778157",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "6b3f9800-c7c0-4a6c-9c05-be8fdcfaa556"
+    ],
+    "createdAt": "2026-05-05T10:01:16+00:00"
+  },
+  {
+    "scoreId": "c5dc3881-60dc-41e6-b395-3d0ee913c1d5",
+    "userId": "fff5f78a-9f62-44f1-b032-d16f8f778157",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "0a7d5df5-18e2-461b-94c8-1908f077ef1a"
+    ],
+    "createdAt": "2026-04-24T08:02:43+00:00"
+  },
+  {
+    "scoreId": "33c71519-12d3-4fd0-8456-19dbbeb6cd5a",
+    "userId": "fff5f78a-9f62-44f1-b032-d16f8f778157",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "17eda41b-0510-413d-b3fc-2cd4d501f914"
+    ],
+    "createdAt": "2026-02-28T23:23:43+00:00"
+  },
+  {
+    "scoreId": "7a4fa3eb-9924-432d-a0f7-73ac5dd10a43",
+    "userId": "fff5f78a-9f62-44f1-b032-d16f8f778157",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "64e84040-e8f2-4006-8b09-240749cd254b"
+    ],
+    "createdAt": "2026-04-26T07:26:49+00:00"
+  },
+  {
+    "scoreId": "dae2703a-0829-4e24-9780-7ba14a84254d",
+    "userId": "810060fc-9216-4b02-a184-d4d8e3611bb8",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "5b469800-fe89-4ae2-a843-5e2056fde2ba"
+    ],
+    "createdAt": "2026-03-23T02:46:47+00:00"
+  },
+  {
+    "scoreId": "a684c29f-f565-44e7-bd73-1c5eddafbc99",
+    "userId": "810060fc-9216-4b02-a184-d4d8e3611bb8",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "b144a4bc-77b6-4629-8fd1-90cd3f1639a2"
+    ],
+    "createdAt": "2026-02-17T11:26:55+00:00"
+  },
+  {
+    "scoreId": "3ad8d4be-28c8-46cd-bef8-4c73139e93cb",
+    "userId": "810060fc-9216-4b02-a184-d4d8e3611bb8",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "b21f290a-d9b6-4429-bbfb-c9f641616577"
+    ],
+    "createdAt": "2026-04-17T06:38:55+00:00"
+  },
+  {
+    "scoreId": "103a7fd3-0fb5-43a8-b0ee-357613c3f579",
+    "userId": "810060fc-9216-4b02-a184-d4d8e3611bb8",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "ef96d55c-d736-488c-afd9-c891b8c7cc89"
+    ],
+    "createdAt": "2026-02-24T13:00:37+00:00"
+  },
+  {
+    "scoreId": "734be522-db1d-4d6c-961f-75515f6856bd",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "45de39f7-b54f-4edb-b4f2-2a93ab65fb21"
+    ],
+    "createdAt": "2024-10-30T08:49:27+00:00"
+  },
+  {
+    "scoreId": "770c6bc2-7c57-4652-978d-24252806d5e9",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "4cdb122d-cb57-4abf-8101-3e75f1c87465"
+    ],
+    "createdAt": "2025-04-25T14:07:27+00:00"
+  },
+  {
+    "scoreId": "7ff0b7b0-cd63-4a46-b9c4-25da88899b53",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "8d18dfb9-95dc-47be-bbab-9179b5f794eb"
+    ],
+    "createdAt": "2025-08-28T22:44:19+00:00"
+  },
+  {
+    "scoreId": "ff66f04e-c544-43d1-bc8e-1d2184a3a008",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 2,
+    "score": 5,
+    "active": false,
+    "entityUniqueIds": [
+      "fcf41a46-1c75-4f40-ba06-8b76b5ff5e6a"
+    ],
+    "createdAt": "2025-05-29T14:51:49+00:00"
+  },
+  {
+    "scoreId": "e6f56088-144e-46cb-8f65-142469690b4e",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "2c4ffa2d-4d09-4ef1-958d-92d5c36798da"
+    ],
+    "createdAt": "2026-01-26T15:32:10+00:00"
+  },
+  {
+    "scoreId": "171b4949-31dc-4a49-ae3d-acd3fc9fc528",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "ea241602-f00a-4c6c-a8c4-c09d0c05e896"
+    ],
+    "createdAt": "2025-11-14T06:19:47+00:00"
+  },
+  {
+    "scoreId": "6db68a54-443b-4926-88c8-7177ca0d5892",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "bb79e60b-2d97-4730-ad92-dc61638f53a1"
+    ],
+    "createdAt": "2025-06-12T05:19:53+00:00"
+  },
+  {
+    "scoreId": "28c2e9a8-fb83-4dc4-9d8d-a03e5b2426b8",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "85f99c4f-e999-44a9-9b3d-1dea2eb75fdd"
+    ],
+    "createdAt": "2025-06-26T14:29:35+00:00"
+  },
+  {
+    "scoreId": "be749286-cffd-42f4-bfdf-ed99ef0b0309",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "0b0cfea9-f32a-4035-b7c8-a6904b68f86d"
+    ],
+    "createdAt": "2025-12-10T14:11:47+00:00"
+  },
+  {
+    "scoreId": "28f7236f-9e6e-4503-8708-bd364e0fedec",
+    "userId": "fa7725a9-16cd-4046-bfce-0783d65e8e51",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "69e9fc2e-0c55-460f-9097-017ed7a5dcec"
+    ],
+    "createdAt": "2024-12-20T22:40:28+00:00"
+  },
+  {
+    "scoreId": "77d09c9f-4cad-4f51-ac09-e5e7ab8bdd38",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "2baa5986-aa0a-42a9-adb2-3b1b8b7c7019"
+    ],
+    "createdAt": "2025-06-14T01:23:06+00:00"
+  },
+  {
+    "scoreId": "27c42444-f475-4bd3-9b1e-182e1a257bad",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 6,
+    "score": 2,
+    "active": false,
+    "entityUniqueIds": [
+      "3d07d680-bfa9-4bdd-9db7-1fa7f4d48086"
+    ],
+    "createdAt": "2025-10-23T06:53:16+00:00"
+  },
+  {
+    "scoreId": "e8fcebfb-7dea-433e-9316-1a8ef91b5087",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "40cbfa3c-a589-4a6c-a4a1-b8409e3f6f4b"
+    ],
+    "createdAt": "2025-05-15T17:12:41+00:00"
+  },
+  {
+    "scoreId": "7d582781-1e73-42d9-96cd-1c93d186e9ab",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7b481a87-9f68-43ef-b3df-3467a22b2e45"
+    ],
+    "createdAt": "2025-03-17T21:51:51+00:00"
+  },
+  {
+    "scoreId": "4cc0f523-aca3-420d-a924-dde5f4546f96",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "80535cd4-f182-4c7e-9eaa-be63d9f647d0"
+    ],
+    "createdAt": "2025-07-17T21:46:31+00:00"
+  },
+  {
+    "scoreId": "708a1e88-8fcc-43d1-af28-991c54e72f3d",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "3abc878b-2d82-4ff1-80c6-908215df4846"
+    ],
+    "createdAt": "2026-01-25T17:13:27+00:00"
+  },
+  {
+    "scoreId": "3f4f9e8e-6ba2-406b-9143-7aa06f8c58bb",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "eecccb3c-9c4b-4a49-9045-7abc52de26d9"
+    ],
+    "createdAt": "2025-03-18T06:13:07+00:00"
+  },
+  {
+    "scoreId": "fe81062e-a935-4c30-adbe-8a70e4840b25",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "90e56e20-eab4-4c80-962a-011069f7a752"
+    ],
+    "createdAt": "2025-10-10T05:26:30+00:00"
+  },
+  {
+    "scoreId": "315b0c3b-e484-4b27-a12f-f6a8a1f40323",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "e53c74ec-f3c5-469e-bed8-70976d9138d1"
+    ],
+    "createdAt": "2025-03-03T22:26:02+00:00"
+  },
+  {
+    "scoreId": "55d3990a-43c6-4171-8025-a839baf9c960",
+    "userId": "3e14e270-331c-4186-9787-19af9b6a9117",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "87dff140-4443-4094-afef-05502c9a5d53"
+    ],
+    "createdAt": "2025-12-26T16:23:33+00:00"
+  },
+  {
+    "scoreId": "52081b64-5bb7-4a5e-b205-eb765db2febf",
+    "userId": "bbf6bd61-b848-4cf1-a871-c7655c92e752",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "e43c5d49-b80c-46ae-86cc-cac5e326865d"
+    ],
+    "createdAt": "2024-12-27T00:58:55+00:00"
+  },
+  {
+    "scoreId": "11c6764c-e5a0-4840-8e7a-08adbe670029",
+    "userId": "bbf6bd61-b848-4cf1-a871-c7655c92e752",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "9e0885fb-2276-436b-8293-3245b50f96fd"
+    ],
+    "createdAt": "2025-04-25T00:58:15+00:00"
+  },
+  {
+    "scoreId": "8ab9d262-11f7-411c-ac7a-480d0cbc0a87",
+    "userId": "bbf6bd61-b848-4cf1-a871-c7655c92e752",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "7a55a5ec-28a1-468d-bd75-496115f42c0f"
+    ],
+    "createdAt": "2024-09-13T21:04:04+00:00"
+  },
+  {
+    "scoreId": "75678796-7c37-447d-9974-1afa684d72e1",
+    "userId": "bbf6bd61-b848-4cf1-a871-c7655c92e752",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "cadb3729-d04b-457a-8f35-f5376230902c"
+    ],
+    "createdAt": "2024-10-05T01:37:31+00:00"
+  },
+  {
+    "scoreId": "073e8122-a317-4f91-b630-156401108cf5",
+    "userId": "bbf6bd61-b848-4cf1-a871-c7655c92e752",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "d3c4f6f3-2b73-48a4-885c-7b5134de6946"
+    ],
+    "createdAt": "2025-12-16T12:03:01+00:00"
+  },
+  {
+    "scoreId": "801b3a95-9155-449e-aede-c773dcd07779",
+    "userId": "a1e2b9d6-e00c-401a-8ed6-baa2385f0316",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "19470f90-5b9c-4cf3-9672-049972cf931a"
+    ],
+    "createdAt": "2026-02-09T15:16:36+00:00"
+  },
+  {
+    "scoreId": "53962347-0cfd-4ee6-800e-5e521b7c8a97",
+    "userId": "a1e2b9d6-e00c-401a-8ed6-baa2385f0316",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "bdf4940b-58e9-4edb-b195-2ac75e1e6d27"
+    ],
+    "createdAt": "2025-11-29T07:00:18+00:00"
+  },
+  {
+    "scoreId": "c746dc71-b1a0-4765-b6b6-01058890af43",
+    "userId": "a1e2b9d6-e00c-401a-8ed6-baa2385f0316",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "2e092c77-eb68-410b-98a0-581b95375d12"
+    ],
+    "createdAt": "2025-12-26T09:37:25+00:00"
+  },
+  {
+    "scoreId": "29820ffb-0a85-4574-985c-ddc13bd68956",
+    "userId": "a1e2b9d6-e00c-401a-8ed6-baa2385f0316",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "4d6de4ed-92e7-44a0-b7cf-e25a65850ac9"
+    ],
+    "createdAt": "2026-01-15T03:32:48+00:00"
+  },
+  {
+    "scoreId": "bf705241-fbc0-440c-ae83-13ade934cbba",
+    "userId": "5815a251-5236-4b95-b907-343540c9c271",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "c0b7fcce-577d-4527-b0c6-ee22caf47fbe"
+    ],
+    "createdAt": "2024-11-20T07:31:51+00:00"
+  },
+  {
+    "scoreId": "be6e0fe3-edff-4147-88ca-ba0a8d54ed57",
+    "userId": "fb713a5c-8511-4ccf-bf1a-1f8e8d50bc42",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "9c935f0a-b15f-4317-9dac-a9aa95b94d06"
+    ],
+    "createdAt": "2026-02-09T05:54:19+00:00"
+  },
+  {
+    "scoreId": "be782387-b692-4acf-9907-70f7c2f2fffc",
+    "userId": "fb713a5c-8511-4ccf-bf1a-1f8e8d50bc42",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5e0c6943-3951-44d1-9529-5c95153ff7a4"
+    ],
+    "createdAt": "2025-12-07T04:52:37+00:00"
+  },
+  {
+    "scoreId": "a06c9574-4d55-4808-91f5-40f52091b678",
+    "userId": "fb713a5c-8511-4ccf-bf1a-1f8e8d50bc42",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "32f84168-b690-4507-865d-ab7a25e887d4"
+    ],
+    "createdAt": "2026-01-31T00:47:54+00:00"
+  },
+  {
+    "scoreId": "7add16aa-e8b7-4742-a14c-5e7ea7766fb8",
+    "userId": "fb713a5c-8511-4ccf-bf1a-1f8e8d50bc42",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "c6206bfe-5db3-480d-91cb-ae19826d1fd9"
+    ],
+    "createdAt": "2026-04-21T10:51:33+00:00"
+  },
+  {
+    "scoreId": "5a75639e-a5a3-46d4-a3a5-7386ec0c7fd9",
+    "userId": "fb713a5c-8511-4ccf-bf1a-1f8e8d50bc42",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "5958bb8c-778b-45de-8f46-4cd730d04b8f"
+    ],
+    "createdAt": "2025-10-23T09:23:42+00:00"
+  },
+  {
+    "scoreId": "9838d38a-1462-460c-a9ae-c4064c3900d3",
+    "userId": "c2e45860-36ed-4e6c-8e24-1f59d3c3ac71",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "1e18d879-2d96-4e68-9d44-990bfea0f72a"
+    ],
+    "createdAt": "2025-12-01T02:23:27+00:00"
+  },
+  {
+    "scoreId": "a66fd22a-9332-4df3-bebb-e02d5070245b",
+    "userId": "c2e45860-36ed-4e6c-8e24-1f59d3c3ac71",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "ce054f24-4d1c-4666-bc4f-d528045000c9"
+    ],
+    "createdAt": "2025-07-07T22:18:42+00:00"
+  },
+  {
+    "scoreId": "9bac3ad3-7513-4952-b133-5f99f5496a3b",
+    "userId": "c2e45860-36ed-4e6c-8e24-1f59d3c3ac71",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "e98a394f-ae7c-4c6a-832a-215f19fa3165"
+    ],
+    "createdAt": "2025-08-20T18:13:07+00:00"
+  },
+  {
+    "scoreId": "a2b15258-772d-49b7-a889-32549520ffbd",
+    "userId": "c2e45860-36ed-4e6c-8e24-1f59d3c3ac71",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "7339cdb2-2052-4c45-99d2-b033b3b90651"
+    ],
+    "createdAt": "2026-01-25T11:11:17+00:00"
+  },
+  {
+    "scoreId": "033991a4-a879-4fee-908f-eea5419c3c5a",
+    "userId": "c2e45860-36ed-4e6c-8e24-1f59d3c3ac71",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "4aed32a6-515b-4148-bfbd-d72785241b40"
+    ],
+    "createdAt": "2026-03-27T07:15:34+00:00"
+  },
+  {
+    "scoreId": "860ea785-ae31-461e-aeed-22d4e70a8ab3",
+    "userId": "24583ca2-ed31-48d2-a8b8-ecc335e596d2",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "20a7739b-6544-40d3-9b5b-91053551dc24"
+    ],
+    "createdAt": "2025-09-12T19:58:52+00:00"
+  },
+  {
+    "scoreId": "9dde8ffe-8e2c-4424-9825-50830873ff7a",
+    "userId": "24583ca2-ed31-48d2-a8b8-ecc335e596d2",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "bcc35c48-f0b5-4cd1-9a66-0539f8a609ee"
+    ],
+    "createdAt": "2026-03-28T22:19:43+00:00"
+  },
+  {
+    "scoreId": "4051471b-01f7-4b31-b200-10adb4e1dc71",
+    "userId": "d3317317-b61f-470f-aab0-56cd289ac1b9",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "74bd724a-7d63-46a3-84c5-2c1d6f736ded"
+    ],
+    "createdAt": "2024-11-14T09:50:41+00:00"
+  },
+  {
+    "scoreId": "8f53206e-a652-4910-a889-b924732e2326",
+    "userId": "d3317317-b61f-470f-aab0-56cd289ac1b9",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "42a9860b-aeb3-4748-bc06-e043bff165d5"
+    ],
+    "createdAt": "2026-03-09T18:15:35+00:00"
+  },
+  {
+    "scoreId": "065a6167-b013-4403-9053-f58d8a7dbb02",
+    "userId": "d3317317-b61f-470f-aab0-56cd289ac1b9",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "7c137901-d37b-4f18-89e9-5a153045a53c"
+    ],
+    "createdAt": "2025-11-26T03:24:39+00:00"
+  },
+  {
+    "scoreId": "e9d362c5-440c-47c1-b8e3-2be4dbafd4e4",
+    "userId": "d3317317-b61f-470f-aab0-56cd289ac1b9",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "7b42104c-9270-42f3-84bd-109b50928e12"
+    ],
+    "createdAt": "2026-02-04T06:27:57+00:00"
+  },
+  {
+    "scoreId": "f15faa18-6124-4304-b2fc-718c3a94654b",
+    "userId": "d3317317-b61f-470f-aab0-56cd289ac1b9",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "52ff9fc6-e124-456b-bcc8-1f4f65e71201"
+    ],
+    "createdAt": "2025-05-08T03:38:39+00:00"
+  },
+  {
+    "scoreId": "9e2765fa-7488-4c97-8250-3a81cb3387be",
+    "userId": "d3317317-b61f-470f-aab0-56cd289ac1b9",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "5b30f530-d2b8-41e7-b55e-753b8afb6e1b"
+    ],
+    "createdAt": "2025-08-15T15:04:31+00:00"
+  },
+  {
+    "scoreId": "75f50ced-65f0-46a7-b842-b1f0e4cd8611",
+    "userId": "d3317317-b61f-470f-aab0-56cd289ac1b9",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "782276d4-b167-4f17-96b9-ae551db3fccb"
+    ],
+    "createdAt": "2025-12-26T12:46:08+00:00"
+  },
+  {
+    "scoreId": "f0e7cebd-29c7-40af-a0bc-b91ef9134a13",
+    "userId": "d3317317-b61f-470f-aab0-56cd289ac1b9",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "84a5fb0f-c05a-4073-aee3-cc0e2e0641d0"
+    ],
+    "createdAt": "2025-10-16T20:07:39+00:00"
+  },
+  {
+    "scoreId": "40c7c15a-e9ed-4cc3-b99e-1d97f43c0ff1",
+    "userId": "d3317317-b61f-470f-aab0-56cd289ac1b9",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "16414fd4-44c2-4d04-a03b-b93f2776ee21"
+    ],
+    "createdAt": "2026-02-11T16:50:01+00:00"
+  },
+  {
+    "scoreId": "e15f4b18-7848-4c9a-a1f8-b38829f82f99",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 1,
+    "score": 10,
+    "active": false,
+    "entityUniqueIds": [
+      "6306e8ca-6e67-45bd-a494-e964e18276e6"
+    ],
+    "createdAt": "2025-12-03T23:49:08+00:00"
+  },
+  {
+    "scoreId": "b5b7f16e-0fba-4bc1-98d8-dd8125a3561e",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "a35867fd-1b79-45b4-95cc-e527e5b48755"
+    ],
+    "createdAt": "2025-12-27T07:30:26+00:00"
+  },
+  {
+    "scoreId": "0088b905-29f2-4ed3-9c1b-72175523442c",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "a9379196-a0b8-4f45-a870-2f77f95a1704"
+    ],
+    "createdAt": "2026-01-23T00:35:22+00:00"
+  },
+  {
+    "scoreId": "149dd9b1-20ae-4601-9d0b-06bdcb1e7f59",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "d70434d2-3f40-4070-a698-c850e475d6ca"
+    ],
+    "createdAt": "2026-05-07T13:09:14+00:00"
+  },
+  {
+    "scoreId": "a3e9db03-25cb-4c6d-86ae-a81c7bf433ad",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "d7445b26-fa17-4c64-9730-5527b6594b68"
+    ],
+    "createdAt": "2026-03-02T11:57:54+00:00"
+  },
+  {
+    "scoreId": "0a0eacac-7cbd-4b4e-9e80-ac18168e9a78",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "96aa69c4-e14a-495b-a30c-53f72c7db6c9"
+    ],
+    "createdAt": "2026-03-12T01:21:23+00:00"
+  },
+  {
+    "scoreId": "5eca7bfe-f110-4790-aa44-2f219fcb76da",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "05a4e2c5-ed2b-4c83-a690-a25bf24aa224"
+    ],
+    "createdAt": "2026-04-10T02:05:38+00:00"
+  },
+  {
+    "scoreId": "e8089765-1a27-4132-afb7-cc5513fc9759",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "e44a1789-a2e3-4792-ac90-9cccd3088768"
+    ],
+    "createdAt": "2026-04-11T08:14:49+00:00"
+  },
+  {
+    "scoreId": "29df894b-cb6e-4952-84bc-bb86453ea240",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "6d8a097d-7e54-4eb0-9528-f85c13a9c436"
+    ],
+    "createdAt": "2025-12-07T12:54:50+00:00"
+  },
+  {
+    "scoreId": "1e32f503-fca5-424a-8866-7a219d812754",
+    "userId": "ca1a8e1d-375b-418f-8cea-4247f65db71f",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "85dc7820-0635-48ee-b371-5d577ccd60fd"
+    ],
+    "createdAt": "2026-02-11T02:08:36+00:00"
+  },
+  {
+    "scoreId": "7cbcdee0-a74e-4c4b-be27-4fc7e13e20db",
+    "userId": "dadb1a9c-b4dd-43db-805f-35f11c769705",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "d20323ab-8015-4742-b308-e444206a3510"
+    ],
+    "createdAt": "2026-02-18T10:02:21+00:00"
+  },
+  {
+    "scoreId": "678707b7-630d-4137-ac97-8c817fdb95a6",
+    "userId": "2a48807d-f776-4fac-88f7-ca66760869d7",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "538145f6-a9e3-411a-abb5-a32756ff0315"
+    ],
+    "createdAt": "2026-01-12T19:56:31+00:00"
+  },
+  {
+    "scoreId": "0d2716bd-1312-40d9-87f3-d3e3b0a93155",
+    "userId": "2a48807d-f776-4fac-88f7-ca66760869d7",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "9f174768-b6d8-4c34-b5bc-2576e738ccea"
+    ],
+    "createdAt": "2026-01-27T21:25:50+00:00"
+  },
+  {
+    "scoreId": "c54bbaa9-9b79-47eb-8643-d7c094400491",
+    "userId": "2a48807d-f776-4fac-88f7-ca66760869d7",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "95e060a6-2329-4857-803c-d63538cea71d"
+    ],
+    "createdAt": "2026-02-27T17:17:54+00:00"
+  },
+  {
+    "scoreId": "650ba9f8-0b28-4937-8ebb-01b0822345f9",
+    "userId": "2a48807d-f776-4fac-88f7-ca66760869d7",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "7cab0fb6-f8ec-4949-b6cd-aa06fe7646dc"
+    ],
+    "createdAt": "2026-03-25T17:57:36+00:00"
+  },
+  {
+    "scoreId": "9c57cfad-bc33-4dbf-a33d-3df5890e1180",
+    "userId": "2a48807d-f776-4fac-88f7-ca66760869d7",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "f516368b-fec8-4b63-af14-749361c51e28"
+    ],
+    "createdAt": "2026-03-09T16:32:04+00:00"
+  },
+  {
+    "scoreId": "a47c5df1-d2d4-43f1-b428-3b7a632501c8",
+    "userId": "2a48807d-f776-4fac-88f7-ca66760869d7",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "996e667c-6b81-4d86-a3a4-db57ef608d57"
+    ],
+    "createdAt": "2026-01-08T16:41:56+00:00"
+  },
+  {
+    "scoreId": "92c0e2c5-b7c0-4c60-bc3f-be4f5a7eb29e",
+    "userId": "2a48807d-f776-4fac-88f7-ca66760869d7",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "d9bf7f6f-5bc4-4606-bcbb-001ca929ae42"
+    ],
+    "createdAt": "2026-04-13T07:03:24+00:00"
+  },
+  {
+    "scoreId": "d95f6f94-8a32-4fad-b24c-0ec6d4526faa",
+    "userId": "c5efe4e4-070d-4da6-abd3-5a9bfd025493",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "ec5d2605-595d-4d34-9f4e-18443172f6ad"
+    ],
+    "createdAt": "2025-10-04T04:55:16+00:00"
+  },
+  {
+    "scoreId": "de883cae-ea03-4605-be03-7e94b0876b1e",
+    "userId": "38bb4bf5-e54f-4c08-82f8-b9a29c166f8b",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "ef06ac69-5a1b-445d-8242-6d5010d6fb41"
+    ],
+    "createdAt": "2026-01-12T17:58:38+00:00"
+  },
+  {
+    "scoreId": "a951f1c7-ceab-4324-8cf1-b69df4e99a74",
+    "userId": "38bb4bf5-e54f-4c08-82f8-b9a29c166f8b",
+    "type": 5,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "4e77df99-5f38-43d3-bf0a-ba450790b8da"
+    ],
+    "createdAt": "2026-01-06T08:03:17+00:00"
+  },
+  {
+    "scoreId": "3506fb3b-82b2-4b34-8862-57074f88235d",
+    "userId": "391c3ff6-d63e-45bd-b49c-63f4ab49262d",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "d3219177-6f2b-4883-ac06-d64c8db0a245"
+    ],
+    "createdAt": "2026-03-20T18:54:09+00:00"
+  },
+  {
+    "scoreId": "b38c3933-9001-4210-9f87-c9f00a13e3ee",
+    "userId": "391c3ff6-d63e-45bd-b49c-63f4ab49262d",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "d86130ec-10f3-4449-8eab-21673b83acc0"
+    ],
+    "createdAt": "2026-02-19T03:53:14+00:00"
+  },
+  {
+    "scoreId": "e193b64a-fac5-4b77-a86d-78074c6db902",
+    "userId": "391c3ff6-d63e-45bd-b49c-63f4ab49262d",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "80c2bbd5-2e54-4551-9554-ffd9dc40ae5d"
+    ],
+    "createdAt": "2026-02-02T06:56:01+00:00"
+  },
+  {
+    "scoreId": "f13ac911-7b6d-46ee-95a4-9e7f8f3f6ff7",
+    "userId": "69bbd43b-850c-4325-a8e0-b25ca30046b5",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "dd8d8acf-76aa-4f35-bd5f-c1a462d97ee3"
+    ],
+    "createdAt": "2025-05-02T05:02:22+00:00"
+  },
+  {
+    "scoreId": "6bfeea33-5e25-46cf-a3d2-1abe0b4cb4ff",
+    "userId": "cd28ac7a-7df0-4514-8da7-e15e77af6ea4",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "8d60af97-775e-4f97-aa01-321fe056a3bc"
+    ],
+    "createdAt": "2026-02-19T01:42:37+00:00"
+  },
+  {
+    "scoreId": "3304d794-73dc-4d60-be25-cfa8cbe4988b",
+    "userId": "1e169057-a7f3-4fba-82f2-a08b5c6f51d4",
+    "type": 2,
+    "score": 5,
+    "active": true,
+    "entityUniqueIds": [
+      "ae40c56b-7911-4c3d-b532-e19f6d389962"
+    ],
+    "createdAt": "2025-07-22T17:52:02+00:00"
+  },
+  {
+    "scoreId": "9f68778a-f128-44b8-bee7-4b22f5b88a92",
+    "userId": "7d0b891d-6436-4057-bc84-e81920d8bdab",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "6f647ddd-f50e-43b8-9954-034bb19056f1"
+    ],
+    "createdAt": "2025-08-15T07:05:40+00:00"
+  },
+  {
+    "scoreId": "ba220b71-b3ca-4cc9-8399-dfd15c249703",
+    "userId": "7d0b891d-6436-4057-bc84-e81920d8bdab",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "a6788118-5719-486e-a469-ec5e69c180a0"
+    ],
+    "createdAt": "2026-04-27T08:42:31+00:00"
+  },
+  {
+    "scoreId": "0575e584-f748-4b9e-960a-2dfa8f63eada",
+    "userId": "7a8484db-a832-4b1f-876b-5081aea471ec",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "b9305ec7-e442-4763-8afd-aa634f6a9be7"
+    ],
+    "createdAt": "2026-04-07T15:09:40+00:00"
+  },
+  {
+    "scoreId": "3d537b3a-684f-4a94-b5c3-79a91c92a4d3",
+    "userId": "7a8484db-a832-4b1f-876b-5081aea471ec",
+    "type": 3,
+    "score": 50,
+    "active": true,
+    "entityUniqueIds": [
+      "026e6a71-add2-4dbb-93c4-da711b80dd01"
+    ],
+    "createdAt": "2025-12-03T18:41:56+00:00"
+  },
+  {
+    "scoreId": "31b0df2a-a415-4688-ad6d-88176e8f261b",
+    "userId": "7a8484db-a832-4b1f-876b-5081aea471ec",
+    "type": 4,
+    "score": 20,
+    "active": true,
+    "entityUniqueIds": [
+      "35577092-812a-4f6a-b037-264b3b88d705"
+    ],
+    "createdAt": "2025-10-23T22:07:59+00:00"
+  },
+  {
+    "scoreId": "2a73d759-7917-4171-ada4-9dabe1f558d6",
+    "userId": "4f96f37e-ed8b-48b4-8274-157b2d1f3041",
+    "type": 7,
+    "score": 100,
+    "active": true,
+    "entityUniqueIds": [
+      "31ef33b6-5e92-47f7-a2a0-9f6d01b6ca5d"
+    ],
+    "createdAt": "2026-05-06T01:09:56+00:00"
+  },
+  {
+    "scoreId": "87b52be4-fabc-4b16-a4f0-503140debec4",
+    "userId": "4f96f37e-ed8b-48b4-8274-157b2d1f3041",
+    "type": 1,
+    "score": 10,
+    "active": true,
+    "entityUniqueIds": [
+      "4b9f274c-9b11-4064-99a1-2a5852ac1f6b"
+    ],
+    "createdAt": "2025-02-10T04:38:01+00:00"
+  },
+  {
+    "scoreId": "b7d2cdde-dd70-4b39-99b3-ffe8b8b32b20",
+    "userId": "4f96f37e-ed8b-48b4-8274-157b2d1f3041",
+    "type": 6,
+    "score": 2,
+    "active": true,
+    "entityUniqueIds": [
+      "09f60ecc-d901-47cd-a3b4-1d88799683fb"
+    ],
+    "createdAt": "2025-07-13T09:04:01+00:00"
+  }
+]
