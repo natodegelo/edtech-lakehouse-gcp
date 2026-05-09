@@ -1,7 +1,7 @@
 # Schema das Fontes de Dados — EdTech Lakehouse GCP (LearnHub)
 
 Documentação dos schemas das 21 entidades da plataforma fictícia **LearnHub**.
-Todos os dados são sintéticos, gerados com Faker, baseados na lógica de negócio de uma plataforma EdTech real.
+Todos os dados são sintéticos, gerados com Faker, baseados na lógica de negócio de uma plataforma EdTech.
 
 > **Chave central:** `userId` (UUID v4) — presente em todas as collections de comportamento, engajamento, scores e financeiro.
 
@@ -488,4 +488,4 @@ subscriptions (userId) → bills (subscriptionId)
 
 ---
 
-*Schema gerado com base em dados de produção anonimizados. Todos os valores são sintéticos.*
+*Todos os dados são sintéticos, gerados com Faker. O schema reflete a lógica de negócio de uma plataforma EdTech fictícia.*
