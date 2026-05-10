@@ -1,0 +1,28 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_courses",
+  description: "Catálogo de cursos da plataforma LearnHub",
+  tags: ["silver", "courses"]
+}
+
+SELECT
+  courseId,
+  name,
+  description,
+  certificate,
+  durationHours,
+  durationMinutes,
+  categories,
+  categoryGroups,
+  levels,
+  tags,
+  plans,
+  TIMESTAMP(createdAt)    AS createdAt,
+
+  CURRENT_TIMESTAMP()     AS _transformed_at,
+  '1.0.0'                AS _pipeline_version
+
+FROM ${ref("courses")}
+
+WHERE courseId IS NOT NULL
