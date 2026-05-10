@@ -1,0 +1,29 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_specialization_graduates",
+  description: "Usuários aprovados em especializações",
+  bigquery: {
+    partitionBy: "DATE(start_time)",
+    clusterBy: ["userId"]
+  },
+  tags: ["silver", "certifications"]
+}
+
+SELECT
+  aprovadoId,
+  userId,
+  userEmail,
+  userName,
+  userPlanName,
+  eventId,
+  eventTitle,
+  average_progress,
+  TIMESTAMP(start_time)          AS start_time,
+  TIMESTAMP(_ingest_timestamp)   AS _ingested_at,
+  DATE(_ingest_date)             AS _ingest_date,
+  CURRENT_TIMESTAMP()            AS _transformed_at,
+  '1.0.0'                       AS _pipeline_version
+FROM ${ref("specialization_graduates")}
+WHERE userId IS NOT NULL
+  AND eventId IS NOT NULL

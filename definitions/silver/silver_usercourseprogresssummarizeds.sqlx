@@ -1,0 +1,23 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_usercourseprogresssummarizeds",
+  description: "Progresso consolidado do usuário em cursos",
+  tags: ["silver", "engagement"]
+}
+
+SELECT
+  userId,
+  userName,
+  company,
+  planName,
+  courses,
+  events,
+  totalWatchedTimeInMinutes,
+  totalWatchedTimeCurrentMonthInMinutes,
+  TIMESTAMP(userSince)           AS userSince,
+  TIMESTAMP(updatedAt)           AS updatedAt,
+  CURRENT_TIMESTAMP()            AS _transformed_at,
+  '1.0.0'                       AS _pipeline_version
+FROM ${ref("usercourseprogresssummarizeds")}
+WHERE userId IS NOT NULL
