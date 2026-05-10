@@ -1,0 +1,30 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_certificates",
+  description: "Certificados emitidos por conclusão de cursos",
+  bigquery: {
+    partitionBy: "DATE(finishDate)",
+    clusterBy: ["userId"]
+  },
+  tags: ["silver", "certifications"]
+}
+
+SELECT
+  certificateId,
+  userId,
+  userName,
+  courseId,
+  courseName,
+  finalProgress,
+  durationHours,
+  durationMinutes,
+  fileName,
+  TIMESTAMP(finishDate)          AS finishDate,
+  TIMESTAMP(_ingest_timestamp)   AS _ingested_at,
+  DATE(_ingest_date)             AS _ingest_date,
+  CURRENT_TIMESTAMP()            AS _transformed_at,
+  '1.0.0'                       AS _pipeline_version
+FROM ${ref("certificates")}
+WHERE certificateId IS NOT NULL
+  AND userId IS NOT NULL

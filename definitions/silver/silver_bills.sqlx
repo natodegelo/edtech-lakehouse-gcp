@@ -1,0 +1,30 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_bills",
+  description: "Cobranças por ciclo de assinatura",
+  bigquery: {
+    partitionBy: "DATE(due_at)",
+    clusterBy: ["status"]
+  },
+  tags: ["silver", "financial"]
+}
+
+SELECT
+  billId,
+  userId,
+  subscriptionId,
+  CAST(amount AS FLOAT64)        AS amount,
+  status,
+  installments,
+  TIMESTAMP(due_at)              AS due_at,
+  TIMESTAMP(created_at)          AS created_at,
+  TIMESTAMP(updated_at)          AS updated_at,
+  TIMESTAMP(_ingest_timestamp)   AS _ingested_at,
+  DATE(_ingest_date)             AS _ingest_date,
+  _source,
+  CURRENT_TIMESTAMP()            AS _transformed_at,
+  '1.0.0'                       AS _pipeline_version
+FROM ${ref("bills")}
+WHERE billId IS NOT NULL
+  AND userId IS NOT NULL
