@@ -4,7 +4,7 @@ config {
   name: "silver_users",
   description: "Usuários da plataforma LearnHub — snapshot diário com data lineage",
   bigquery: {
-    clusterBy: ["planId", "active"]
+    clusterBy: ["profile", "active"]
   },
   tags: ["silver", "users"]
 }
