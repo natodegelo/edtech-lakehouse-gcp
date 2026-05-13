@@ -1,0 +1,75 @@
+config {
+  type: "table",
+  schema: "gold",
+  name: "gold_user_content_engagement",
+  description: "Engajamento por usuário × conteúdo. Grain: userId × contentId × contentType.",
+  bigquery: {
+    partitionBy: "last_access",
+    clusterBy: ["userId", "status"]
+  },
+  tags: ["gold", "engagement"]
+}
+
+WITH
+
+course_progress AS (
+  SELECT
+    userId,
+    courseId                                    AS contentId,
+    'course'                                    AS contentType,
+    c.name                                      AS contentName,
+    c.categoryGroups                            AS contentCategory,
+    MAX(ucp.progress)                           AS progress_pct,
+    ROUND(SUM(ucp.videoProgress) / 60.0, 2)    AS watched_minutes,
+    MAX(DATE(ucp.updatedAt))                    AS last_access,
+    CASE
+      WHEN MAX(ucp.progress) = 0    THEN 'not_started'
+      WHEN MAX(ucp.progress) < 90   THEN 'in_progress'
+      ELSE 'completed'
+    END                                         AS status
+  FROM ${ref("silver_usercourseprogresses")} ucp
+  LEFT JOIN ${ref("silver_courses")} c USING (courseId)
+  GROUP BY userId, courseId, c.name, c.categoryGroups
+),
+
+event_progress AS (
+  SELECT
+    userId,
+    eventId                                     AS contentId,
+    'event'                                     AS contentType,
+    ep.eventName                                AS contentName,
+    ep.eventCategory                            AS contentCategory,
+    MAX(ep.progress)                            AS progress_pct,
+    CAST(NULL AS FLOAT64)                       AS watched_minutes,
+    MAX(DATE(ep.eventDate))                     AS last_access,
+    CASE
+      WHEN MAX(ep.progress) = 0   THEN 'not_started'
+      WHEN MAX(ep.progress) < 70  THEN 'in_progress'
+      ELSE 'completed'
+    END                                         AS status
+  FROM ${ref("silver_newusereventprogresses")} ep
+  GROUP BY userId, eventId, ep.eventName, ep.eventCategory
+),
+
+combined AS (
+  SELECT * FROM course_progress
+  UNION ALL
+  SELECT * FROM event_progress
+)
+
+SELECT
+  userId,
+  contentId,
+  contentType,
+  contentName,
+  contentCategory,
+  progress_pct,
+  watched_minutes,
+  status,
+  last_access,
+  CURRENT_DATE()      AS _ingest_date,
+  CURRENT_TIMESTAMP() AS _transformed_at,
+  '1.0.0'             AS _pipeline_version
+FROM combined
+WHERE userId IS NOT NULL
+  AND contentId IS NOT NULL
