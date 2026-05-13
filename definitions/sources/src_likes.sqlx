@@ -1,6 +1,0 @@
-config {
-  type: "declaration",
-  database: "edtech-lakehouse",
-  schema: "raw_dev",
-  name: "likes"
-}

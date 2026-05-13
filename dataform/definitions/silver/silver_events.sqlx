@@ -1,0 +1,27 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_events",
+  description: "Catálogo de eventos ao vivo da plataforma LearnHub",
+  tags: ["silver", "events"]
+}
+
+SELECT
+  eventId,
+  title,
+  description,
+  category,
+  subject,
+  hostName,
+  hostEmail,
+  highlight,
+  tags,
+  durationHours,
+  durationMinutes,
+
+  CURRENT_TIMESTAMP()     AS _transformed_at,
+  '1.0.0'                AS _pipeline_version
+
+FROM ${ref("events")}
+
+WHERE eventId IS NOT NULL

@@ -1,0 +1,17 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_scoresummarizeds",
+  description: "Score total consolidado por usuário",
+  tags: ["silver", "scores"]
+}
+
+SELECT
+  scoreSummarizedId,
+  userId,
+  score,
+  TIMESTAMP(updatedAt)           AS updatedAt,
+  CURRENT_TIMESTAMP()            AS _transformed_at,
+  '1.0.0'                       AS _pipeline_version
+FROM ${ref("scoresummarizeds")}
+WHERE userId IS NOT NULL

@@ -1,0 +1,54 @@
+config {
+  type: "incremental",
+  schema: "silver_dev",
+  name: "silver_userplans",
+  description: "Planos dos usuários com histórico SCD Tipo 2",
+  bigquery: {
+    partitionBy: "valid_from",
+    clusterBy: ["userId", "planId"]
+  },
+  tags: ["silver", "users", "scd2"],
+  uniqueKey: ["userId", "valid_from"]
+}
+
+WITH source AS (
+  SELECT
+    userPlanId,
+    userId,
+    planId,
+    planName,
+    TIMESTAMP(validity)     AS validity,
+    isTrial,
+    trialUsed,
+    TIMESTAMP(trialUseDate) AS trialUseDate,
+    TIMESTAMP(createdAt)    AS createdAt,
+    TIMESTAMP(updatedAt)    AS updatedAt,
+    TIMESTAMP(_ingest_timestamp) AS _ingested_at,
+    DATE(_ingest_date)      AS _ingest_date,
+    _source
+  FROM ${ref("userplans")}
+  WHERE userId IS NOT NULL
+    AND planId IS NOT NULL
+)
+
+SELECT
+  userPlanId,
+  userId,
+  planId,
+  planName,
+  validity,
+  isTrial,
+  trialUsed,
+  trialUseDate,
+  createdAt,
+  updatedAt,
+  CURRENT_DATE()          AS valid_from,
+  CAST(NULL AS DATE)      AS valid_to,
+  TRUE                    AS is_current,
+  _ingested_at,
+  _ingest_date,
+  _source,
+  CURRENT_TIMESTAMP()     AS _transformed_at,
+  '1.0.0'                AS _pipeline_version
+
+FROM source

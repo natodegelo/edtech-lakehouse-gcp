@@ -1,6 +1,0 @@
-config { type: "assertion", tags: ["gold", "assertion", "adherence"] }
-
-SELECT userId, reference_month, COUNT(*) AS qty
-FROM ${ref("gold_user_adherence")}
-GROUP BY 1, 2
-HAVING COUNT(*) > 1

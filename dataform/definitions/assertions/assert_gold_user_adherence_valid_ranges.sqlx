@@ -1,0 +1,21 @@
+config { type: "assertion", tags: ["gold", "assertion", "adherence"] }
+
+SELECT
+  userId,
+  reference_month,
+  CASE
+    WHEN days_active < 0 OR days_active > 31        THEN 'days_active fora de [0,31]'
+    WHEN sessions < 0                               THEN 'sessions negativo'
+    WHEN score_earned_month < 0                     THEN 'score_earned_month negativo'
+    WHEN watched_minutes_month < 0                  THEN 'watched_minutes_month negativo'
+    WHEN adherence_score < 0 OR adherence_score > 1 THEN 'adherence_score fora de [0,1]'
+    WHEN lifetime_days < 0                          THEN 'lifetime_days negativo'
+  END AS failure_reason
+FROM ${ref("gold_user_adherence")}
+WHERE
+  days_active < 0 OR days_active > 31
+  OR sessions < 0
+  OR score_earned_month < 0
+  OR watched_minutes_month < 0
+  OR adherence_score < 0 OR adherence_score > 1
+  OR lifetime_days < 0
