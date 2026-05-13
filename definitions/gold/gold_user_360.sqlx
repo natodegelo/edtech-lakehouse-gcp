@@ -99,9 +99,13 @@ trial_conversion AS (
     up.userId,
     up.isTrial,
     up.trialUsed,
-    IF(up.isTrial = TRUE AND p.name != 'Starter', TRUE, FALSE) AS trial_converted
-  FROM ${ref("silver_userplans")} up
-  LEFT JOIN ${ref("silver_plans")} p ON up.planId = p.planId
+    CASE
+      WHEN up.isTrial = TRUE AND p.name != 'Starter' THEN TRUE
+      ELSE FALSE
+    END AS trial_converted
+  FROM ${ref("silver_userplans")} AS up
+  LEFT JOIN ${ref("silver_plans")} AS p
+    ON up.planId = p.planId
     AND up.is_current = TRUE
 ),
 
