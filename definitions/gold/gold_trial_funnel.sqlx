@@ -1,0 +1,104 @@
+config {
+  type: "table",
+  schema: "gold",
+  name: "gold_trial_funnel",
+  description: "Funil de conversão trial → pago. Grain: 1 linha por userId que teve trial.",
+  bigquery: {
+    partitionBy: "trial_start",
+    clusterBy: ["converted", "plan_name"]
+  },
+  tags: ["gold", "trial", "funnel"]
+}
+
+WITH
+
+trial_users AS (
+  SELECT
+    up.userId,
+    up.planId        AS plan_id,
+    up.planName      AS plan_name,
+    DATE(up.trialUseDate)                    AS trial_start,
+    DATE(up.validity)                        AS trial_end,
+    DATE_DIFF(
+      DATE(up.validity),
+      DATE(up.trialUseDate),
+      DAY
+    )                                        AS trial_days
+  FROM ${ref("silver_userplans")} up
+  WHERE up.isTrial = TRUE
+    AND up.trialUseDate IS NOT NULL
+),
+
+crm_signals AS (
+  SELECT
+    userid                                   AS userId,
+    trial_cancel,
+    trial_cancel_date,
+    COALESCE(trial_business, trial_user)     AS cancel_reason
+  FROM (
+    SELECT
+      userid,
+      trial_cancel,
+      trial_cancel_date,
+      trial_business,
+      trial_user,
+      ROW_NUMBER() OVER (
+        PARTITION BY userid
+        ORDER BY lastmodifieddate DESC
+      ) AS rn
+    FROM ${ref("silver_crm_contacts")}
+    WHERE userid IS NOT NULL
+  )
+  WHERE rn = 1
+),
+
+content_during_trial AS (
+  SELECT
+    ucp.userId,
+    COUNT(DISTINCT ucp.courseId)             AS content_consumed,
+    COALESCE(SUM(ucp.videoProgress) / 60, 0) AS watched_minutes_trial
+  FROM ${ref("silver_usercourseprogresses")} ucp
+  INNER JOIN trial_users tu
+    ON ucp.userId = tu.userId
+    AND DATE(ucp.createdAt) BETWEEN tu.trial_start AND tu.trial_end
+  GROUP BY ucp.userId
+),
+
+score_at_conversion AS (
+  SELECT
+    s.userId,
+    SUM(s.score) AS score_at_conversion
+  FROM ${ref("silver_scores")} s
+  INNER JOIN trial_users tu
+    ON s.userId = tu.userId
+    AND DATE(s.createdAt) <= tu.trial_end
+  GROUP BY s.userId
+)
+
+SELECT
+  tu.userId,
+  tu.plan_id,
+  tu.plan_name,
+  tu.trial_start,
+  tu.trial_end,
+  tu.trial_days,
+  CASE
+    WHEN crm.trial_cancel = TRUE THEN FALSE
+    ELSE TRUE
+  END                                        AS converted,
+  CASE
+    WHEN crm.trial_cancel = TRUE
+    THEN DATE(crm.trial_cancel_date)
+    ELSE NULL
+  END                                        AS cancel_date,
+  crm.cancel_reason,
+  COALESCE(ct.content_consumed, 0)           AS content_consumed,
+  COALESCE(ct.watched_minutes_trial, 0)      AS watched_minutes_trial,
+  COALESCE(sc.score_at_conversion, 0)        AS score_at_conversion,
+  CURRENT_DATE()                             AS _ingest_date,
+  CURRENT_TIMESTAMP()                        AS _transformed_at,
+  '1.0.0'                                    AS _pipeline_version
+FROM trial_users tu
+LEFT JOIN crm_signals           crm ON tu.userId = crm.userId
+LEFT JOIN content_during_trial  ct  ON tu.userId = ct.userId
+LEFT JOIN score_at_conversion   sc  ON tu.userId = sc.userId
