@@ -155,7 +155,7 @@ consolidated AS (
   LEFT JOIN event_engagement     ee ON ub.userId = ee.userId
   LEFT JOIN trial_conversion     tc ON ub.userId = tc.userId
   LEFT JOIN revenue              rv ON ub.userId = rv.userId
-)
+),
 
 -- ── 9. Output final com termômetro ───────────────────────────────────────────
 SELECT
