@@ -1,0 +1,85 @@
+config {
+  type: "table",
+  schema: "gold",
+  name: "gold_trial_daily_journey",
+  description: "Jornada diária do usuário durante o trial. Grain: userId × journey_date.",
+  bigquery: {
+    partitionBy: "journey_date",
+    clusterBy: ["userId", "trial_day"]
+  },
+  tags: ["gold", "trial", "journey"]
+}
+
+WITH
+
+trial_users AS (
+  SELECT
+    userId,
+    DATE(trialUseDate) AS trial_start,
+    DATE(validity)     AS trial_end
+  FROM ${ref("silver_userplans")}
+  WHERE isTrial = TRUE
+    AND trialUseDate IS NOT NULL
+),
+
+trial_spine AS (
+  SELECT
+    tu.userId,
+    d                                                         AS journey_date,
+    DATE_DIFF(d, tu.trial_start, DAY) + 1                    AS trial_day,
+    tu.trial_start,
+    tu.trial_end,
+    (d = tu.trial_end)                                        AS is_last_day
+  FROM trial_users tu
+  CROSS JOIN UNNEST(
+    GENERATE_DATE_ARRAY(tu.trial_start, tu.trial_end)
+  ) AS d
+),
+
+daily_content AS (
+  SELECT
+    userId,
+    DATE(createdAt)                    AS activity_date,
+    COUNT(DISTINCT courseId)           AS content_accessed,
+    COUNT(DISTINCT topicId)            AS topics_completed,
+    ROUND(SUM(videoProgress) / 60, 2) AS watched_minutes
+  FROM ${ref("silver_usercourseprogresses")}
+  GROUP BY userId, DATE(createdAt)
+),
+
+daily_scores AS (
+  SELECT
+    userId,
+    DATE(createdAt)   AS activity_date,
+    SUM(score)        AS score_earned
+  FROM ${ref("silver_scores")}
+  GROUP BY userId, DATE(createdAt)
+)
+
+SELECT
+  ts.userId,
+  ts.journey_date,
+  ts.trial_day,
+  ts.trial_start,
+  ts.trial_end,
+  ts.is_last_day,
+  (dc.content_accessed > 0 OR ds.score_earned > 0)     AS logged_in,
+  COALESCE(dc.content_accessed, 0)                     AS content_accessed,
+  COALESCE(dc.topics_completed, 0)                     AS topics_completed,
+  COALESCE(dc.watched_minutes, 0)                      AS watched_minutes,
+  COALESCE(ds.score_earned, 0)                         AS score_earned,
+  SUM(COALESCE(ds.score_earned, 0)) OVER (
+    PARTITION BY ts.userId
+    ORDER BY ts.journey_date
+    ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+  )                                                    AS cumulative_score,
+  CURRENT_DATE()                                       AS _ingest_date,
+  CURRENT_TIMESTAMP()                                  AS _transformed_at,
+  '1.0.0'                                              AS _pipeline_version
+FROM trial_spine ts
+LEFT JOIN daily_content dc
+  ON ts.userId = dc.userId
+  AND ts.journey_date = dc.activity_date
+LEFT JOIN daily_scores ds
+  ON ts.userId = ds.userId
+  AND ts.journey_date = ds.activity_date
