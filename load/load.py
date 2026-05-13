@@ -8,19 +8,45 @@ from google.cloud import bigquery, storage
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-GCS_PROJECT      = os.environ.get("GCS_PROJECT", "edtech-lakehouse")
-GCS_RAW_BUCKET   = os.environ.get("GCS_RAW_BUCKET", "edtech-raw-dev")
-BQ_DATASET       = os.environ.get("BQ_DATASET", "raw_dev")
-BQ_LOCATION      = os.environ.get("BQ_LOCATION", "us-east1")
+GCS_PROJECT    = os.environ.get("GCS_PROJECT", "edtech-lakehouse")
+GCS_RAW_BUCKET = os.environ.get("GCS_RAW_BUCKET", "edtech-raw-dev")
+BQ_DATASET     = os.environ.get("BQ_DATASET", "raw_dev")
+BQ_LOCATION    = os.environ.get("BQ_LOCATION", "us-east1")
 
-COLLECTIONS = [
-    "users", "userprofiles", "userplans", "courses", "events", "plans",
-    "usercourseprogresses", "usercourseprogresssummarizeds",
-    "newusereventprogresses", "audittraffics", "scores", "scoresummarizeds",
-    "subscriptions", "bills", "consolidated_sales", "comments", "likes",
-    "certificates", "specialization_graduates", "gateway_customers",
-    "crm_contacts",
-]
+# Mesma estratégia do ingest.py — define write_disposition no BigQuery
+WRITE_DISPOSITION = {
+    "snapshot":   bigquery.WriteDisposition.WRITE_TRUNCATE,
+    "scd2":       bigquery.WriteDisposition.WRITE_TRUNCATE,
+    "merge":      bigquery.WriteDisposition.WRITE_TRUNCATE,
+    "append":     bigquery.WriteDisposition.WRITE_APPEND,
+    "checkpoint": bigquery.WriteDisposition.WRITE_APPEND,
+}
+
+INGEST_STRATEGY = {
+    "users":                         "snapshot",
+    "userprofiles":                  "snapshot",
+    "courses":                       "snapshot",
+    "events":                        "snapshot",
+    "plans":                         "snapshot",
+    "gateway_customers":             "snapshot",
+    "consolidated_sales":            "snapshot",
+    "usercourseprogresssummarizeds": "snapshot",
+    "scoresummarizeds":              "snapshot",
+    "bills":                         "snapshot",
+    "userplans":                     "scd2",
+    "subscriptions":                 "scd2",
+    "usercourseprogresses":          "merge",
+    "crm_contacts":                  "checkpoint",
+    "audittraffics":                 "append",
+    "scores":                        "append",
+    "comments":                      "append",
+    "likes":                         "append",
+    "certificates":                  "append",
+    "newusereventprogresses":        "append",
+    "specialization_graduates":      "append",
+}
+
+COLLECTIONS = list(INGEST_STRATEGY.keys())
 
 
 def get_latest_partition(storage_client: storage.Client, collection: str) -> str | None:
@@ -41,11 +67,13 @@ def load_collection(bq_client: bigquery.Client, storage_client: storage.Client, 
         logger.warning(f"No data found in GCS for collection: {collection}")
         return {"collection": collection, "status": "skipped"}
 
-    table_id = f"{GCS_PROJECT}.{BQ_DATASET}.{collection}"
+    strategy  = INGEST_STRATEGY.get(collection, "snapshot")
+    write_dis = WRITE_DISPOSITION[strategy]
+    table_id  = f"{GCS_PROJECT}.{BQ_DATASET}.{collection}"
 
     job_config = bigquery.LoadJobConfig(
         source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
-        write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,
+        write_disposition=write_dis,
         autodetect=True,
         ignore_unknown_values=True,
     )
@@ -60,6 +88,8 @@ def load_collection(bq_client: bigquery.Client, storage_client: storage.Client, 
         "service": "lakehouse-load",
         "collection": collection,
         "table": table_id,
+        "strategy": strategy,
+        "write_disposition": str(write_dis),
         "rows_loaded": table.num_rows,
         "gcs_uri": gcs_uri,
         "status": "success",
@@ -77,9 +107,9 @@ def main():
         result = load_collection(bq_client, storage_client, collection)
         results.append(result)
 
-    total    = len(results)
-    skipped  = sum(1 for r in results if r.get("status") == "skipped")
-    loaded   = sum(r.get("rows_loaded", 0) for r in results)
+    total   = len(results)
+    skipped = sum(1 for r in results if r.get("status") == "skipped")
+    loaded  = sum(r.get("rows_loaded", 0) for r in results)
 
     logger.info(json.dumps({
         "severity": "INFO",
