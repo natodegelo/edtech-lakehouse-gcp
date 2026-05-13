@@ -102,8 +102,9 @@ trial_conversion AS (
     IF(up.isTrial = TRUE AND p.name != 'Starter', TRUE, FALSE) AS trial_converted
   FROM ${ref("silver_userplans")} up
   LEFT JOIN ${ref("silver_plans")} p ON up.planId = p.planId
-  WHERE up.is_current = TRUE
+    AND up.is_current = TRUE
 ),
+
 
 -- ── 7. Receita total via subscriptions ───────────────────────────────────────
 revenue AS (
@@ -155,7 +156,7 @@ consolidated AS (
   LEFT JOIN event_engagement     ee ON ub.userId = ee.userId
   LEFT JOIN trial_conversion     tc ON ub.userId = tc.userId
   LEFT JOIN revenue              rv ON ub.userId = rv.userId
-),
+)
 
 -- ── 9. Output final com termômetro ───────────────────────────────────────────
 SELECT
