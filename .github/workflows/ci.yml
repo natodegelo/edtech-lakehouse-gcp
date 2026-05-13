@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt flake8 black pytest
+
+      - name: Lint (flake8)
+        run: flake8 ingestion/ load/ --max-line-length=120 --ignore=E501,E241,W292,E231,E221,F401
+
+      - name: Format check (black)
+        run: black --check ingestion/ load/ --line-length=120
+        continue-on-error: true
+
+      - name: Test
+        run: pytest tests/ -v --tb=short
+        if: always()
