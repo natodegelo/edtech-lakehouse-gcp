@@ -94,24 +94,14 @@ event_engagement AS (
 ),
 
 -- ── 6. Conversão trial ────────────────────────────────────────────────────────
-starter_plan AS (
-  SELECT planId
-  FROM ${ref("silver_plans")}
-  WHERE name = 'Starter'
-),
-
 trial_conversion AS (
   SELECT
     up.userId,
     up.isTrial,
     up.trialUsed,
-    CASE
-      WHEN up.isTrial = TRUE
-       AND up.planId NOT IN (SELECT planId FROM starter_plan)
-      THEN TRUE
-      ELSE FALSE
-    END AS trial_converted
+    IF(up.isTrial = TRUE AND p.name != 'Starter', TRUE, FALSE) AS trial_converted
   FROM ${ref("silver_userplans")} up
+  LEFT JOIN ${ref("silver_plans")} p ON up.planId = p.planId
   WHERE up.is_current = TRUE
 ),
 
