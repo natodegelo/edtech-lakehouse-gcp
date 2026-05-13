@@ -2,7 +2,7 @@ config {
   type: "table",
   schema: "gold",
   name: "gold_user_360",
-  description: "Visão 360 do usuário — score de propensão, termômetro de engajamento, cursos, eventos, trial e receita. Grain: 1 linha por userId.",
+  description: "Visão 360 do usuário — score, termômetro, cursos, eventos, trial. Grain: 1 linha por userId.",
   bigquery: {
     partitionBy: "_ingest_date",
     clusterBy: ["planId", "termometro"]
@@ -12,7 +12,6 @@ config {
 
 WITH
 
--- ── 1. Base de usuários com plano atual ───────────────────────────────────────
 users_base AS (
   SELECT
     u.userId,
@@ -31,8 +30,7 @@ users_base AS (
     up.planName,
     up.isTrial,
     up.trialUsed,
-    up.trialUseDate,
-    up.validity                                       AS plan_validity,
+    up.validity AS plan_validity,
     DATE_DIFF(CURRENT_DATE(), DATE(u.createdAt), DAY) AS lifetime_days
   FROM ${ref("silver_users")} u
   LEFT JOIN ${ref("silver_userplans")} up
@@ -40,12 +38,11 @@ users_base AS (
     AND up.is_current = TRUE
 ),
 
--- ── 2. Score total e percentil ────────────────────────────────────────────────
 score_base AS (
   SELECT
     userId,
-    COALESCE(SUM(score), 0)  AS score_total,
-    COUNT(*)                 AS score_events
+    COALESCE(SUM(score), 0) AS score_total,
+    COUNT(*)                AS score_events
   FROM ${ref("silver_scores")}
   GROUP BY userId
 ),
@@ -55,14 +52,10 @@ score_with_percentil AS (
     userId,
     score_total,
     score_events,
-    ROUND(
-      PERCENT_RANK() OVER (ORDER BY score_total),
-      4
-    ) AS score_percentil
+    ROUND(PERCENT_RANK() OVER (ORDER BY score_total), 4) AS score_percentil
   FROM score_base
 ),
 
--- ── 3. Engajamento em cursos ──────────────────────────────────────────────────
 course_engagement AS (
   SELECT
     userId,
@@ -74,7 +67,6 @@ course_engagement AS (
   GROUP BY userId
 ),
 
--- ── 4. Certificados emitidos ──────────────────────────────────────────────────
 certificates AS (
   SELECT
     userId,
@@ -83,20 +75,19 @@ certificates AS (
   GROUP BY userId
 ),
 
--- ── 5. Presença em eventos ────────────────────────────────────────────────────
 event_engagement AS (
   SELECT
     userId,
-    COUNT(DISTINCT eventId)                              AS events_attended,
-    COUNT(DISTINCT IF(progress >= 70, eventId, NULL))   AS events_completed
+    COUNT(DISTINCT eventId)                            AS events_attended,
+    COUNT(DISTINCT IF(progress >= 70, eventId, NULL)) AS events_completed
   FROM ${ref("silver_newusereventprogresses")}
   GROUP BY userId
 ),
 
--- ── 6. Conversão trial ────────────────────────────────────────────────────────
 trial_conversion AS (
   SELECT
     up.userId,
+<<<<<<< HEAD
     up.isTrial,
     up.trialUsed,
     CASE
@@ -107,20 +98,17 @@ trial_conversion AS (
   LEFT JOIN ${ref("silver_plans")} AS p
     ON up.planId = p.planId
     AND up.is_current = TRUE
+=======
+    IF(up.isTrial = TRUE AND p.name != 'Starter', TRUE, FALSE) AS trial_converted
+  FROM (
+    SELECT userId, planId, isTrial
+    FROM ${ref("silver_userplans")}
+    WHERE is_current = TRUE
+  ) AS up
+  LEFT JOIN ${ref("silver_plans")} AS p ON up.planId = p.planId
+>>>>>>> refs/heads/main
 ),
 
-
--- ── 7. Receita total via subscriptions ───────────────────────────────────────
-revenue AS (
-  SELECT
-    userId,
-    COALESCE(SUM(amount), 0) AS total_revenue
-  FROM ${ref("silver_subscriptions")}
-  WHERE status = 'active'
-  GROUP BY userId
-),
-
--- ── 8. Consolidação final ─────────────────────────────────────────────────────
 consolidated AS (
   SELECT
     ub.userId,
@@ -141,41 +129,60 @@ consolidated AS (
     ub.trialUsed,
     ub.lifetime_days,
     ub.plan_validity,
-    COALESCE(sp.score_total, 0)         AS score_total,
-    COALESCE(sp.score_events, 0)        AS score_events,
-    COALESCE(sp.score_percentil, 0)     AS score_percentil,
-    COALESCE(ce.courses_started, 0)     AS courses_started,
-    COALESCE(ce.courses_completed, 0)   AS courses_completed,
+    COALESCE(sp.score_total, 0)           AS score_total,
+    COALESCE(sp.score_events, 0)          AS score_events,
+    COALESCE(sp.score_percentil, 0)       AS score_percentil,
+    COALESCE(ce.courses_started, 0)       AS courses_started,
+    COALESCE(ce.courses_completed, 0)     AS courses_completed,
     COALESCE(ce.total_watched_minutes, 0) AS total_watched_minutes,
     ce.last_course_access,
-    COALESCE(ct.certificates_earned, 0) AS certificates_earned,
-    COALESCE(ee.events_attended, 0)     AS events_attended,
-    COALESCE(ee.events_completed, 0)    AS events_completed,
-    COALESCE(tc.trial_converted, FALSE) AS trial_converted,
-    COALESCE(rv.total_revenue, 0)       AS total_revenue
+    COALESCE(ct.certificates_earned, 0)   AS certificates_earned,
+    COALESCE(ee.events_attended, 0)       AS events_attended,
+    COALESCE(ee.events_completed, 0)      AS events_completed,
+    COALESCE(tc.trial_converted, FALSE)   AS trial_converted
   FROM users_base ub
   LEFT JOIN score_with_percentil sp ON ub.userId = sp.userId
   LEFT JOIN course_engagement    ce ON ub.userId = ce.userId
   LEFT JOIN certificates         ct ON ub.userId = ct.userId
   LEFT JOIN event_engagement     ee ON ub.userId = ee.userId
   LEFT JOIN trial_conversion     tc ON ub.userId = tc.userId
-  LEFT JOIN revenue              rv ON ub.userId = rv.userId
 )
 
--- ── 9. Output final com termômetro ───────────────────────────────────────────
 SELECT
-  userId, name, lastName, email, profile, company, companySize,
-  carreerStage, experienceTime, active, acceptedCommunication,
-  createdAt, planId, planName, isTrial, trialUsed, trial_converted,
-  lifetime_days, plan_validity, score_total, score_events, score_percentil,
+  userId,
+  name,
+  lastName,
+  email,
+  profile,
+  company,
+  companySize,
+  carreerStage,
+  experienceTime,
+  active,
+  acceptedCommunication,
+  createdAt,
+  planId,
+  planName,
+  isTrial,
+  trialUsed,
+  trial_converted,
+  lifetime_days,
+  plan_validity,
+  score_total,
+  score_events,
+  score_percentil,
   CASE
     WHEN score_percentil >= 0.65 THEN 'quente'
     WHEN score_percentil >= 0.35 THEN 'morno'
     ELSE 'frio'
-  END AS termometro,
-  courses_started, courses_completed, total_watched_minutes,
-  last_course_access, certificates_earned, events_attended,
-  events_completed, total_revenue,
+  END                 AS termometro,
+  courses_started,
+  courses_completed,
+  total_watched_minutes,
+  last_course_access,
+  certificates_earned,
+  events_attended,
+  events_completed,
   CURRENT_DATE()      AS _ingest_date,
   CURRENT_TIMESTAMP() AS _transformed_at,
   '1.0.0'             AS _pipeline_version
