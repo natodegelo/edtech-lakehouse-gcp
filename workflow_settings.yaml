@@ -1,0 +1,5 @@
+defaultProject: edtech-lakehouse
+defaultDataset: silver_dev
+defaultAssertionDataset: silver_dev_assertions
+defaultLocation: us-east1
+dataformCoreVersion: 3.0.52

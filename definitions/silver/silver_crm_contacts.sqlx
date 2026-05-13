@@ -1,0 +1,38 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_crm_contacts",
+  description: "Contatos do CRM — ingestão incremental",
+  bigquery: {
+    partitionBy: "_ingest_date",
+    clusterBy: ["userid", "perfil_do_lead"]
+  },
+  tags: ["silver", "crm"]
+}
+
+SELECT
+  hubspot_id,
+  email,
+  firstname,
+  lastname,
+  phone,
+  company,
+  jobtitle,
+  perfil_do_lead,
+  seu_cargo,
+  tamanho_da_empresa,
+  hubspot_owner_id,
+  userid,
+  data_inicio_trial,
+  trial_cancel,
+  trial_cancel_date,
+  trial_business,
+  trial_user,
+  TIMESTAMP(lastmodifieddate)    AS lastmodifieddate,
+  DATE(_ingest_date)             AS _ingest_date,
+  _source,
+  CURRENT_TIMESTAMP()            AS _transformed_at,
+  '1.0.0'                       AS _pipeline_version
+FROM ${ref("crm_contacts")}
+WHERE hubspot_id IS NOT NULL
+  AND email IS NOT NULL

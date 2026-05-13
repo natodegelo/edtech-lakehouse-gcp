@@ -1,0 +1,15 @@
+config { type: "assertion", tags: ["gold", "assertion", "adherence"] }
+
+WITH total AS (
+  SELECT COUNT(DISTINCT userId) AS total
+  FROM ${ref("silver_users")}
+  WHERE active = TRUE
+),
+covered AS (
+  SELECT COUNT(DISTINCT userId) AS covered
+  FROM ${ref("gold_user_adherence")}
+  WHERE reference_month = DATE_TRUNC(CURRENT_DATE(), MONTH)
+)
+SELECT t.total, c.covered, ROUND(c.covered / t.total, 4) AS coverage_ratio
+FROM total t, covered c
+WHERE (c.covered / t.total) < 0.80

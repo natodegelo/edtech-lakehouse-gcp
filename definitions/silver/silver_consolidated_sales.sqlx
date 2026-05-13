@@ -1,0 +1,32 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_consolidated_sales",
+  description: "Visão consolidada de vendas LearnHub",
+  tags: ["silver", "financial"]
+}
+
+SELECT
+  saleId,
+  bill_id,
+  UserId                          AS userId,
+  Status                          AS status,
+  TIMESTAMP(Vencimento)           AS vencimento,
+  TIMESTAMP(Data_Pagamento)       AS data_pagamento,
+  Forma_de_Pagamento              AS forma_pagamento,
+  Tentativas_Pagamento            AS tentativas_pagamento,
+  Nome_Produto                    AS nome_produto,
+  Valor                           AS valor,
+  Valor_Total                     AS valor_total,
+  Plano                           AS plano,
+  Categoria_Produto               AS categoria_produto,
+  Perfil                          AS perfil,
+  Condicao_Pagamento              AS condicao_pagamento,
+  Numero_Parcelas                 AS numero_parcelas,
+  Tipo_Venda                      AS tipo_venda,
+  Usuario_Ativo                   AS usuario_ativo,
+  TIMESTAMP(Data_Atualizacao)     AS data_atualizacao,
+  CURRENT_TIMESTAMP()             AS _transformed_at,
+  '1.0.0'                        AS _pipeline_version
+FROM ${ref("consolidated_sales")}
+WHERE UserId IS NOT NULL

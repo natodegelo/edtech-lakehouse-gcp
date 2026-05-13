@@ -1,0 +1,31 @@
+config {
+  type: "table",
+  schema: "silver_dev",
+  name: "silver_newusereventprogresses",
+  description: "Progresso dos usuários em eventos ao vivo",
+  bigquery: {
+    partitionBy: "DATE(eventDate)",
+    clusterBy: ["userId"]
+  },
+  tags: ["silver", "engagement"]
+}
+
+SELECT
+  eventProgressId,
+  userId,
+  userEmail,
+  userName,
+  userPlanId,
+  userPlanName,
+  eventId,
+  eventName,
+  eventCategory,
+  progress,
+  TIMESTAMP(eventDate)           AS eventDate,
+  TIMESTAMP(_ingest_timestamp)   AS _ingested_at,
+  DATE(_ingest_date)             AS _ingest_date,
+  CURRENT_TIMESTAMP()            AS _transformed_at,
+  '1.0.0'                       AS _pipeline_version
+FROM ${ref("newusereventprogresses")}
+WHERE userId IS NOT NULL
+  AND eventId IS NOT NULL
