@@ -94,19 +94,25 @@ event_engagement AS (
 ),
 
 -- ── 6. Conversão trial ────────────────────────────────────────────────────────
+starter_plan AS (
+  SELECT planId
+  FROM ${ref("silver_plans")}
+  WHERE name = 'Starter'
+),
+
 trial_conversion AS (
   SELECT
-    userId,
-    isTrial,
-    trialUsed,
+    up.userId,
+    up.isTrial,
+    up.trialUsed,
     CASE
-      WHEN isTrial = TRUE AND planId NOT IN (
-        SELECT planId FROM ${ref("silver_plans")} WHERE name = 'Starter'
-      ) THEN TRUE
+      WHEN up.isTrial = TRUE
+       AND up.planId NOT IN (SELECT planId FROM starter_plan)
+      THEN TRUE
       ELSE FALSE
     END AS trial_converted
-  FROM ${ref("silver_userplans")}
-  WHERE is_current = TRUE
+  FROM ${ref("silver_userplans")} up
+  WHERE up.is_current = TRUE
 ),
 
 -- ── 7. Receita total via subscriptions ───────────────────────────────────────
