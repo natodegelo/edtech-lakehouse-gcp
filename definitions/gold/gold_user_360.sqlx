@@ -102,8 +102,9 @@ trial_conversion AS (
     IF(up.isTrial = TRUE AND p.name != 'Starter', TRUE, FALSE) AS trial_converted
   FROM ${ref("silver_userplans")} up
   LEFT JOIN ${ref("silver_plans")} p ON up.planId = p.planId
-  WHERE up.is_current = TRUE
+    AND up.is_current = TRUE
 ),
+
 
 -- ── 7. Receita total via subscriptions ───────────────────────────────────────
 revenue AS (
