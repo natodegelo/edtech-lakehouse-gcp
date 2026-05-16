@@ -8,57 +8,57 @@ from google.cloud import storage
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-GCS_PROJECT           = os.environ.get("GCS_PROJECT",           "edtech-lakehouse")
-GCS_GENERATOR_BUCKET  = os.environ.get("GCS_GENERATOR_BUCKET",  "edtech-generator-dev")
-GCS_RAW_BUCKET        = os.environ.get("GCS_RAW_BUCKET",        "edtech-raw-dev")
+GCS_PROJECT = os.environ.get("GCS_PROJECT", "edtech-lakehouse")
+GCS_GENERATOR_BUCKET = os.environ.get("GCS_GENERATOR_BUCKET", "edtech-generator-dev")
+GCS_RAW_BUCKET = os.environ.get("GCS_RAW_BUCKET", "edtech-raw-dev")
 GCS_QUARANTINE_BUCKET = os.environ.get("GCS_QUARANTINE_BUCKET", "edtech-quarantine-dev")
 
 SCHEMA_REQUIRED_FIELDS = {
-    "users":                         ["userId", "email", "createdAt"],
-    "userprofiles":                  ["userId"],
-    "userplans":                     ["userId", "planId"],
-    "courses":                       ["courseId", "name"],
-    "events":                        ["eventId", "title"],
-    "plans":                         ["planId", "name"],
-    "usercourseprogresses":          ["userCourseProgressId", "userId", "courseId"],
+    "users": ["userId", "email", "createdAt"],
+    "userprofiles": ["userId"],
+    "userplans": ["userId", "planId"],
+    "courses": ["courseId", "name"],
+    "events": ["eventId", "title"],
+    "plans": ["planId", "name"],
+    "usercourseprogresses": ["userCourseProgressId", "userId", "courseId"],
     "usercourseprogresssummarizeds": ["userId"],
-    "newusereventprogresses":        ["userId", "eventId"],
-    "audittraffics":                 ["userId", "tag", "createdAt"],
-    "scores":                        ["scoreId", "userId", "score"],
-    "scoresummarizeds":              ["userId", "score"],
-    "subscriptions":                 ["subscriptionId", "userId", "status"],
-    "bills":                         ["billId", "userId", "amount", "status"],
-    "consolidated_sales":            ["UserId", "bill_id"],
-    "comments":                      ["commentId", "userId"],
-    "likes":                         ["likeId", "userId"],
-    "certificates":                  ["certificateId", "userId", "courseId"],
-    "specialization_graduates":      ["userId", "eventId"],
-    "gateway_customers":             ["customerId", "userId"],
-    "crm_contacts":                  ["hubspot_id", "email"],
+    "newusereventprogresses": ["userId", "eventId"],
+    "audittraffics": ["userId", "tag", "createdAt"],
+    "scores": ["scoreId", "userId", "score"],
+    "scoresummarizeds": ["userId", "score"],
+    "subscriptions": ["subscriptionId", "userId", "status"],
+    "bills": ["billId", "userId", "amount", "status"],
+    "consolidated_sales": ["UserId", "bill_id"],
+    "comments": ["commentId", "userId"],
+    "likes": ["likeId", "userId"],
+    "certificates": ["certificateId", "userId", "courseId"],
+    "specialization_graduates": ["userId", "eventId"],
+    "gateway_customers": ["customerId", "userId"],
+    "crm_contacts": ["hubspot_id", "email"],
 }
 
 INGEST_STRATEGY = {
-    "users":                         "snapshot",
-    "userprofiles":                  "snapshot",
-    "courses":                       "snapshot",
-    "events":                        "snapshot",
-    "plans":                         "snapshot",
-    "gateway_customers":             "snapshot",
-    "consolidated_sales":            "snapshot",
+    "users": "snapshot",
+    "userprofiles": "snapshot",
+    "courses": "snapshot",
+    "events": "snapshot",
+    "plans": "snapshot",
+    "gateway_customers": "snapshot",
+    "consolidated_sales": "snapshot",
     "usercourseprogresssummarizeds": "snapshot",
-    "scoresummarizeds":              "snapshot",
-    "bills":                         "snapshot",
-    "userplans":                     "scd2",
-    "subscriptions":                 "scd2",
-    "usercourseprogresses":          "merge",
-    "crm_contacts":                  "checkpoint",
-    "audittraffics":                 "append",
-    "scores":                        "append",
-    "comments":                      "append",
-    "likes":                         "append",
-    "certificates":                  "append",
-    "newusereventprogresses":        "append",
-    "specialization_graduates":      "append",
+    "scoresummarizeds": "snapshot",
+    "bills": "snapshot",
+    "userplans": "scd2",
+    "subscriptions": "scd2",
+    "usercourseprogresses": "merge",
+    "crm_contacts": "checkpoint",
+    "audittraffics": "append",
+    "scores": "append",
+    "comments": "append",
+    "likes": "append",
+    "certificates": "append",
+    "newusereventprogresses": "append",
+    "specialization_graduates": "append",
 }
 
 
@@ -107,7 +107,7 @@ def ingest_collection(client: storage.Client, collection: str, ingest_date: str,
         logger.warning(f"Collection not found in generator bucket: {collection}")
         return {"collection": collection, "status": "skipped"}
 
-    valid_lines      = []
+    valid_lines = []
     quarantine_lines = []
 
     for record in records:
@@ -117,11 +117,11 @@ def ingest_collection(client: storage.Client, collection: str, ingest_date: str,
             valid_lines.append(json.dumps(record, ensure_ascii=False))
         else:
             record["_quarantine_reason"] = reason
-            record["_ingest_date"]       = ingest_date
+            record["_ingest_date"] = ingest_date
             quarantine_lines.append(json.dumps(record, ensure_ascii=False))
 
-    source  = "crm"      if collection == "crm_contacts" else "mongodb"
-    entity  = "contacts" if collection == "crm_contacts" else collection
+    source = "crm" if collection == "crm_contacts" else "mongodb"
+    entity = "contacts" if collection == "crm_contacts" else collection
     blob_path = f"{source}/{entity}/ingest_date={ingest_date}/ingest_time={ingest_time}/part-00000.ndjson"
 
     if valid_lines:
@@ -131,16 +131,16 @@ def ingest_collection(client: storage.Client, collection: str, ingest_date: str,
         upload_to_gcs(client, GCS_QUARANTINE_BUCKET, blob_path, "\n".join(quarantine_lines))
 
     log_entry = {
-        "severity":            "INFO",
-        "service":             "lakehouse-ingest",
-        "collection":          collection,
-        "strategy":            INGEST_STRATEGY.get(collection, "snapshot"),
-        "records_processed":   len(records),
-        "records_valid":       len(valid_lines),
+        "severity": "INFO",
+        "service": "lakehouse-ingest",
+        "collection": collection,
+        "strategy": INGEST_STRATEGY.get(collection, "snapshot"),
+        "records_processed": len(records),
+        "records_valid": len(valid_lines),
         "records_quarantined": len(quarantine_lines),
-        "ingest_date":         ingest_date,
-        "ingest_time":         ingest_time,
-        "gcs_path":            f"gs://{GCS_RAW_BUCKET}/{blob_path}",
+        "ingest_date": ingest_date,
+        "ingest_time": ingest_time,
+        "gcs_path": f"gs://{GCS_RAW_BUCKET}/{blob_path}",
     }
     logger.info(json.dumps(log_entry))
 
@@ -159,19 +159,19 @@ def main():
         result = ingest_collection(client, collection, ingest_date, ingest_time)
         results.append(result)
 
-    total      = len(results)
-    skipped    = sum(1 for r in results if r.get("status") == "skipped")
+    total = len(results)
+    skipped = sum(1 for r in results if r.get("status") == "skipped")
     quarantined = sum(r.get("records_quarantined", 0) for r in results)
 
     logger.info(json.dumps({
-        "severity":                  "INFO",
-        "service":                   "lakehouse-ingest",
-        "summary":                   "ingestion complete",
-        "collections_processed":     total - skipped,
-        "collections_skipped":       skipped,
+        "severity": "INFO",
+        "service": "lakehouse-ingest",
+        "summary": "ingestion complete",
+        "collections_processed": total - skipped,
+        "collections_skipped": skipped,
         "total_records_quarantined": quarantined,
-        "ingest_date":               ingest_date,
-        "ingest_time":               ingest_time,
+        "ingest_date": ingest_date,
+        "ingest_time": ingest_time,
     }))
 
 
