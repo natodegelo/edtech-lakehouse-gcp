@@ -72,11 +72,11 @@ def validate_record(record: dict, collection: str) -> tuple[bool, str]:
 
 def add_metadata(record: dict, collection: str, ingest_date: str, ingest_time: str) -> dict:
     record["_ingest_timestamp"] = datetime.now(tz=timezone.utc).isoformat()
-    record["_ingest_date"]      = ingest_date
-    record["_ingest_time"]      = ingest_time
-    record["_source"]           = "mongodb"
-    record["_collection"]       = collection
-    record["_ingest_strategy"]  = INGEST_STRATEGY.get(collection, "snapshot")
+    record["_ingest_date"] = ingest_date
+    record["_ingest_time"] = ingest_time
+    record["_source"] = "mongodb"
+    record["_collection"] = collection
+    record["_ingest_strategy"] = INGEST_STRATEGY.get(collection, "snapshot")
     return record
 
 
