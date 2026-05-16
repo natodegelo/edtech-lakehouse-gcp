@@ -2,40 +2,39 @@ import json
 import logging
 import os
 from datetime import datetime, timezone
-from pathlib import Path
 
 from google.cloud import storage
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-GCS_PROJECT = os.environ.get("GCS_PROJECT", "edtech-lakehouse")
-GCS_RAW_BUCKET = os.environ.get("GCS_RAW_BUCKET", "edtech-raw-dev")
+GCS_PROJECT           = os.environ.get("GCS_PROJECT",           "edtech-lakehouse")
+GCS_GENERATOR_BUCKET  = os.environ.get("GCS_GENERATOR_BUCKET",  "edtech-generator-dev")
+GCS_RAW_BUCKET        = os.environ.get("GCS_RAW_BUCKET",        "edtech-raw-dev")
 GCS_QUARANTINE_BUCKET = os.environ.get("GCS_QUARANTINE_BUCKET", "edtech-quarantine-dev")
-DATA_DIR = Path(os.environ.get("DATA_DIR", "../data_generator/data"))
 
 SCHEMA_REQUIRED_FIELDS = {
-    "users":                        ["userId", "email", "createdAt"],
-    "userprofiles":                 ["userId"],
-    "userplans":                    ["userId", "planId"],
-    "courses":                      ["courseId", "name"],
-    "events":                       ["eventId", "title"],
-    "plans":              ["planId", "name"],
-    "usercourseprogresses":         ["userCourseProgressId", "userId", "courseId"],
-    "usercourseprogresssummarizeds":["userId"],
-    "newusereventprogresses":       ["userId", "eventId"],
-    "audittraffics":                ["userId", "tag", "createdAt"],
-    "scores":                       ["scoreId", "userId", "score"],
-    "scoresummarizeds":             ["userId", "score"],
-    "subscriptions":                ["subscriptionId", "userId", "status"],
-    "bills":                        ["billId", "userId", "amount", "status"],
-    "consolidated_sales":           ["UserId", "bill_id"],
-    "comments":                     ["commentId", "userId"],
-    "likes":                        ["likeId", "userId"],
-    "certificates":                 ["certificateId", "userId", "courseId"],
-    "specialization_graduates":     ["userId", "eventId"],
-    "gateway_customers":              ["customerId", "userId"],
-    "crm_contacts":             ["hubspot_id", "email"],
+    "users":                         ["userId", "email", "createdAt"],
+    "userprofiles":                  ["userId"],
+    "userplans":                     ["userId", "planId"],
+    "courses":                       ["courseId", "name"],
+    "events":                        ["eventId", "title"],
+    "plans":                         ["planId", "name"],
+    "usercourseprogresses":          ["userCourseProgressId", "userId", "courseId"],
+    "usercourseprogresssummarizeds": ["userId"],
+    "newusereventprogresses":        ["userId", "eventId"],
+    "audittraffics":                 ["userId", "tag", "createdAt"],
+    "scores":                        ["scoreId", "userId", "score"],
+    "scoresummarizeds":              ["userId", "score"],
+    "subscriptions":                 ["subscriptionId", "userId", "status"],
+    "bills":                         ["billId", "userId", "amount", "status"],
+    "consolidated_sales":            ["UserId", "bill_id"],
+    "comments":                      ["commentId", "userId"],
+    "likes":                         ["likeId", "userId"],
+    "certificates":                  ["certificateId", "userId", "courseId"],
+    "specialization_graduates":      ["userId", "eventId"],
+    "gateway_customers":             ["customerId", "userId"],
+    "crm_contacts":                  ["hubspot_id", "email"],
 }
 
 INGEST_STRATEGY = {
@@ -44,7 +43,7 @@ INGEST_STRATEGY = {
     "courses":                       "snapshot",
     "events":                        "snapshot",
     "plans":                         "snapshot",
-    "gateway_customers":               "snapshot",
+    "gateway_customers":             "snapshot",
     "consolidated_sales":            "snapshot",
     "usercourseprogresssummarizeds": "snapshot",
     "scoresummarizeds":              "snapshot",
@@ -52,7 +51,7 @@ INGEST_STRATEGY = {
     "userplans":                     "scd2",
     "subscriptions":                 "scd2",
     "usercourseprogresses":          "merge",
-    "crm_contacts":              "checkpoint",
+    "crm_contacts":                  "checkpoint",
     "audittraffics":                 "append",
     "scores":                        "append",
     "comments":                      "append",
@@ -73,11 +72,11 @@ def validate_record(record: dict, collection: str) -> tuple[bool, str]:
 
 def add_metadata(record: dict, collection: str, ingest_date: str, ingest_time: str) -> dict:
     record["_ingest_timestamp"] = datetime.now(tz=timezone.utc).isoformat()
-    record["_ingest_date"] = ingest_date
-    record["_ingest_time"] = ingest_time
-    record["_source"] = "mongodb"
-    record["_collection"] = collection
-    record["_ingest_strategy"] = INGEST_STRATEGY.get(collection, "snapshot")
+    record["_ingest_date"]      = ingest_date
+    record["_ingest_time"]      = ingest_time
+    record["_source"]           = "mongodb"
+    record["_collection"]       = collection
+    record["_ingest_strategy"]  = INGEST_STRATEGY.get(collection, "snapshot")
     return record
 
 
@@ -87,17 +86,28 @@ def upload_to_gcs(client: storage.Client, bucket_name: str, blob_path: str, cont
     blob.upload_from_string(content, content_type="application/x-ndjson")
 
 
-def ingest_collection(client: storage.Client, collection: str, ingest_date: str, ingest_time: str) -> dict:
-    file_path = DATA_DIR / f"{collection}.json"
+def read_latest_from_generator(client: storage.Client, collection: str) -> list[dict] | None:
+    """Lê o arquivo JSON mais recente do bucket generator para a collection."""
+    bucket = client.bucket(GCS_GENERATOR_BUCKET)
+    blobs = list(bucket.list_blobs(prefix=f"{collection}/"))
 
-    if not file_path.exists():
-        logger.warning(f"File not found: {file_path}")
+    if not blobs:
+        return None
+
+    # Ordena por nome — ingest_date e ingest_time no path garantem ordem lexicográfica correta
+    latest_blob = sorted(blobs, key=lambda b: b.name)[-1]
+    content = latest_blob.download_as_text(encoding="utf-8")
+    return json.loads(content)
+
+
+def ingest_collection(client: storage.Client, collection: str, ingest_date: str, ingest_time: str) -> dict:
+    records = read_latest_from_generator(client, collection)
+
+    if records is None:
+        logger.warning(f"Collection not found in generator bucket: {collection}")
         return {"collection": collection, "status": "skipped"}
 
-    with open(file_path, encoding="utf-8") as f:
-        records = json.load(f)
-
-    valid_lines = []
+    valid_lines      = []
     quarantine_lines = []
 
     for record in records:
@@ -107,11 +117,11 @@ def ingest_collection(client: storage.Client, collection: str, ingest_date: str,
             valid_lines.append(json.dumps(record, ensure_ascii=False))
         else:
             record["_quarantine_reason"] = reason
-            record["_ingest_date"] = ingest_date
+            record["_ingest_date"]       = ingest_date
             quarantine_lines.append(json.dumps(record, ensure_ascii=False))
 
-    source = "crm" if collection == "crm_contacts" else "mongodb"
-    entity = "contacts" if collection == "crm_contacts" else collection
+    source  = "crm"      if collection == "crm_contacts" else "mongodb"
+    entity  = "contacts" if collection == "crm_contacts" else collection
     blob_path = f"{source}/{entity}/ingest_date={ingest_date}/ingest_time={ingest_time}/part-00000.ndjson"
 
     if valid_lines:
@@ -121,16 +131,16 @@ def ingest_collection(client: storage.Client, collection: str, ingest_date: str,
         upload_to_gcs(client, GCS_QUARANTINE_BUCKET, blob_path, "\n".join(quarantine_lines))
 
     log_entry = {
-        "severity": "INFO",
-        "service": "lakehouse-ingest",
-        "collection": collection,
-        "strategy": INGEST_STRATEGY.get(collection, "snapshot"),
-        "records_processed": len(records),
-        "records_valid": len(valid_lines),
+        "severity":            "INFO",
+        "service":             "lakehouse-ingest",
+        "collection":          collection,
+        "strategy":            INGEST_STRATEGY.get(collection, "snapshot"),
+        "records_processed":   len(records),
+        "records_valid":       len(valid_lines),
         "records_quarantined": len(quarantine_lines),
-        "ingest_date": ingest_date,
-        "ingest_time": ingest_time,
-        "gcs_path": f"gs://{GCS_RAW_BUCKET}/{blob_path}",
+        "ingest_date":         ingest_date,
+        "ingest_time":         ingest_time,
+        "gcs_path":            f"gs://{GCS_RAW_BUCKET}/{blob_path}",
     }
     logger.info(json.dumps(log_entry))
 
@@ -149,19 +159,19 @@ def main():
         result = ingest_collection(client, collection, ingest_date, ingest_time)
         results.append(result)
 
-    total = len(results)
-    skipped = sum(1 for r in results if r.get("status") == "skipped")
+    total      = len(results)
+    skipped    = sum(1 for r in results if r.get("status") == "skipped")
     quarantined = sum(r.get("records_quarantined", 0) for r in results)
 
     logger.info(json.dumps({
-        "severity": "INFO",
-        "service": "lakehouse-ingest",
-        "summary": "ingestion complete",
-        "collections_processed": total - skipped,
-        "collections_skipped": skipped,
+        "severity":                  "INFO",
+        "service":                   "lakehouse-ingest",
+        "summary":                   "ingestion complete",
+        "collections_processed":     total - skipped,
+        "collections_skipped":       skipped,
         "total_records_quarantined": quarantined,
-        "ingest_date": ingest_date,
-        "ingest_time": ingest_time,
+        "ingest_date":               ingest_date,
+        "ingest_time":               ingest_time,
     }))
 
 

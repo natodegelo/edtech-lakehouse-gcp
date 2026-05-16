@@ -1,9 +1,13 @@
+import argparse
 import json
 import uuid
 from datetime import datetime, timezone, timedelta
+
 from faker import Faker
+from google.cloud import storage
 
 fake = Faker("pt_BR")
+Faker.seed(42)
 
 PLANS = [
     {"planId": "e4aece44-f291-11ec-b939-0242ac120002", "name": "Master", "hierarchy": 1},
@@ -15,6 +19,25 @@ PLANS = [
 CATEGORY_GROUPS = ["Customer Success", "CX", "Dados", "Liderança", "Vendas"]
 EVENT_CATEGORIES = ["masterclass", "especializacao"]
 SUBJECTS = ["customer_experience", "dados", "cx", "lideranca", "vendas"]
+
+
+# ── Upload ──────────────────────────────────────────────────────────────────────
+
+def upload_to_gcs(data: list[dict], collection: str, bucket_name: str) -> None:
+    client = storage.Client()
+    bucket = client.bucket(bucket_name)
+
+    now = datetime.now(tz=timezone.utc)
+    ingest_date = now.strftime("%Y-%m-%d")
+    ingest_time = now.strftime("%H%M%S")
+    blob_path = f"{collection}/ingest_date={ingest_date}/ingest_time={ingest_time}/data.json"
+
+    blob = bucket.blob(blob_path)
+    blob.upload_from_string(
+        json.dumps(data, ensure_ascii=False, indent=2),
+        content_type="application/json",
+    )
+    print(f"[OK] {len(data):>6} registros → gs://{bucket_name}/{blob_path}")
 
 
 # ── Users ──────────────────────────────────────────────────────────────────────
@@ -206,15 +229,6 @@ def generate_userprofiles(users: list[dict]) -> list[dict]:
     return profiles
 
 
-# ── Main ───────────────────────────────────────────────────────────────────────
-
-def save(data: list[dict], filename: str) -> None:
-    path = f"data/{filename}"
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"{len(data)} registros gerados em {path}")
-
-    
 # ── Audit Traffics ─────────────────────────────────────────────────────────────
 
 def generate_audittraffics(users: list[dict], n_per_user: int = 5) -> list[dict]:
@@ -355,8 +369,9 @@ def generate_scoresummarizeds(users: list[dict], scores: list[dict]) -> list[dic
             "updatedAt": datetime.now(tz=timezone.utc).isoformat(),
         }
         for user in users
-    ]    
-    
+    ]
+
+
 # ── Subscriptions ──────────────────────────────────────────────────────────────
 
 def generate_subscriptions(users: list[dict], userplans: list[dict]) -> list[dict]:
@@ -629,6 +644,9 @@ def generate_crm_contacts(users: list[dict], userplans: list[dict]) -> list[dict
         })
     return contacts
 
+
+# ── User Course Progress Summarizeds ───────────────────────────────────────────
+
 def generate_usercourseprogresssummarizeds(users: list[dict], userplans: list[dict], ucprog: list[dict]) -> list[dict]:
     plan_map = {u["userId"]: u for u in userplans}
     prog_map: dict[str, list] = {}
@@ -654,49 +672,72 @@ def generate_usercourseprogresssummarizeds(users: list[dict], userplans: list[di
             "updatedAt": datetime.now(tz=timezone.utc).isoformat(),
         })
     return summarizeds
-    
-    
-if __name__ == "__main__":
-    users    = generate_users(100)
-    plans    = generate_plans()
-    courses  = generate_courses(50)
-    events   = generate_events(30)
-    uplans   = generate_userplans(users)
-    uprofile = generate_userprofiles(users)
-    audits   = generate_audittraffics(users)
-    ucprog   = generate_usercourseprogresses(users, courses)
-    ueprog   = generate_newusereventprogresses(users, events, uplans)
-    scores   = generate_scores(users, courses)
-    ssum     = generate_scoresummarizeds(users, scores)
-    ucprog_sum = generate_usercourseprogresssummarizeds(users, uplans, ucprog)
-    subs     = generate_subscriptions(users, uplans)
-    bills    = generate_bills(users, subs)
-    sales    = generate_consolidated_sales(users, bills, uplans)
-    comments = generate_comments(users, uplans)
-    likes    = generate_likes(users, comments)
-    certs    = generate_certificates(users, courses)
-    aprovs   = generate_specialization_graduates(users, events, uplans)
-    vindi    = generate_gateway_customers(users)
-    hubspot  = generate_crm_contacts(users, uplans)
 
-    save(users,    "users.json")
-    save(plans,    "plans.json")
-    save(courses,  "courses.json")
-    save(events,   "events.json")
-    save(uplans,   "userplans.json")
-    save(uprofile, "userprofiles.json")
-    save(audits,   "audittraffics.json")
-    save(ucprog,   "usercourseprogresses.json")
-    save(ueprog,   "newusereventprogresses.json")
-    save(ucprog_sum, "usercourseprogresssummarizeds.json")
-    save(scores,   "scores.json")
-    save(ssum,     "scoresummarizeds.json")
-    save(subs,     "subscriptions.json")
-    save(bills,    "bills.json")
-    save(sales,    "consolidated_sales.json")
-    save(comments, "comments.json")
-    save(likes,    "likes.json")
-    save(certs,    "certificates.json")
-    save(aprovs,   "specialization_graduates.json")
-    save(vindi,    "gateway_customers.json")
-    save(hubspot,  "crm_contacts.json")
+
+# ── Entrypoint ─────────────────────────────────────────────────────────────────
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="LearnHub synthetic data generator")
+    parser.add_argument("--bucket",  default="edtech-generator-dev", help="GCS bucket de destino")
+    parser.add_argument("--users",   type=int, default=100,  help="Número de usuários")
+    parser.add_argument("--courses", type=int, default=50,   help="Número de cursos")
+    parser.add_argument("--events",  type=int, default=30,   help="Número de eventos")
+    args = parser.parse_args()
+
+    BUCKET = args.bucket
+
+    print(f"\n{'='*55}")
+    print(f"  LearnHub Data Generator")
+    print(f"  Bucket : gs://{BUCKET}")
+    print(f"  Users  : {args.users} | Courses: {args.courses} | Events: {args.events}")
+    print(f"{'='*55}\n")
+
+    # ── Geração (dependências respeitadas) ──────────────────
+    users      = generate_users(args.users)
+    plans      = generate_plans()
+    courses    = generate_courses(args.courses)
+    events     = generate_events(args.events)
+    uplans     = generate_userplans(users)
+    uprofile   = generate_userprofiles(users)
+    audits     = generate_audittraffics(users)
+    ucprog     = generate_usercourseprogresses(users, courses)
+    ueprog     = generate_newusereventprogresses(users, events, uplans)
+    scores     = generate_scores(users, courses)
+    ssum       = generate_scoresummarizeds(users, scores)
+    ucprog_sum = generate_usercourseprogresssummarizeds(users, uplans, ucprog)
+    subs       = generate_subscriptions(users, uplans)
+    bills      = generate_bills(users, subs)
+    sales      = generate_consolidated_sales(users, bills, uplans)
+    comments   = generate_comments(users, uplans)
+    likes      = generate_likes(users, comments)
+    certs      = generate_certificates(users, courses)
+    aprovs     = generate_specialization_graduates(users, events, uplans)
+    vindi      = generate_gateway_customers(users)
+    hubspot    = generate_crm_contacts(users, uplans)
+
+    # ── Upload para GCS ─────────────────────────────────────
+    upload_to_gcs(users,      "users",                          BUCKET)
+    upload_to_gcs(plans,      "plans",                          BUCKET)
+    upload_to_gcs(courses,    "courses",                        BUCKET)
+    upload_to_gcs(events,     "events",                         BUCKET)
+    upload_to_gcs(uplans,     "userplans",                      BUCKET)
+    upload_to_gcs(uprofile,   "userprofiles",                   BUCKET)
+    upload_to_gcs(audits,     "audittraffics",                  BUCKET)
+    upload_to_gcs(ucprog,     "usercourseprogresses",           BUCKET)
+    upload_to_gcs(ueprog,     "newusereventprogresses",         BUCKET)
+    upload_to_gcs(ucprog_sum, "usercourseprogresssummarizeds",  BUCKET)
+    upload_to_gcs(scores,     "scores",                         BUCKET)
+    upload_to_gcs(ssum,       "scoresummarizeds",               BUCKET)
+    upload_to_gcs(subs,       "subscriptions",                  BUCKET)
+    upload_to_gcs(bills,      "bills",                          BUCKET)
+    upload_to_gcs(sales,      "consolidated_sales",             BUCKET)
+    upload_to_gcs(comments,   "comments",                       BUCKET)
+    upload_to_gcs(likes,      "likes",                          BUCKET)
+    upload_to_gcs(certs,      "certificates",                   BUCKET)
+    upload_to_gcs(aprovs,     "specialization_graduates",       BUCKET)
+    upload_to_gcs(vindi,      "gateway_customers",              BUCKET)
+    upload_to_gcs(hubspot,    "crm_contacts",                   BUCKET)
+
+    print(f"\n{'='*55}")
+    print(f"  Geração concluída — 21 collections no GCS")
+    print(f"{'='*55}\n")
