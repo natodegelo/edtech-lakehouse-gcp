@@ -232,3 +232,4 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 >>>>>>> refs/heads/main
+orchestration/gcp/
