@@ -112,3 +112,4 @@ O Dataform só dispara quando todos os domínios concluírem com sucesso.
         generator >> ingest >> load
 
     return dag
+

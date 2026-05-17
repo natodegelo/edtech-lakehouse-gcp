@@ -1,5 +1,5 @@
 from datetime import datetime
-from dag_factory import build_domain_dag
+from _dag_factory import build_domain_dag
 
 dag = build_domain_dag(
     dag_id="dag_certifications",
@@ -8,3 +8,5 @@ dag = build_domain_dag(
     tags=["certifications"],
     start_date=datetime(2026, 5, 16),
 )
+
+globals()["dag_certifications"] = dag
