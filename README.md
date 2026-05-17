@@ -8,47 +8,31 @@ This project reconstructs a real production lakehouse built at a Brazilian EdTec
 
 ## Architecture Overview
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        DATA SOURCES                             │
-│   MongoDB (21 collections) · HubSpot CRM · Vindi Gateway       │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                     INGESTION LAYER                             │
-│   lakehouse-generator  →  GCS (edtech-generator-dev)           │
-│   lakehouse-ingest     →  GCS raw (NDJSON + quarantine)        │
-│   lakehouse-load       →  BigQuery raw_dev                     │
-│                                                                 │
-│   Cloud Run Jobs · Partitioned by ingest_date / ingest_time    │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                      RAW LAYER (GCS)                            │
-│   gs://edtech-raw-dev/mongodb/{collection}/                     │
-│     ingest_date=YYYY-MM-DD/ingest_time=HHMMSS/part-00000.ndjson│
-│   gs://edtech-quarantine-dev/  ← invalid records               │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    SILVER LAYER (BigQuery)                       │
-│   15 tables · SCD Type 2 · MERGE · WRITE_APPEND · Lineage      │
-│   Dataform ELT · Assertions as quality gates                    │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                     GOLD LAYER (BigQuery)                        │
-│   gold_user_360 · gold_user_adherence · gold_churn_risk_signals │
-│   gold_user_content_engagement · gold_trial_funnel              │
-│   gold_trial_daily_journey                                      │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-                            ▼
-                     Looker Studio
+```mermaid
+flowchart TD
+    A["📦 Data Sources\nMongoDB 21 collections · HubSpot CRM · Vindi Gateway"]
+
+    subgraph GEN["Ingestion Layer — Cloud Run Jobs"]
+        B["lakehouse-generator\nFaker pt_BR → gs://edtech-generator-dev"]
+        C["lakehouse-ingest\nGCS → GCS raw · NDJSON + quarantine"]
+        D["lakehouse-load\nGCS raw → BigQuery raw_dev"]
+    end
+
+    subgraph RAW["Raw Layer — GCS"]
+        E["gs://edtech-raw-dev/mongodb/{collection}/\ningest_date=YYYY-MM-DD/ingest_time=HHMMSS/part-00000.ndjson\ngs://edtech-quarantine-dev/ ← invalid records"]
+    end
+
+    subgraph SILVER["Silver Layer — BigQuery · Dataform ELT"]
+        F["15 tables · SCD Type 2 · MERGE · WRITE_APPEND\nData lineage · Partitioning + Clustering · Assertions"]
+    end
+
+    subgraph GOLD["Gold Layer — BigQuery · Dataform ELT"]
+        G["gold_user_360 · gold_user_adherence · gold_churn_risk_signals\ngold_user_content_engagement · gold_trial_funnel · gold_trial_daily_journey"]
+    end
+
+    H["📊 Looker Studio\nDashboards · Native BigQuery connector"]
+
+    A --> B --> C --> D --> E --> F --> G --> H
 ```
 
 **Orchestration:** Apache Airflow (Docker · LocalExecutor) — 9 domain DAGs + ExternalTaskSensor  
@@ -162,6 +146,7 @@ edtech-lakehouse-gcp/
 ## Medallion Architecture
 
 ### Raw Layer
+
 Every ingestion writes a new partition — idempotent by design.
 
 ```
@@ -179,6 +164,7 @@ gs://edtech-raw-{env}/
 ```
 
 Each record carries ingestion metadata:
+
 ```json
 {
   "_ingest_timestamp": "2026-05-16T00:00:00Z",
@@ -193,9 +179,11 @@ Each record carries ingestion metadata:
 Invalid records are quarantined with `_quarantine_reason` instead of being dropped or crashing the pipeline.
 
 ### Silver Layer
+
 15 tables transformed via Dataform ELT inside BigQuery.
 
 Key patterns applied:
+
 - **SCD Type 2** on `userplans` and `subscriptions` — `valid_from`, `valid_to`, `is_current`
 - **MERGE** on `usercourseprogresses` — upsert by `userCourseProgressId`
 - **WRITE_APPEND** on all event tables — historical log preserved forever
@@ -203,6 +191,7 @@ Key patterns applied:
 - **Partitioning + Clustering** tailored per table access pattern
 
 ### Gold Layer
+
 6 analytical tables, each serving a specific business domain:
 
 | Table | Grain | Description |
@@ -222,36 +211,20 @@ Key patterns applied:
 
 **Domain DAGs (05:00 UTC daily)** — all run in parallel:
 
-```
-dag_users          → users, userprofiles, userplans
-dag_content        → courses, events, plans
-dag_engagement     → usercourseprogresses, summarizeds, eventprogresses, audittraffics
-dag_scores         → scores, scoresummarizeds
-dag_financial      → subscriptions, bills, consolidated_sales
-dag_social         → comments, likes
-dag_certifications → certificates, specialization_graduates
-dag_crm            → gateway_customers, crm_contacts
-```
+| DAG | Collections |
+|---|---|
+| `dag_users` | users, userprofiles, userplans |
+| `dag_content` | courses, events, plans |
+| `dag_engagement` | usercourseprogresses, summarizeds, eventprogresses, audittraffics |
+| `dag_scores` | scores, scoresummarizeds |
+| `dag_financial` | subscriptions, bills, consolidated_sales |
+| `dag_social` | comments, likes |
+| `dag_certifications` | certificates, specialization_graduates |
+| `dag_crm` | gateway_customers, crm_contacts |
 
-Each domain DAG follows the same pipeline:
-```
-lakehouse-generator → lakehouse-ingest → lakehouse-load
-```
+Each domain DAG follows the same pipeline: `lakehouse-generator → lakehouse-ingest → lakehouse-load`
 
-**dag_dataform (06:00 UTC)** — waits for all 8 domains via `ExternalTaskSensor`, then triggers the Dataform workflow invocation (sources → silver → gold + assertions).
-
-```
-[sensor_dag_users]
-[sensor_dag_content]
-[sensor_dag_engagement]     ─┐
-[sensor_dag_scores]          ├→ DataformCreateWorkflowInvocationOperator
-[sensor_dag_financial]       │     silver → gold + assertions
-[sensor_dag_social]          │
-[sensor_dag_certifications] ─┘
-[sensor_dag_crm]
-```
-
-Failure isolation: if `dag_financial` fails, all other domain DAGs continue unaffected.
+**dag_dataform (06:00 UTC)** — waits for all 8 domains via `ExternalTaskSensor`, then triggers the Dataform workflow invocation (sources → silver → gold + assertions). Failure isolation: if `dag_financial` fails, all other domain DAGs continue unaffected.
 
 ---
 
@@ -259,19 +232,12 @@ Failure isolation: if `dag_financial` fails, all other domain DAGs continue unaf
 
 All resources managed as code. Zero manual resource creation.
 
-```hcl
-# Environments: dev and prod
-# Resources provisioned:
-# - GCS: edtech-raw-{env}, edtech-quarantine-{env}, edtech-generator-{env}
-# - BigQuery: raw_{env}, silver_{env}, gold_{env}
-# - IAM: lakehouse-sa with storage.objectAdmin, bigquery.dataEditor, bigquery.jobUser, run.invoker
-# - APIs: storage, bigquery, run, dataform, cloudresourcemanager, iam
-```
-
 | Resource | Dev | Prod |
 |---|---|---|
-| Raw retention | 30 days | 365 days |
-| Quarantine retention | 7 days | 90 days |
+| GCS raw retention | 30 days | 365 days |
+| GCS quarantine retention | 7 days | 90 days |
+
+Resources provisioned: GCS buckets (raw, quarantine, generator), BigQuery datasets (raw, silver, gold), Cloud Run Jobs, IAM service account with least-privilege roles, all required GCP APIs.
 
 ---
 
@@ -281,31 +247,33 @@ All resources managed as code. Zero manual resource creation.
 Transformations run inside BigQuery where the data already lives. No data movement, no serialization overhead, full SQL expressiveness, native lineage visualization, and quality assertions as first-class citizens.
 
 **Why SCD Type 2 for `userplans` and `subscriptions`?**
-Plan changes and subscription lifecycle events are critical business facts. Overwriting them destroys the ability to answer questions like "what plan did this user have when they churned?"
+Plan changes and subscription lifecycle events are critical business facts. Overwriting them destroys the ability to answer "what plan did this user have when they churned?"
 
 **Why WRITE_APPEND for event tables?**
 Events are immutable facts. A login happened, a comment was posted, a certificate was earned — these facts don't change. Truncating and reloading them daily loses history and breaks time-series analysis.
 
 **Why domain-isolated DAGs instead of one monolithic DAG?**
-Failure isolation. If the financial domain fails, engagement data still lands on time. Each domain has its own retry policy, schedule, and ownership. This is the pattern used at scale in production Airflow deployments.
+Failure isolation. If the financial domain fails, engagement data still lands on time. Each domain has its own retry policy, schedule, and ownership — the pattern used at scale in production Airflow deployments.
 
 **Why quarantine instead of dropping invalid records?**
 Silent data loss is worse than a visible error. Quarantined records are preserved with their rejection reason, making root cause analysis possible. The pipeline continues processing valid records without interruption.
 
 **Why idempotent partitioning by `ingest_date/ingest_time`?**
-Each job execution writes to a unique path. Re-running the same job never corrupts existing data — it creates a new partition. This makes backfills and reruns safe by default.
+Each job execution writes to a unique path. Re-running the same job never corrupts existing data — it creates a new partition. Backfills and reruns are safe by default.
 
 ---
 
 ## Running Locally
 
 ### Prerequisites
+
 - Python 3.11+
 - Docker Desktop
 - gcloud CLI authenticated (`gcloud auth application-default login`)
 - GCP project with Terraform-provisioned infrastructure
 
 ### 1. Provision Infrastructure
+
 ```bash
 cd terraform
 terraform init
@@ -313,6 +281,7 @@ terraform apply -var-file="environments/dev.tfvars"
 ```
 
 ### 2. Generate Synthetic Data
+
 ```bash
 cd data_generator
 pip install -r requirements.txt
@@ -320,37 +289,33 @@ python generate.py --bucket edtech-generator-dev --users 1000 --courses 100 --ev
 ```
 
 ### 3. Run Ingestion Pipeline
-```bash
-# Ingest: GCS generator → GCS raw
-gcloud run jobs execute lakehouse-ingest --region us-east1 --wait
 
-# Load: GCS raw → BigQuery
+```bash
+gcloud run jobs execute lakehouse-ingest --region us-east1 --wait
 gcloud run jobs execute lakehouse-load --region us-east1 --wait
 ```
 
 ### 4. Run Airflow
+
 ```bash
 cd orchestration
 docker-compose up airflow-init
 docker-compose up -d
-# Access at http://localhost:8080 (admin/admin)
+# Access at http://localhost:8080 — admin / admin
 ```
 
 ### 5. Trigger Dataform
-Dataform runs automatically via `dag_dataform` after all domain DAGs complete, or manually from the GCP Console → BigQuery → Dataform → `edtech-lakehouse` repository.
+
+Dataform runs automatically via `dag_dataform` after all domain DAGs complete, or manually from GCP Console → BigQuery → Dataform → `edtech-lakehouse`.
 
 ---
 
 ## CI/CD
 
-Every pull request triggers:
-- **flake8** — PEP8 lint with project-specific ignores
-- **black** — format check
-- **pytest** — unit tests for ingestion and load logic
-
-Every merge to `main` triggers:
-- Docker build + push to Artifact Registry
-- Cloud Run Job update
+| Trigger | Steps |
+|---|---|
+| Every PR | flake8 lint · black format check · pytest |
+| Merge to main | Docker build · push to Artifact Registry · Cloud Run Job update |
 
 ---
 
